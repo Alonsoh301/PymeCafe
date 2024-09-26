@@ -867,7 +867,7 @@
   top: 844px;
   width: 134.19px;
 }
-.agregar-clientes {
+.editar-clientes {
   color: var(--gray-scale-gray-900, #1a1a1a);
   text-align: left;
   font-family: var(
@@ -1546,7 +1546,7 @@
   bottom: 38.02%;
   top: 58.98%;
 }
-.agregar {
+.guardar {
   color: var(--gray-scale-white, #ffffff);
   text-align: left;
   font-family: "Poppins-SemiBold", sans-serif;
@@ -1568,7 +1568,7 @@
   width: 284px;
   height: 347px;
   position: absolute;
-  left: 300px;
+  left: 304px;
   top: 340px;
 }
 .menu {
