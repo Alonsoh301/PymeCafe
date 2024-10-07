@@ -1811,3 +1811,89 @@
   font-weight: var(--body-small-body-small-500-font-weight, 500);
   position: relative;
 }
+a, button, input, select, h1, h2, h3, h4, h5, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  appearance: none;
+  background: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+form {
+  margin: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Ajuste para que el botón de Siguiente se vea correctamente */
+button#next {
+  display: inline-block;
+  background-color: #00B307;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button#next:hover {
+  background-color: #008b02;
+}
+
+.survey-section h3 {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.survey-section {
+  max-width: 600px;
+  margin: 250px auto 0 auto; /* Aquí se añade un margen superior de 100px */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+/* Estilos para los checkboxes */
+input[type="radio"], input[type="checkbox"] {
+  appearance: auto; /* Establece la apariencia predeterminada del navegador */
+  -webkit-appearance: auto; /* Compatibilidad para navegadores WebKit */
+  -moz-appearance: auto; /* Compatibilidad para Firefox */
+  width: auto; /* Ajusta el ancho al valor predeterminado */
+  height: auto; /* Ajusta la altura al valor predeterminado */
+  margin-right: 10px; /* Añade espacio entre el input y el texto */
+  cursor: pointer; /* Muestra el cursor en forma de puntero */
+}
+input[type="radio"], input[type="checkbox"] {
+  appearance: initial; /* Esto asegura que los radio buttons/checkboxes se vean */
+}
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  appearance: auto;
+}
+* {
+  appearance: none; /* Esta regla puede ocultar los radio buttons o checkboxes */
+}
+
+label {
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+}

@@ -2,6 +2,139 @@
 .cliente-test * {
   box-sizing: border-box;
 }
+/* Contenedor del formulario */
+form {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  max-width: 600px; /* Ajustar el ancho del formulario */
+  margin: 0 auto; /* Centrando el formulario */
+}
+
+
+/* Estilo para los labels y alineación con los checkboxes */
+label {
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+/* Ajuste de espaciado para los checkboxes */
+input[type="radio"], input[type="checkbox"] {
+  appearance: auto; /* Establece la apariencia predeterminada del navegador */
+  -webkit-appearance: auto; /* Compatibilidad para navegadores WebKit */
+  -moz-appearance: auto; /* Compatibilidad para Firefox */
+  width: auto; /* Ajusta el ancho al valor predeterminado */
+  height: auto; /* Ajusta la altura al valor predeterminado */
+  margin-right: 10px; /* Añade espacio entre el input y el texto */
+  cursor: pointer; /* Muestra el cursor en forma de puntero */
+}
+input[type="radio"], input[type="checkbox"] {
+  appearance: initial; /* Esto asegura que los radio buttons/checkboxes se vean */
+}
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  appearance: auto;
+}
+* {
+  appearance: none; /* Esta regla puede ocultar los radio buttons o checkboxes */
+}
+/* Estilo para el botón de envío */
+button[type="submit"] {
+  background-color: #00b207;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Efecto hover para el botón */
+button[type="submit"]:hover {
+  background-color: #008a06;
+}
+
+/* Títulos */
+h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  color: #1a1a1a;
+  text-align: center; /* Centrar los títulos */
+  margin-bottom: 20px;
+}
+
+/* Contenedor específico de la sección */
+.survey-section {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  max-width: 600px; /* Ajusta el ancho solo para esta sección */
+  margin: 0 auto; /* Centrando la sección */
+  margin-top: 40px; /* Añade más espacio encima */
+  margin-bottom: 40px; /* Añade más espacio debajo */
+}
+
+/* Estilo para los labels dentro de esta sección */
+.survey-section label {
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+/* Ajuste de espaciado para los checkboxes */
+.survey-section input[type="checkbox"] {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* Estilo para el botón de envío */
+.survey-section button[type="submit"] {
+  background-color: #00b207;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Efecto hover para el botón */
+.survey-section button[type="submit"]:hover {
+  background-color: #008a06;
+}
+
+/* Títulos dentro de esta sección */
+.survey-section h2, .survey-section h3 {
+  font-family: 'Poppins', sans-serif;
+  color: #1a1a1a;
+  font-size: 22px; /* Tamaño de fuente ajustado */
+  text-align: center; /* Centrar los títulos */
+  margin-bottom: 20px;
+}
+.survey-section h3 {
+  font-size: 18px; /* Tamaño de fuente ajustado */
+}
 .cliente-test {
   height: 1650px;
   position: relative;
@@ -28,31 +161,7 @@
   left: calc(50% - 577px);
   top: 303px;
 }
-.a-por-la-ma-ana-necesito-un-buen-caf-para-empezar-el-d-a-con-energ-a {
-  color: #000000;
-  text-align: left;
-  text-transform: uppercase;
-  position: absolute;
-  left: 443px;
-  top: 501px;
-  width: 907px;
-}
-.a-por-la-ma-ana-necesito-un-buen-caf-para-empezar-el-d-a-con-energ-a-span {
-  color: #000000;
-  font-family: "Poppins-Medium", sans-serif;
-  font-size: 24px;
-  line-height: 100%;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-.a-por-la-ma-ana-necesito-un-buen-caf-para-empezar-el-d-a-con-energ-a-span2 {
-  color: #000000;
-  font-family: "Poppins-Medium", sans-serif;
-  font-size: 20px;
-  line-height: 100%;
-  font-weight: 500;
-  text-transform: uppercase;
-}
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -787,22 +896,8 @@
   top: 407px;
   width: 620.54px;
 }
-.queremos-brindarte-un-mejor-servicio-ayudanos-respondiendo-esta-encuesta {
-  color: var(--gray-scale-gray-900, #1a1a1a);
-  text-align: left;
-  font-family: var(
-    --body-xl-body-xl-500-font-family,
-    "Poppins-Medium",
-    sans-serif
-  );
-  font-size: var(--body-xl-body-xl-500-font-size, 20px);
-  line-height: var(--body-xl-body-xl-500-line-height, 150%);
-  font-weight: var(--body-xl-body-xl-500-font-weight, 500);
-  position: absolute;
-  left: 443px;
-  top: 314px;
-  width: 760px;
-}
+
+
 .frame {
   width: 23px;
   height: 22px;
@@ -846,9 +941,11 @@
   align-items: center;
   justify-content: flex-start;
   position: absolute;
-  left: 300px;
-  top: calc(50% - 12px);
+  left: 20px; /* Ajusta la distancia desde el lado izquierdo de la ventana */
+  top: 50%; /* Coloca el elemento en el medio verticalmente */
+  transform: translateY(-50%); /* Centra el contenido exactamente en el medio */
 }
+
 .home-1-1 {
   flex-shrink: 0;
   width: 24px;
@@ -1091,11 +1188,20 @@
   background: var(--gray-scale-white, #ffffff);
   padding: 24px 300px 24px 300px;
   flex-shrink: 0;
-  width: 1920px;
+  width: 100%; /* Asegura que la barra cubra todo el ancho */
   height: 93px;
-  position: relative;
+  position: fixed; /* Fija el elemento en la parte superior */
+  top: 0; /* Coloca la barra en la parte superior de la ventana */
+  left: 0;
+  z-index: 1000; /* Asegura que quede por encima de otros elementos */
   box-shadow: inset 0px -1px 0px 0px rgba(229, 229, 229, 1);
 }
+
+/* Ajustar el espaciado del contenido debajo de la barra */
+body {
+  padding-top: 93px; /* Ajusta este valor al tamaño de la barra .midle */
+}
+
 .logo2 {
   display: flex;
   flex-direction: row;
@@ -1596,39 +1702,90 @@
   top: 568px;
   overflow: visible;
 }
-.b {
-  color: #000000;
-  text-align: left;
-  font-family: "Poppins-Medium", sans-serif;
-  font-size: 24px;
-  line-height: 100%;
-  font-weight: 500;
-  text-transform: uppercase;
-  position: absolute;
-  left: 443px;
-  top: 570px;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 30px;
+  background-color: white;
+  box-shadow: 0 4px 2px -2px gray;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
-.despu-s-de-comer-me-gusta-un-caf-post-comida-para-continuar-el-d-a {
-  color: #000000;
-  text-align: left;
-  font-family: "Poppins-Medium", sans-serif;
-  font-size: 20px;
-  line-height: 100%;
-  font-weight: 500;
-  text-transform: uppercase;
-  position: absolute;
-  left: 507px;
-  top: 570px;
+
+/* Estilo para el logo */
+.logo2 {
+  display: flex;
+  align-items: center;
 }
-.a-cualquier-hora-puedo-disfrutar-de-un-caf-en-cualquier-momento-del-d-a {
-  color: #000000;
-  text-align: left;
-  font-family: "Poppins-Medium", sans-serif;
-  font-size: 20px;
-  line-height: 100%;
-  font-weight: 500;
-  text-transform: uppercase;
-  position: absolute;
-  left: 498px;
-  top: 643px;
+
+.logo2 .ecobazar2 {
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: bold;
 }
+
+/* Estilo para la sección de ubicación */
+.location {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Estilo para la barra de búsqueda */
+.search {
+  display: flex;
+  align-items: center;
+}
+button#next {
+  display: inline-block;
+  background-color: #00B307;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button#next:hover {
+  background-color: #008b02;
+}
+.search .button2 {
+  margin-left: 10px;
+}
+s
+/* Estilo para los iconos de carrito de compras y favoritos */
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icons .shopping-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icons .shopping-card .info {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Añadir margen al body para que no se oculte el contenido */
+body {
+  margin-top: 80px;
+  font-family: Arial, sans-serif;
+}
+
+form {
+  margin: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
