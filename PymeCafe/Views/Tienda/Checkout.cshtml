@@ -1,0 +1,71 @@
+﻿<link href="@Url.Content("~/css/pagar.css")" rel="stylesheet" />
+
+@{
+    Layout = "~/Views/Shared/_StoreLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Form</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="credit-card">
+            <div class="logo">VISA</div>
+            <div class="card-number" id="card-number">#### #### #### ####</div>
+            <div class="card-holder" id="card-holder">FULL NAME</div>
+            <div class="expiration-date">
+                <span id="exp-month">MM</span>/<span id="exp-year">YY</span>
+            </div>
+        </div>
+
+        <div class="form">
+            <input type="text" placeholder="Card Number" id="input-card-number" maxlength="16">
+            <input type="text" placeholder="Card Holder" id="input-card-holder">
+            <div style="display: flex; gap: 10px;">
+                <select id="exp-month-select">
+                    <option value="MM">Month</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <!-- add all months -->
+                </select>
+                <select id="exp-year-select">
+                    <option value="YY">Year</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <!-- add more years -->
+                </select>
+            </div>
+            <input type="text" placeholder="CVV" maxlength="3">
+            <button class="btn-custom">Submit</button>
+
+
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to update card details dynamically
+        document.getElementById('input-card-number').addEventListener('input', function () {
+            const cardNumber = this.value.replace(/\D/g, '').replace(/(\d{4})/g, '$1 ').trim();
+            document.getElementById('card-number').innerText = cardNumber || '#### #### #### ####';
+        });
+
+        document.getElementById('input-card-holder').addEventListener('input', function () {
+            document.getElementById('card-holder').innerText = this.value || 'FULL NAME';
+        });
+
+        document.getElementById('exp-month-select').addEventListener('change', function () {
+            document.getElementById('exp-month').innerText = this.value;
+        });
+
+        document.getElementById('exp-year-select').addEventListener('change', function () {
+            document.getElementById('exp-year').innerText = this.value;
+        });
+    </script>
+</body>
+</html>

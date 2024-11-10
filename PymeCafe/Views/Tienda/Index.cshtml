@@ -1,0 +1,125 @@
+﻿@model IEnumerable<PymeCafe.Models.Producto>
+
+@{
+    Layout = "~/Views/Shared/_StoreLayout.cshtml";
+    ViewData["Title"] = "Tienda";
+}
+
+<div class="row">
+    <!-- Sidebar for Categories -->
+    <div class="col-md-3">
+        <h3>Filters</h3>
+        <form method="get">
+            <div>
+                <input type="text" name="searchString" placeholder="Search products" class="form-control" />
+            </div>
+            <div class="mt-3">
+                <select name="categoryFilter" class="form-control">
+                    <option value="">All Categories</option>
+                    @foreach (var categoria in ViewBag.Categorias as IEnumerable<PymeCafe.Models.Categoria>)
+                    {
+                        <option value="@categoria.NombreCategoria">@categoria.NombreCategoria</option>
+                    }
+                </select>
+            </div>
+            <div class="mt-3">
+                <button type="submit" class="btn btn-custom">Apply</button>
+            </div>
+        </form>
+        <div class="mt-3">
+            <button class="btn btn-custom" onclick="viewCart()">Ver Carrito</button>
+        </div>
+
+    </div>
+
+    <!-- Main Product Feed -->
+    <div class="col-md-9">
+        <h2>Your Cart: <span id="cartCount">0</span> items</h2> <!-- Muestra la cantidad de artículos en el carrito -->
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img class="card-img-top" src="https://via.placeholder.com/150" alt="Product Image" />
+                        <div class="card-body">
+                            <h5 class="card-title">@item.NombreProducto</h5>
+                            <p class="card-text">
+                                @String.Format(System.Globalization.CultureInfo.GetCultureInfo("es-ES"), "{0:C}", item.Precio)
+                            </p>
+                            <button class="btn btn-custom" onclick="addToCart(@item.ProductoId, '@item.NombreProducto', @item.Precio)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<!-- Contenedor del Carrito -->
+<div id="cartContainer" style="display: none; position: fixed; right: 20px; top: 100px; width: 300px; background: white; border: 1px solid #ccc; padding: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+    <h4>Cart Items</h4>
+    <table id="cartTable" class="table">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody id="cartBody">
+            <!-- Las filas del carrito se agregarán aquí con JavaScript -->
+        </tbody>
+    </table>
+</div>
+
+<script>
+    let cartItems = []; // Array para almacenar los productos del carrito
+
+    // Función para agregar productos al carrito
+    function addToCart(productId, productName, productPrice) {
+        // Busca si el producto ya está en el carrito
+        const existingItem = cartItems.find(item => item.id === productId);
+
+        if (existingItem) {
+            existingItem.quantity += 1; // Aumenta la cantidad si ya está en el carrito
+        } else {
+            cartItems.push({ id: productId, name: productName, price: productPrice, quantity: 1 }); // Agrega nuevo producto
+        }
+
+        // Actualiza el contador de artículos en el carrito
+        document.getElementById('cartCount').innerText = cartItems.reduce((total, item) => total + item.quantity, 0);
+
+        // Muestra el carrito si es la primera adición
+        if (cartItems.length === 1) {
+            document.getElementById('cartContainer').style.display = 'block';
+        }
+
+        // Actualiza la tabla del carrito
+        updateCartTable();
+
+        // Aquí puedes agregar más lógica para mostrar un mensaje de éxito
+        alert(`${productName} has been added to the cart.`);
+    }
+
+    // Función para actualizar la tabla del carrito
+    function updateCartTable() {
+        const cartBody = document.getElementById('cartBody');
+        cartBody.innerHTML = ''; // Limpiar contenido anterior
+
+        cartItems.forEach(item => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                    <td>${item.name}</td>
+                    <td>${item.quantity}</td>
+                `;
+            cartBody.appendChild(row);
+        });
+    }
+    function viewCart() {
+        // Guarda el carrito en localStorage
+        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+        // Redirige a la página del carrito
+        window.location.href = '@Url.Action("Carrito", "Tienda")';
+    }
+
+</script>

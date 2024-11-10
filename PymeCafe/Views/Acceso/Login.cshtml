@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "Iniciar Sesión";
+    Layout = "_Layout";
+}
+
+<div class="main-container">
+    <div class="login-container">
+        <h2>Inicia Sesión</h2>
+        <main>
+        <form action="/Acceso/Login" method="post">
+            <div>
+                <input type="email" id="correoElectronico" name="correoElectronico" placeholder="Correo" required />
+            </div>
+            <div>
+                <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña" required />
+            </div>
+            <div class="login-options">
+                <div>
+                    <input type="checkbox" id="recordarDatos" name="recordarDatos" />
+                    <label for="recordarDatos">Recordar mis datos</label>
+                </div>
+                <div>
+                    <a href="#">Olvidé mi contraseña</a>
+                </div>
+            </div>
+            <div>
+                <button type="submit">Iniciar</button>
+            </div>
+        </form>
+        </main>
+        <p>¿No tienes cuenta? <a asp-controller="Acceso" asp-action="Registrar">Registrate</a></p>
+
+        @if (ViewData["Resultado"] != null)
+        {
+            <p style="color: red;">@ViewData["Resultado"]</p>
+        }
+
+        
+        
+        @if (ViewBag.SuccessMessage != null)
+        {
+            <div class="alert alert-success">
+                @ViewBag.SuccessMessage
+            </div>
+        }
+    </div>
+</div>

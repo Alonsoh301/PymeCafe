@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - PymeCafe</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/PymeCafe.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/login.css" />
+</head>
+
+<body>
+    <!-- Barra superior -->
+    <header class="bg-light py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="text-muted">
+                <i class="fas fa-map-marker-alt"></i> Localización, Tibás, San Juan, Costa Rica
+            </div>
+            <div>
+                <a href="#" class="text-muted me-3">Esp <i class="fas fa-globe"></i></a>
+                <a class="text-muted" asp-controller="Home" asp-action="Logout">Registrarse / Iniciar sesión</a>
+                <a class="text-muted" asp-controller="Usuario" asp-action="Perfil">Mi Perfil</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Barra de navegación principal -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand text-success fw-bold" asp-area="" asp-controller="Home" asp-action="Index">
+                <i class="fas fa-seedling"></i> PymeCafe
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-controller="Tienda" asp-action="Index">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-controller="Home" asp-action="Logout">Cerrar sesión</a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main role="main" class="container my-4" style="background: linear-gradient(to bottom, #f8f9fa, #ffffff);">
+        @RenderBody()
+    </main>
+
+
+    <footer style="background-color: #1a1a1a; color: #f7f7f7; padding: 40px 0;">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: start;">
+            <div>
+                <h2 style="color: #00b207;">Fadiva y Sagaz</h2>
+                <p style="max-width: 300px;">Suscríbete a nuestro boletín.</p>
+                <form>
+                    <input type="email" placeholder="Tu correo electrónico" style="padding: 10px; border-radius: 5px; border: none;">
+                    <button class="btn-customFooter">Suscribirme</button>
+                </form>
+            </div>
+
+            <div>
+                <h3>Mi cuenta</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li>
+                        <a asp-controller="Usuarios" asp-action="Perfil" style="color: #f7f7f7;">Mi cuenta</a></li>
+                    <li><a asp-controller="Usuarios" asp-action="Historial" style="color: #f7f7f7;">Historial</a></li>
+                    <li><a asp-controller="Tienda" asp-action="Carrito" style="color: #f7f7f7;">Carrito</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Pagos Seguros</h3>
+                <img src="~/Images/payments.png" alt="Pagos" style="width: 30px; height: auto; filter: invert(1);" />
+            </div>
+
+        </div>
+    </footer>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

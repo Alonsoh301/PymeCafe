@@ -1,0 +1,30 @@
+﻿@model IEnumerable<PymeCafe.Models.Valoracionesdeproducto>
+
+<h2>Valoraciones de Producto</h2>
+
+@if (!Model.Any())
+{
+    <p>No has realizado valoraciones de productos.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Calificación</th>
+                <th>Comentario</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var valoracion in Model)
+            {
+                <tr>
+                    <td>@valoracion.Producto.NombreProducto</td>
+                    <td>@valoracion.Calificacion</td>
+                    <td>@valoracion.Comentario</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

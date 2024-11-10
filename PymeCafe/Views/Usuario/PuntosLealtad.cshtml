@@ -1,0 +1,15 @@
+﻿@model PymeCafe.Models.Puntosdelealtad
+
+<h2>Puntos de Lealtad</h2>
+
+@if (Model == null)
+{
+    <p>No se encontraron puntos de lealtad para este usuario.</p>
+}
+else
+{
+    <div class="lealtad-container">
+        <p><strong>ID de Usuario:</strong> @Model.UserId</p>
+        <p><strong>Puntos Acumulados:</strong> @Model.PuntosAcumulados ?? 0</p>
+    </div>
+}

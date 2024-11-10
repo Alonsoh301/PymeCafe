@@ -1,0 +1,99 @@
+﻿@{
+    ViewData["Title"] = "Registrar Usuario";
+}
+
+<h2>Crear Cuenta</h2>
+
+<form asp-action="Registrar" method="post">
+    <div class="form-group">
+        <label for="Nombre">Nombre:</label>
+        <input type="text" id="Nombre" name="Nombre" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label for="Apellido">Apellido:</label>
+        <input type="text" id="Apellido" name="Apellido" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label for="CorreoElectronico">Correo Electrónico:</label>
+        <input type="email" id="CorreoElectronico" name="CorreoElectronico" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label for="Contraseña">Contraseña:</label>
+        <input type="password" id="Contraseña" name="Contraseña" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label for="ConfirmarContraseña">Confirmar Contraseña:</label>
+        <input type="password" id="ConfirmarContraseña" name="ConfirmarContraseña" class="form-control" required />
+    </div>
+    <button type="submit" class="btn btn-custom" style="background-color: #00b207;">Crear Cuenta</button>
+</form>
+
+    <p>¿Ya tienes una cuenta? <a href="@Url.Action("Login", "Acceso")">Iniciar Sesión</a></p>
+</div>
+@if (ViewData["Resultado"] != null)
+{
+    <p>@ViewData["Resultado"]</p>
+}
+<style>
+    .register-container {
+        width: 400px;
+        margin: 0 auto;
+        padding: 30px;
+        background: linear-gradient(to top, #f0f0f0, #fff);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .register-form .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    .input-group {
+        position: relative;
+    }
+
+    .input-group-text {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+
+    .btn-green {
+        background-color: #00b207;
+        color: white;
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-green:hover {
+            background-color: #008f06;
+        }
+
+    p {
+        margin-top: 15px;
+    }
+
+    a {
+        color: #00b207;
+        text-decoration: none;
+    }
+
+        a:hover {
+            text-decoration: underline;
+        }
+</style>

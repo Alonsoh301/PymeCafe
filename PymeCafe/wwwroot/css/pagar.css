@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f3f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.btn-custom {
+    width: 100%;
+    padding: 15px;
+    background-color: #00b207 !important; /* Forzar el color verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .btn-custom:hover {
+        background-color: #008e06 !important; /* Verde más oscuro en hover */
+    }
+
+.container {
+    width: 10000px; /* Mantienes el ancho del contenedor grande */
+    display: flex;
+    justify-content: center; /* Centra el contenido dentro del contenedor */
+    align-items: center;
+}
+
+.credit-card {
+    background: linear-gradient(45deg, #00b207, #015f02); /* Verde a verde oscuro */
+    width: 400px;
+    height: 250px;
+    border-radius: 15px;
+    padding: 30px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+    .credit-card .logo {
+        font-size: 1.5em;
+        text-align: right;
+    }
+
+    .credit-card .card-number,
+    .credit-card .card-holder,
+    .credit-card .expiration-date {
+        letter-spacing: 2px;
+        font-size: 1.4em;
+    }
+
+        .credit-card .expiration-date span {
+            margin-right: 10px;
+        }
+
+.form {
+    margin-top: 20px;
+}
+
+    .form input,
+    .form select {
+        width: 100%;
+        padding: 15px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 1.1em;
+    }
+
+    .form button {
+        width: 100%;
+        padding: 15px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2em;
+        cursor: pointer;
+    }
+
+        .form button:hover {
+            background-color: #0056b3;
+        }
