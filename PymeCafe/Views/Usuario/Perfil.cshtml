@@ -31,15 +31,62 @@
         <p>@Model.UserId</p> <!-- Non-editable -->
     </div>
 
+    <!-- Botón Editar -->
     <button class="btn btn-custom" onclick="window.location.href='@Url.Action("EditProfile", "Usuario")'">
         Editar
     </button>
 </div>
-<div>
-    
-    <button onclick="location.href='@Url.Action("PuntosLealtad", "Usuario")'">Puntos de Lealtad</button>
-    <button onclick="location.href='@Url.Action("Recomendaciones", "Usuario")'">Recomendaciones</button>
-    <button onclick="location.href='@Url.Action("ValoracionesProducto", "Usuario")'">Valoraciones de Producto</button>
-    <button onclick="location.href='@Url.Action("Pedidos", "Usuario")'">Pedidos</button>
+<div class="button-container">
+    <button class="btn btn-custom" onclick="location.href='@Url.Action("PuntosLealtad", "Usuario")'">Puntos de Lealtad</button>
+    <button class="btn btn-custom" onclick="location.href='@Url.Action("Recomendaciones", "Usuario")'">Recomendaciones</button>
+    <button class="btn btn-custom" onclick="location.href='@Url.Action("ValoracionesProducto", "Usuario")'">Valoraciones de Producto</button>
+    <button class="btn btn-custom" onclick="location.href='@Url.Action("Pedidos", "Usuario")'">Pedidos</button>
 </div>
 
+<!-- Estilos CSS -->
+<style>
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        font-family: Arial, sans-serif;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    .btn-custom {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 10px 5px; /* Espaciado entre botones */
+        font-size: 16px;
+        font-weight: bold;
+        color: #ffffff;
+        background: linear-gradient(135deg, #4CAF50, #00b207); /* Degradado verde */
+        border: none;
+        border-radius: 25px; /* Bordes redondeados */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .btn-custom:hover {
+        background: linear-gradient(135deg, #00b207, #4CAF50); /* Cambiar degradado al pasar */
+        box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); /* Más sombra */
+        transform: translateY(-2px); /* Elevar botón */
+    }
+
+    .button-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    h2 {
+        text-align: center;
+        color: #333333;
+    }
+</style>
