@@ -1,0 +1,30 @@
+﻿@model IEnumerable<PymeCafe.Models.Recomendacion>
+
+<h2>Recomendaciones para Ti</h2>
+
+@if (!Model.Any())
+{
+    <p>No tienes recomendaciones en este momento.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Fecha de Recomendación</th>
+                <th>Usuario</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var recomendacion in Model)
+            {
+                <tr>
+                    <td>@recomendacion.Producto?.NombreProducto</td>
+                    <td>@recomendacion.FechaRecomendacion?.ToString("dd/MM/yyyy")</td>
+                    <td>@recomendacion.User?.Nombre @recomendacion.User?.Apellido</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

@@ -1,0 +1,36 @@
+﻿@model IEnumerable<PymeCafe.Models.Pedido>
+
+<h2>Tus Pedidos</h2>
+
+@if (!Model.Any())
+{
+    <p>No tienes pedidos registrados.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Fecha del Pedido</th>
+                <th>Estado</th>
+                <th>Comentarios</th>
+                <th>Detalles</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var pedido in Model)
+            {
+                <tr>
+                    <td>@pedido.FechaPedido?.ToString("dd/MM/yyyy")</td>
+                    <td>@pedido.EstadoPedido</td>
+                    <td>@pedido.Comentarios</td>
+                    <td>
+                        <a href="@Url.Action("DetallesPedido", "Pedidos", new { pedidoId = pedido.PedidoId })" class="btn btn-primary">
+                            Ver Detalles
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
