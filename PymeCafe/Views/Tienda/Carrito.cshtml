@@ -1,23 +1,30 @@
 ﻿@{
     ViewData["Title"] = "Shopping Cart";
 }
+@model List<PymeCafe.Models.Detallespedido>
 
 <h2>Your Cart</h2>
 
 <table class="table" id="cartTable">
     <thead>
         <tr>
-            <th>Item</th>
-            <th>Quantity</th>
-            <th>Cost</th>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
         </tr>
     </thead>
     <tbody id="cartBody">
-        <!-- Las filas del carrito se agregarán aquí con JavaScript -->
+        @foreach(var item in Model) {
+            <tr>
+                <td>@item.Producto.NombreProducto</td>
+                <td>@item.Cantidad</td>
+                <td>@item.PrecioUnitario</td>
+            </tr>
+        }
     </tbody>
 </table>
 
-<h3>Total: <span id="totalCost">0</span></h3>
+<h3>Total: <span id="totalCost">@ViewBag.Total</span></h3>
 
 <a href="#" class="btn btn-customRed" id="clearCart">Clear Cart</a>
 <a href="@Url.Action("Checkout", "Tienda")" class="btn btn-custom">todo listo para pagar</a>

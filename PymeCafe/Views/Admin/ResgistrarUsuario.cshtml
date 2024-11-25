@@ -1,0 +1,30 @@
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+@model PymeCafe.Models.Usuario
+
+<form class="card m-5 p-5" asp-action="RegistrarUsuario" asp-controller="Admin">
+    <h2 class="mb-3 mt-3">Registro de nuevo usuario</h2>
+    <div class="mb-3">
+        <label asp-for="Nombre" class="form-label">Nombre</label>
+        <input type="text" asp-for="Nombre" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Apellido" class="form-label">Apellido</label>
+        <input type="text" asp-for="Apellido" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="CorreoElectronico" class="form-label">Correo Electronico</label>
+        <input type="email" asp-for="CorreoElectronico" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Contraseña" class="form-label">Contraseña</label>
+        <input type="password" asp-for="Contraseña" class="form-control">
+    </div>
+    <select class="form-select mb-3" asp-for="TipoUsuario">
+        <option selected>Elige el tipo de usuario</option>
+        <option value="Cliente">Cliente</option>
+        <option value="Administrador">Administrador</option>
+    </select>
+    <button type="submit" class="btn btn-primary w-25">Registrar</button>
+</form>

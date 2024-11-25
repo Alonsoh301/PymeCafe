@@ -58,7 +58,7 @@ namespace PymeCafe.Controllers
             ViewData["Resultado"] = resultado;
 
             // Verificar el resultado
-            if (resultado == "Usuario registrado exitosamente") 
+            if (resultado == "Usuario registrado exitosamente.") 
             {
                 return RedirectToAction("Login", "Accesso"); 
             }

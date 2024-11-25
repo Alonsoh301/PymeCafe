@@ -46,7 +46,9 @@
                             <p class="card-text">
                                 @String.Format(System.Globalization.CultureInfo.GetCultureInfo("es-ES"), "{0:C}", item.Precio)
                             </p>
-                            <button class="btn btn-custom" onclick="addToCart(@item.ProductoId, '@item.NombreProducto', @item.Precio)">Add to Cart</button>
+                            <a class="btn btn-custom" asp-action="AgregarAlCarrito" asp-controller="Tienda" asp-route-id="@item.ProductoId" asp-route-precio="@item.Precio.ToString()" asp-route-user="@ViewBag.UserId">
+                                Agregar al carrito
+                            </a>
                         </div>
                     </div>
                 </div>
