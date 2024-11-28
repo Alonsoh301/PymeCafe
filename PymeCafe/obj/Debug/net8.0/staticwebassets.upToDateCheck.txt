@@ -1,3 +1,4 @@
+wwwroot\css\dashboard.css
 wwwroot\css\login.css
 wwwroot\css\pagar.css
 wwwroot\css\site.css

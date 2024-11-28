@@ -1,0 +1,76 @@
+﻿@{
+    ViewBag.Title = "Procesar Pago";
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Cambia según tu proyecto.
+}
+
+<div id="payment-container" class="text-center" style="padding: 50px;">
+    <h1 id="payment-status" class="mb-4">Procesando su pago<span id="dots">...</span></h1>
+    <div id="payment-animation" class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    <div id="payment-result" class="mt-4 d-none">
+        <h2 id="result-message" class="mb-4"></h2>
+        <div>
+            <button id="retry-button" class="btn btn-warning d-none" onclick="retryPayment()">Reintentar Pago</button>
+            <a href="@Url.Action("Index", "Tienda")" class="btn btn-custom mt-2">Volver a la Tienda</a>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        let isValidPayment = true; // Simulación de validación lógica del pago
+        const dotsElement = document.getElementById("dots");
+        const statusElement = document.getElementById("payment-status");
+        const animationElement = document.getElementById("payment-animation");
+        const resultElement = document.getElementById("payment-result");
+        const resultMessageElement = document.getElementById("result-message");
+        const retryButton = document.getElementById("retry-button");
+
+        let dots = 0;
+
+        // Simulación de la animación de puntos
+        const animateDots = setInterval(() => {
+            dots = (dots + 1) % 4;
+            dotsElement.innerHTML = ".".repeat(dots);
+        }, 500);
+
+        // Simulación del procesamiento del pago
+        setTimeout(() => {
+            clearInterval(animateDots);
+            animationElement.classList.add("d-none");
+            resultElement.classList.remove("d-none");
+
+            if (isValidPayment) {
+                resultMessageElement.textContent = "¡Su pago ha sido exitoso!";
+                resultMessageElement.classList.add("text-success");
+            } else {
+                resultMessageElement.textContent = "Su pago no se ha podido procesar. Verifique los datos de la tarjeta.";
+                resultMessageElement.classList.add("text-danger");
+                retryButton.classList.remove("d-none");
+            }
+        }, 5000); // Simula 5 segundos de "procesamiento"
+
+        // Función para reintentar el pago
+        function retryPayment() {
+            isValidPayment = Math.random() < 0.5; // Simula un resultado aleatorio
+            resultElement.classList.add("d-none");
+            animationElement.classList.remove("d-none");
+            resultMessageElement.classList.remove("text-success", "text-danger");
+            retryButton.classList.add("d-none");
+
+            dots = 0;
+            dotsElement.innerHTML = "...";
+            setTimeout(() => {
+                if (isValidPayment) {
+                    resultMessageElement.textContent = "¡Su pago ha sido exitoso!";
+                    resultMessageElement.classList.add("text-success");
+                } else {
+                    resultMessageElement.textContent = "Su pago no se ha podido procesar. Verifique los datos de la tarjeta.";
+                    resultMessageElement.classList.add("text-danger");
+                    retryButton.classList.remove("d-none");
+                }
+                resultElement.classList.remove("d-none");
+                animationElement.classList.add("d-none");
+            }, 5000);
+        }
+    </script>
+}

@@ -131,5 +131,11 @@ public IActionResult Carrito()
             return View();
         }
 
+
+        public ActionResult ProcesarPago()
+        {
+            return View();
+        }
+
     }
 }

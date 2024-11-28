@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -18,7 +17,7 @@ namespace PymeCafe.Controllers
         }
 
         // Método para obtener el ID del usuario logueado
-        public int GetLoggedUserId()
+        private int GetLoggedUserId()
         {
             return HttpContext.Session.GetInt32("UserId") ?? -1;
         }
@@ -41,8 +40,8 @@ namespace PymeCafe.Controllers
             return View(usuario);
         }
 
-        // Acción para editar el perfil del usuario logueado
-        public async Task<IActionResult> EditPerfil()
+        // Acción para mostrar los puntos de lealtad del usuario logueado
+        public async Task<IActionResult> PuntosLealtad()
         {
             var userId = GetLoggedUserId();
             if (userId == -1)
@@ -50,41 +49,46 @@ namespace PymeCafe.Controllers
                 return RedirectToAction("Login", "Cuenta");
             }
 
-            var usuario = await _context.Usuarios.FindAsync(userId);
-            if (usuario == null)
-            {
-                return NotFound();
-            }
+            var puntosLealtad = await _context.PuntosLealtad
+                .Where(p => p.UserId == userId)
+                .ToListAsync();
 
-            return View(usuario);
+            return View(puntosLealtad);
         }
 
-        // Acción para actualizar el perfil del usuario
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> UpdatePerfil(Usuario updatedUser)
+        // Acción para mostrar las recomendaciones del usuario logueado
+        public async Task<IActionResult> Recomendaciones()
         {
             var userId = GetLoggedUserId();
             if (userId == -1)
             {
-                return NotFound();
+                return RedirectToAction("Login", "Cuenta");
             }
 
-            var userToUpdate = await _context.Usuarios.FindAsync(userId);
-            if (userToUpdate != null)
-            {
-                userToUpdate.Nombre = updatedUser.Nombre;
-                userToUpdate.Apellido = updatedUser.Apellido;
-                userToUpdate.Contraseña = updatedUser.Contraseña;
+            var recomendaciones = await _context.Recomendaciones
+                .Where(r => r.UserId == userId)
+                .ToListAsync();
 
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Perfil));
-            }
-
-            return NotFound();
+            return View(recomendaciones);
         }
 
-        // Otras acciones relacionadas con el perfil
+        // Acción para mostrar las valoraciones de productos del usuario logueado
+        public async Task<IActionResult> ValoracionesProducto()
+        {
+            var userId = GetLoggedUserId();
+            if (userId == -1)
+            {
+                return RedirectToAction("Login", "Cuenta");
+            }
+
+            var valoraciones = await _context.ValoracionesProducto
+                .Where(v => v.UserId == userId)
+                .ToListAsync();
+
+            return View(valoraciones);
+        }
+
+        // Acción para mostrar los pedidos del usuario logueado
         public async Task<IActionResult> Pedidos()
         {
             var userId = GetLoggedUserId();
@@ -98,21 +102,6 @@ namespace PymeCafe.Controllers
                 .ToListAsync();
 
             return View(pedidos);
-        }
-
-        public async Task<IActionResult> DetallesPedido(int pedidoId)
-        {
-            var userId = GetLoggedUserId();
-            if (userId == -1)
-            {
-                return RedirectToAction("Login", "Cuenta");
-            }
-
-            var detallesPedido = await _context.Detallespedidos
-                .Where(d => d.PedidoId == pedidoId && d.Pedido.UserId == userId)
-                .ToListAsync();
-
-            return View(detallesPedido);
         }
     }
 }

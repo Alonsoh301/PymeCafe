@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qW+BJxzJu+j87MayOVr86aIz9rwxlm/QlsqhUJuuBnY=",
+  "Hash": "reBI37PAOgxt8lX39R+cq6JF4h4nJzsYmQCSMsTIxUE=",
   "Source": "PymeCafe",
   "BasePath": "_content/PymeCafe",
   "Mode": "Default",
@@ -57,6 +57,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PymeCafe.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\css\\dashboard.css",
+      "SourceId": "PymeCafe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\",
+      "BasePath": "_content/PymeCafe",
+      "RelativePath": "css/dashboard#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zgawelbzcr",
+      "Integrity": "A6/tcwq3+OM90+5Crj7XkGEWk6vYm/x55g86GYSSlcw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\dashboard.css"
     },
     {
       "Identity": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\css\\login.css",
@@ -8208,6 +8229,88 @@
     }
   ],
   "Endpoints": [
+    {
+      "Route": "css/dashboard.css",
+      "AssetFile": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\css\\dashboard.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1540"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"A6/tcwq3+OM90+5Crj7XkGEWk6vYm/x55g86GYSSlcw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 28 Nov 2024 00:58:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-A6/tcwq3+OM90+5Crj7XkGEWk6vYm/x55g86GYSSlcw="
+        }
+      ]
+    },
+    {
+      "Route": "css/dashboard.zgawelbzcr.css",
+      "AssetFile": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\css\\dashboard.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1540"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"A6/tcwq3+OM90+5Crj7XkGEWk6vYm/x55g86GYSSlcw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 28 Nov 2024 00:58:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zgawelbzcr"
+        },
+        {
+          "Name": "label",
+          "Value": "css/dashboard.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-A6/tcwq3+OM90+5Crj7XkGEWk6vYm/x55g86GYSSlcw="
+        }
+      ]
+    },
     {
       "Route": "css/login.css",
       "AssetFile": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\css\\login.css",

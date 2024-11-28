@@ -25,31 +25,43 @@
 
         <div class="form">
             <input type="text" placeholder="Card Number" id="input-card-number" maxlength="16">
+            <div id="error-card-number" class="error-message"></div>
             <input type="text" placeholder="Card Holder" id="input-card-holder">
+            <div id="error-card-holder" class="error-message"></div>
             <div style="display: flex; gap: 10px;">
                 <select id="exp-month-select">
                     <option value="MM">Month</option>
                     <option value="01">01</option>
                     <option value="02">02</option>
                     <option value="03">03</option>
-                    <!-- add all months -->
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
                 </select>
                 <select id="exp-year-select">
                     <option value="YY">Year</option>
                     <option value="24">24</option>
                     <option value="25">25</option>
-                    <!-- add more years -->
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
                 </select>
             </div>
-            <input type="text" placeholder="CVV" maxlength="3">
-            <button class="btn-custom">Submit</button>
-
-
+            <div id="error-expiration" class="error-message"></div>
+            <input type="text" placeholder="CVV" id="input-cvv" maxlength="3">
+            <div id="error-cvv" class="error-message"></div>
+            <button class="btn btn-custom" id="submit-button">Hecho</button>
         </div>
     </div>
 
     <script>
-        // JavaScript to update card details dynamically
+        // Actualización de datos dinámicos en la tarjeta
         document.getElementById('input-card-number').addEventListener('input', function () {
             const cardNumber = this.value.replace(/\D/g, '').replace(/(\d{4})/g, '$1 ').trim();
             document.getElementById('card-number').innerText = cardNumber || '#### #### #### ####';
@@ -60,11 +72,62 @@
         });
 
         document.getElementById('exp-month-select').addEventListener('change', function () {
-            document.getElementById('exp-month').innerText = this.value;
+            document.getElementById('exp-month').innerText = this.value !== "MM" ? this.value : "MM";
         });
 
         document.getElementById('exp-year-select').addEventListener('change', function () {
-            document.getElementById('exp-year').innerText = this.value;
+            document.getElementById('exp-year').innerText = this.value !== "YY" ? this.value : "YY";
+        });
+
+        // Validación antes de proceder al pago
+        document.getElementById('submit-button').addEventListener('click', function (e) {
+            e.preventDefault();
+
+            // Variables para capturar los campos
+            const cardNumber = document.getElementById('input-card-number').value.trim();
+            const cardHolder = document.getElementById('input-card-holder').value.trim();
+            const expMonth = document.getElementById('exp-month-select').value;
+            const expYear = document.getElementById('exp-year-select').value;
+            const cvv = document.getElementById('input-cvv').value.trim();
+
+            let valid = true;
+
+            // Validación del número de tarjeta
+            if (!cardNumber || cardNumber.length !== 16 || !/^\d+$/.test(cardNumber)) {
+                document.getElementById('error-card-number').innerText = "Por favor, ingrese un número de tarjeta válido.";
+                valid = false;
+            } else {
+                document.getElementById('error-card-number').innerText = "";
+            }
+
+            // Validación del titular de la tarjeta
+            if (!cardHolder) {
+                document.getElementById('error-card-holder').innerText = "Por favor, ingrese el nombre del titular.";
+                valid = false;
+            } else {
+                document.getElementById('error-card-holder').innerText = "";
+            }
+
+            // Validación de la fecha de expiración
+            if (expMonth === "MM" || expYear === "YY") {
+                document.getElementById('error-expiration').innerText = "Por favor, seleccione una fecha de expiración válida.";
+                valid = false;
+            } else {
+                document.getElementById('error-expiration').innerText = "";
+            }
+
+            // Validación del CVV
+            if (!cvv || cvv.length !== 3 || !/^\d+$/.test(cvv)) {
+                document.getElementById('error-cvv').innerText = "Por favor, ingrese un CVV válido.";
+                valid = false;
+            } else {
+                document.getElementById('error-cvv').innerText = "";
+            }
+
+            // Si todos los campos son válidos, redirigir al procesamiento del pago
+            if (valid) {
+                window.location.href = '@Url.Action("ProcesarPago", "Tienda")';
+            }
         });
     </script>
 </body>
