@@ -8,8 +8,98 @@
 }
 else
 {
-    <div class="lealtad-container">
+    <div class="lealtad-container" id="lealtad-container">
         <p><strong>ID de Usuario:</strong> @Model.UserId</p>
-        <p><strong>Puntos Acumulados:</strong> @Model.PuntosAcumulados ?? 0</p>
+        <p><strong>Puntos Acumulados:</strong> <span id="animated-points" data-puntos="@Model.PuntosAcumulados ?? 0">0</span></p>
     </div>
 }
+
+<!-- Botón para volver al perfil -->
+<div class="text-center mt-4">
+    <a class="btn btn-primary" href="@Url.Action("Perfil", "Perfil")">Volver al Perfil</a>
+</div>
+
+<style>
+    .lealtad-container {
+        padding: 20px;
+        background: linear-gradient(135deg, #4caf50, #000); /* Definir el gradiente de verde a negro */
+        border-radius: 10px;
+        color: white;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        margin-top: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    #animated-points {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #ffd700; /* Color predeterminado de los puntos */
+        text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const pointsElement = document.getElementById("animated-points");
+        const container = document.getElementById("lealtad-container");
+
+        if (pointsElement) {
+            const targetPoints = parseInt(pointsElement.getAttribute("data-puntos")) || 0;
+            const duration = 2000; // Duración de la animación en milisegundos
+            const increment = targetPoints / (duration / 16); // Incremento por frame (aprox. 60fps)
+
+            let currentPoints = 0;
+
+            // Animar los puntos
+            function animatePoints() {
+                currentPoints += increment;
+                if (currentPoints >= targetPoints) {
+                    pointsElement.textContent = targetPoints; // Asegurarse de mostrar el valor final
+                    setColors(targetPoints); // Cambiar los colores cuando se llega al valor final
+                } else {
+                    pointsElement.textContent = Math.floor(currentPoints); // Actualizar el texto del elemento
+                    requestAnimationFrame(animatePoints);
+                }
+            }
+
+            // Función para cambiar los colores del fondo y los puntos
+            function setColors(points) {
+                // Cambiar el color de los puntos
+                if (points < 100) {
+                    pointsElement.style.color = "#ff4d4d"; // Rojo para pocos puntos
+                } else if (points < 500) {
+                    pointsElement.style.color = "#f0ad4e"; // Naranja para puntos medianos
+                } else {
+                    pointsElement.style.color = "#28a745"; // Verde para muchos puntos
+                }
+
+                // Cambiar el fondo del contenedor
+                if (points < 100) {
+                    container.style.background = "linear-gradient(135deg, #ff4d4d, #000)"; // Rojo
+                } else if (points < 500) {
+                    container.style.background = "linear-gradient(135deg, #f0ad4e, #000)"; // Naranja
+                } else {
+                    container.style.background = "linear-gradient(135deg, #28a745, #000)"; // Verde
+                }
+            }
+
+            animatePoints(); // Iniciar animación
+        } else {
+            console.error("Elemento con id 'animated-points' no encontrado");
+        }
+    });
+</script>

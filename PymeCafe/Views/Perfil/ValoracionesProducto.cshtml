@@ -20,9 +20,9 @@ else
             @foreach (var valoracion in Model)
             {
                 <tr>
-                    <td>@valoracion.Producto.NombreProducto</td>
-                    <td>@valoracion.Calificacion</td>
-                    <td>@valoracion.Comentario</td>
+                    <td>@valoracion.Producto</td> <!-- Cambia "Producto" si el nombre del campo es diferente -->
+                    <td>@valoracion.Calificacion</td> <!-- Cambia "Calificacion" si el nombre del campo es diferente -->
+                    <td>@valoracion.Comentario</td> <!-- Cambia "Comentario" si el nombre del campo es diferente -->
                 </tr>
             }
         </tbody>
