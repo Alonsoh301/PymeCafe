@@ -26,42 +26,5 @@
 
 <h3>Total: <span id="totalCost">@ViewBag.Total</span></h3>
 
-<a href="#" class="btn btn-customRed" id="clearCart">Clear Cart</a>
+<a asp-action="LimpiarCarrito" asp-controller="Tienda" class="btn btn-customRed" id="clearCart">Clear Cart</a>
 <a href="@Url.Action("Checkout", "Tienda")" class="btn btn-custom">todo listo para pagar</a>
-
-
-<script>
-    // Recupera los productos del carrito del localStorage
-    const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
-
-    const cartBody = document.getElementById('cartBody');
-    const totalCostElement = document.getElementById('totalCost');
-
-    let totalCost = 0;
-
-    // Función para cargar los productos en el carrito
-    function loadCartItems() {
-        cartItems.forEach(item => {
-            const row = document.createElement('tr');
-            row.innerHTML = `
-                    <td>${item.name}</td>
-                    <td>${item.quantity}</td>
-                    <td>${item.price}</td>
-                `;
-            cartBody.appendChild(row);
-            totalCost += item.price * item.quantity;
-        });
-        totalCostElement.innerText = totalCost;
-    }
-
-    // Función para limpiar el carrito
-    document.getElementById('clearCart').addEventListener('click', function () {
-        localStorage.removeItem('cartItems'); // Limpiar el localStorage
-        cartBody.innerHTML = ''; // Limpiar la tabla
-        totalCost = 0; // Reiniciar el costo total
-        totalCostElement.innerText = totalCost; // Actualizar el total
-    });
-
-    // Cargar los artículos al cargar la página
-    loadCartItems();
-</script>
