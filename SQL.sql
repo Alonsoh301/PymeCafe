@@ -249,48 +249,6 @@ INSERT [dbo].[CATEGORIA] ([CategoriaID], [NombreCategoria]) VALUES (7, N'Paquete
 GO
 SET IDENTITY_INSERT [dbo].[CATEGORIA] OFF
 GO
-SET IDENTITY_INSERT [dbo].[DETALLESPEDIDO] ON 
-GO
-INSERT [dbo].[DETALLESPEDIDO] ([DetalleID], [PedidoID], [ProductoID], [Cantidad], [PrecioUnitario]) VALUES (7, 1, 3, 2, CAST(6500.00 AS Decimal(10, 2)))
-GO
-INSERT [dbo].[DETALLESPEDIDO] ([DetalleID], [PedidoID], [ProductoID], [Cantidad], [PrecioUnitario]) VALUES (8, 2, 2, 1, CAST(1500.00 AS Decimal(10, 2)))
-GO
-INSERT [dbo].[DETALLESPEDIDO] ([DetalleID], [PedidoID], [ProductoID], [Cantidad], [PrecioUnitario]) VALUES (21, 1, 3, 2, CAST(6500.00 AS Decimal(10, 2)))
-GO
-INSERT [dbo].[DETALLESPEDIDO] ([DetalleID], [PedidoID], [ProductoID], [Cantidad], [PrecioUnitario]) VALUES (22, 2, 2, 1, CAST(1500.00 AS Decimal(10, 2)))
-GO
-INSERT [dbo].[DETALLESPEDIDO] ([DetalleID], [PedidoID], [ProductoID], [Cantidad], [PrecioUnitario]) VALUES (23, 6, 4, 1, CAST(1500.00 AS Decimal(10, 2)))
-GO
-INSERT [dbo].[DETALLESPEDIDO] ([DetalleID], [PedidoID], [ProductoID], [Cantidad], [PrecioUnitario]) VALUES (24, 8, 5, 2, CAST(5500.00 AS Decimal(10, 2)))
-GO
-INSERT [dbo].[DETALLESPEDIDO] ([DetalleID], [PedidoID], [ProductoID], [Cantidad], [PrecioUnitario]) VALUES (25, 9, 6, 1, CAST(13100.00 AS Decimal(10, 2)))
-GO
-INSERT [dbo].[DETALLESPEDIDO] ([DetalleID], [PedidoID], [ProductoID], [Cantidad], [PrecioUnitario]) VALUES (26, 10, 7, 5, CAST(1500.00 AS Decimal(10, 2)))
-GO
-INSERT [dbo].[DETALLESPEDIDO] ([DetalleID], [PedidoID], [ProductoID], [Cantidad], [PrecioUnitario]) VALUES (27, 11, 8, 1, CAST(1500.00 AS Decimal(10, 2)))
-GO
-INSERT [dbo].[DETALLESPEDIDO] ([DetalleID], [PedidoID], [ProductoID], [Cantidad], [PrecioUnitario]) VALUES (28, 12, 9, 4, CAST(5500.00 AS Decimal(10, 2)))
-GO
-INSERT [dbo].[DETALLESPEDIDO] ([DetalleID], [PedidoID], [ProductoID], [Cantidad], [PrecioUnitario]) VALUES (29, 13, 10, 3, CAST(13100.00 AS Decimal(10, 2)))
-GO
-INSERT [dbo].[DETALLESPEDIDO] ([DetalleID], [PedidoID], [ProductoID], [Cantidad], [PrecioUnitario]) VALUES (30, 14, 11, 2, CAST(1000.00 AS Decimal(10, 2)))
-GO
-INSERT [dbo].[DETALLESPEDIDO] ([DetalleID], [PedidoID], [ProductoID], [Cantidad], [PrecioUnitario]) VALUES (31, 15, 12, 5, CAST(4500.00 AS Decimal(10, 2)))
-GO
-INSERT [dbo].[DETALLESPEDIDO] ([DetalleID], [PedidoID], [ProductoID], [Cantidad], [PrecioUnitario]) VALUES (33, 7, 14, 1, CAST(7000.00 AS Decimal(10, 2)))
-GO
-INSERT [dbo].[DETALLESPEDIDO] ([DetalleID], [PedidoID], [ProductoID], [Cantidad], [PrecioUnitario]) VALUES (34, 8, 15, 2, CAST(6500.00 AS Decimal(10, 2)))
-GO
-INSERT [dbo].[DETALLESPEDIDO] ([DetalleID], [PedidoID], [ProductoID], [Cantidad], [PrecioUnitario]) VALUES (35, 9, 16, 3, CAST(1340.00 AS Decimal(10, 2)))
-GO
-INSERT [dbo].[DETALLESPEDIDO] ([DetalleID], [PedidoID], [ProductoID], [Cantidad], [PrecioUnitario]) VALUES (36, 10, 17, 2, CAST(1355.00 AS Decimal(10, 2)))
-GO
-INSERT [dbo].[DETALLESPEDIDO] ([DetalleID], [PedidoID], [ProductoID], [Cantidad], [PrecioUnitario]) VALUES (37, 11, 18, 4, CAST(5400.00 AS Decimal(10, 2)))
-GO
-INSERT [dbo].[DETALLESPEDIDO] ([DetalleID], [PedidoID], [ProductoID], [Cantidad], [PrecioUnitario]) VALUES (38, 12, 19, 2, CAST(4350.00 AS Decimal(10, 2)))
-GO
-SET IDENTITY_INSERT [dbo].[DETALLESPEDIDO] OFF
-GO
 SET IDENTITY_INSERT [dbo].[NOTIFICACION] ON 
 GO
 INSERT [dbo].[NOTIFICACION] ([NotificacionID], [UserID], [Mensaje], [FechaEnvio]) VALUES (1, 1, N'Tu pedido está en proceso', CAST(N'2024-10-01T17:52:35.473' AS DateTime))
@@ -316,52 +274,6 @@ GO
 INSERT [dbo].[NOTIFICACION] ([NotificacionID], [UserID], [Mensaje], [FechaEnvio]) VALUES (11, 11, N'Estamos procesando tu pedido', CAST(N'2024-10-01T17:52:35.473' AS DateTime))
 GO
 SET IDENTITY_INSERT [dbo].[NOTIFICACION] OFF
-GO
-SET IDENTITY_INSERT [dbo].[PEDIDO] ON 
-GO
-INSERT [dbo].[PEDIDO] ([PedidoID], [UserID], [FechaPedido], [EstadoPedido], [Comentarios]) VALUES (1, 1, CAST(N'2024-09-30' AS Date), N'En Proceso', N'Pedido urgente.')
-GO
-INSERT [dbo].[PEDIDO] ([PedidoID], [UserID], [FechaPedido], [EstadoPedido], [Comentarios]) VALUES (2, 2, CAST(N'2024-10-01' AS Date), N'Completado', N'Cliente satisfecho.')
-GO
-INSERT [dbo].[PEDIDO] ([PedidoID], [UserID], [FechaPedido], [EstadoPedido], [Comentarios]) VALUES (6, 1, CAST(N'2024-10-01' AS Date), N'Completado', N'Pedido sin comentarios adicionales.')
-GO
-INSERT [dbo].[PEDIDO] ([PedidoID], [UserID], [FechaPedido], [EstadoPedido], [Comentarios]) VALUES (7, 2, CAST(N'2024-10-01' AS Date), N'En proceso', N'Requiere entrega rápida.')
-GO
-INSERT [dbo].[PEDIDO] ([PedidoID], [UserID], [FechaPedido], [EstadoPedido], [Comentarios]) VALUES (8, 3, CAST(N'2024-10-01' AS Date), N'Completado', N'Excelente atención al cliente.')
-GO
-INSERT [dbo].[PEDIDO] ([PedidoID], [UserID], [FechaPedido], [EstadoPedido], [Comentarios]) VALUES (9, 4, CAST(N'2024-10-01' AS Date), N'Cancelado', N'Cliente canceló por problemas de pago.')
-GO
-INSERT [dbo].[PEDIDO] ([PedidoID], [UserID], [FechaPedido], [EstadoPedido], [Comentarios]) VALUES (10, 5, CAST(N'2024-10-01' AS Date), N'En proceso', N'Pedido con entrega programada.')
-GO
-INSERT [dbo].[PEDIDO] ([PedidoID], [UserID], [FechaPedido], [EstadoPedido], [Comentarios]) VALUES (11, 1, CAST(N'2024-10-01' AS Date), N'Completado', N'El cliente solicitó un descuento.')
-GO
-INSERT [dbo].[PEDIDO] ([PedidoID], [UserID], [FechaPedido], [EstadoPedido], [Comentarios]) VALUES (12, 2, CAST(N'2024-10-01' AS Date), N'En proceso', N'Cliente solicitó verificación de producto.')
-GO
-INSERT [dbo].[PEDIDO] ([PedidoID], [UserID], [FechaPedido], [EstadoPedido], [Comentarios]) VALUES (13, 3, CAST(N'2024-10-01' AS Date), N'Completado', N'Entrega antes de las 3 PM.')
-GO
-INSERT [dbo].[PEDIDO] ([PedidoID], [UserID], [FechaPedido], [EstadoPedido], [Comentarios]) VALUES (14, 4, CAST(N'2024-10-01' AS Date), N'Completado', N'Pedido procesado sin problemas.')
-GO
-INSERT [dbo].[PEDIDO] ([PedidoID], [UserID], [FechaPedido], [EstadoPedido], [Comentarios]) VALUES (15, 5, CAST(N'2024-10-01' AS Date), N'En proceso', N'Revisión de disponibilidad de productos.')
-GO
-INSERT [dbo].[PEDIDO] ([PedidoID], [UserID], [FechaPedido], [EstadoPedido], [Comentarios]) VALUES (16, 3, CAST(N'2024-10-01' AS Date), N'Completado', N'El cliente solicitó un descuento.')
-GO
-INSERT [dbo].[PEDIDO] ([PedidoID], [UserID], [FechaPedido], [EstadoPedido], [Comentarios]) VALUES (17, 4, CAST(N'2024-10-01' AS Date), N'En proceso', N'Cliente solicitó verificación de producto.')
-GO
-INSERT [dbo].[PEDIDO] ([PedidoID], [UserID], [FechaPedido], [EstadoPedido], [Comentarios]) VALUES (18, 5, CAST(N'2024-10-01' AS Date), N'Completado', N'Entrega antes de las 3 PM.')
-GO
-INSERT [dbo].[PEDIDO] ([PedidoID], [UserID], [FechaPedido], [EstadoPedido], [Comentarios]) VALUES (20, 2, CAST(N'2024-10-01' AS Date), N'En proceso', N'Revisión de disponibilidad de productos.')
-GO
-INSERT [dbo].[PEDIDO] ([PedidoID], [UserID], [FechaPedido], [EstadoPedido], [Comentarios]) VALUES (21, 3, CAST(N'2024-10-01' AS Date), N'Completado', N'El cliente solicitó un descuento.')
-GO
-INSERT [dbo].[PEDIDO] ([PedidoID], [UserID], [FechaPedido], [EstadoPedido], [Comentarios]) VALUES (22, 4, CAST(N'2024-10-01' AS Date), N'En proceso', N'Cliente solicitó verificación de producto.')
-GO
-INSERT [dbo].[PEDIDO] ([PedidoID], [UserID], [FechaPedido], [EstadoPedido], [Comentarios]) VALUES (23, 5, CAST(N'2024-10-01' AS Date), N'Completado', N'Entrega antes de las 3 PM.')
-GO
-INSERT [dbo].[PEDIDO] ([PedidoID], [UserID], [FechaPedido], [EstadoPedido], [Comentarios]) VALUES (24, 1, CAST(N'2024-10-01' AS Date), N'Completado', N'Pedido procesado sin problemas.')
-GO
-INSERT [dbo].[PEDIDO] ([PedidoID], [UserID], [FechaPedido], [EstadoPedido], [Comentarios]) VALUES (25, 2, CAST(N'2024-10-01' AS Date), N'En proceso', N'Revisión de disponibilidad de productos.')
-GO
-SET IDENTITY_INSERT [dbo].[PEDIDO] OFF
 GO
 SET IDENTITY_INSERT [dbo].[PRODUCTO] ON 
 GO

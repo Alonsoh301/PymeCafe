@@ -176,6 +176,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/alons/OneDrive/Documentos/GitHub/pyme/PymeCafe/Views/Publicacion/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVibGljYWNpb25cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alons/OneDrive/Documentos/GitHub/pyme/PymeCafe/Views/Publicacion/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVibGljYWNpb25cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alons/OneDrive/Documentos/GitHub/pyme/PymeCafe/Views/Publicacion/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVibGljYWNpb25cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alons/OneDrive/Documentos/GitHub/pyme/PymeCafe/Views/Publicacion/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVibGljYWNpb25cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alons/OneDrive/Documentos/GitHub/pyme/PymeCafe/Views/Publicacion/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVibGljYWNpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/alons/OneDrive/Documentos/GitHub/pyme/PymeCafe/Views/Puntosdelealtad/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVudG9zZGVsZWFsdGFkXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -299,6 +319,10 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/alons/OneDrive/Documentos/GitHub/pyme/PymeCafe/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alons/OneDrive/Documentos/GitHub/pyme/PymeCafe/Views/Shared/_Layout -login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQgLWxvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-j973k8j5pi
 
 [C:/Users/alons/OneDrive/Documentos/GitHub/pyme/PymeCafe/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s

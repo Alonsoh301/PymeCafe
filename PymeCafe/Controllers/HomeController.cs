@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using PymeCafe.Filters;
-using PymeCafe.Models;
+using PymeCafe.Models; // Asegúrate de que este espacio de nombres esté incluido
 using System.Diagnostics;
 
 namespace PymeCafe.Controllers
@@ -8,20 +9,24 @@ namespace PymeCafe.Controllers
     [SessionAuthorize]
     public class HomeController : Controller
     {
+        private readonly MyContext _context;  // Aquí se agrega el contexto de la base de datos
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        // Modificamos el constructor para incluir la inyección del contexto
+        public HomeController(MyContext context, ILogger<HomeController> logger)
         {
+            _context = context; // Se asigna el contexto a la variable de instancia
             _logger = logger;
         }
 
-        public IActionResult Index()
+        // Acción Index que ahora usa el contexto
+        public async Task<IActionResult> Index()
         {
             // Mostrar mensaje de éxito si existe
             ViewBag.SuccessMessage = TempData["SuccessMessage"];
+
             return View();
         }
-
         public IActionResult Privacy()
         {
             return View();

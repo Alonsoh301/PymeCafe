@@ -1,36 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|c:\\users\\alons\\onedrive\\documentos\\github\\pyme\\pymecafe\\views\\perfil\\pedidos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|solutionrelative:views\\perfil\\pedidos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|c:\\users\\alons\\onedrive\\documentos\\github\\pyme\\pymecafe\\views\\perfil\\perfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|solutionrelative:views\\perfil\\perfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|c:\\users\\alons\\onedrive\\documentos\\github\\pyme\\pymecafe\\views\\perfil\\puntoslealtad.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|solutionrelative:views\\perfil\\puntoslealtad.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|c:\\users\\alons\\onedrive\\documentos\\github\\pyme\\pymecafe\\models\\puntosdelealtad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|solutionrelative:models\\puntosdelealtad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|c:\\users\\alons\\onedrive\\documentos\\github\\pyme\\pymecafe\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|c:\\users\\alons\\onedrive\\documentos\\github\\pyme\\pymecafe\\controllers\\perfilcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|solutionrelative:controllers\\perfilcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|c:\\users\\alons\\onedrive\\documentos\\github\\pyme\\pymecafe\\views\\perfil\\recomendaciones.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|solutionrelative:views\\perfil\\recomendaciones.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -38,103 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 134,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PerfilController.cs",
-              "DocumentMoniker": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Controllers\\PerfilController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PerfilController.cs",
-              "ToolTip": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Controllers\\PerfilController.cs",
-              "RelativeToolTip": "Controllers\\PerfilController.cs",
-              "ViewState": "AgIAAIMAAAAAAAAAAAAYwLQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T18:08:32.613Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Pedidos.cshtml",
-              "DocumentMoniker": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Views\\Perfil\\Pedidos.cshtml",
-              "RelativeDocumentMoniker": "Views\\Perfil\\Pedidos.cshtml",
-              "ToolTip": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Views\\Perfil\\Pedidos.cshtml",
-              "RelativeToolTip": "Views\\Perfil\\Pedidos.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAACEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-29T00:26:02.65Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Perfil.cshtml",
-              "DocumentMoniker": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Views\\Perfil\\Perfil.cshtml",
-              "RelativeDocumentMoniker": "Views\\Perfil\\Perfil.cshtml",
-              "ToolTip": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Views\\Perfil\\Perfil.cshtml",
-              "RelativeToolTip": "Views\\Perfil\\Perfil.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-29T00:15:52.333Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Puntosdelealtad.cs",
-              "DocumentMoniker": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Models\\Puntosdelealtad.cs",
-              "RelativeDocumentMoniker": "Models\\Puntosdelealtad.cs",
-              "ToolTip": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Models\\Puntosdelealtad.cs",
-              "RelativeToolTip": "Models\\Puntosdelealtad.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T23:30:34.955Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAJMAAAAAAAAAAAAAwKEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-28T22:42:31.603Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PuntosLealtad.cshtml",
-              "DocumentMoniker": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Views\\Perfil\\PuntosLealtad.cshtml",
-              "RelativeDocumentMoniker": "Views\\Perfil\\PuntosLealtad.cshtml",
-              "ToolTip": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Views\\Perfil\\PuntosLealtad.cshtml",
-              "RelativeToolTip": "Views\\Perfil\\PuntosLealtad.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-28T22:40:57.12Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Recomendaciones.cshtml",
-              "DocumentMoniker": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Views\\Perfil\\Recomendaciones.cshtml",
-              "RelativeDocumentMoniker": "Views\\Perfil\\Recomendaciones.cshtml",
-              "ToolTip": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Views\\Perfil\\Recomendaciones.cshtml",
-              "RelativeToolTip": "Views\\Perfil\\Recomendaciones.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-28T22:40:48.764Z",
-              "EditorCaption": ""
             }
           ]
         }

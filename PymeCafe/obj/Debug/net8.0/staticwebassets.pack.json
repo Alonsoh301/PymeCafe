@@ -2,11 +2,371 @@
   "Files": [
     {
       "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PymeCafe.bundle.scp.css",
-      "PackagePath": "staticwebassets\\PymeCafe.nuwxknciun.bundle.scp.css"
+      "PackagePath": "staticwebassets\\PymeCafe.94c618hxf2.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\QR.png",
+      "PackagePath": "staticwebassets\\Images\\QR.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\Upload.png",
+      "PackagePath": "staticwebassets\\Images\\Upload.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\background\\bannar-big0.png",
+      "PackagePath": "staticwebassets\\Images\\background\\bannar-big0.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\background\\bannar-big0Cafes.png",
+      "PackagePath": "staticwebassets\\Images\\background\\bannar-big0Cafes.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\background\\bg0 copy.png",
+      "PackagePath": "staticwebassets\\Images\\background\\bg0 copy.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\background\\bg0.png",
+      "PackagePath": "staticwebassets\\Images\\background\\bg0.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\background\\bg1.png",
+      "PackagePath": "staticwebassets\\Images\\background\\bg1.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\background\\bg4.png",
+      "PackagePath": "staticwebassets\\Images\\background\\bg4.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\background\\breadcrumbs0.png",
+      "PackagePath": "staticwebassets\\Images\\background\\breadcrumbs0.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\background\\discount-bannar0.png",
+      "PackagePath": "staticwebassets\\Images\\background\\discount-bannar0.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\background\\image0.png",
+      "PackagePath": "staticwebassets\\Images\\background\\image0.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\background\\rectangle-510.png",
+      "PackagePath": "staticwebassets\\Images\\background\\rectangle-510.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\background\\rectangle-540.png",
+      "PackagePath": "staticwebassets\\Images\\background\\rectangle-540.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\background\\rectangle-541.png",
+      "PackagePath": "staticwebassets\\Images\\background\\rectangle-541.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\background\\rectangle-542.png",
+      "PackagePath": "staticwebassets\\Images\\background\\rectangle-542.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\cafes\\BenoitAntoinette-1.jpg",
+      "PackagePath": "staticwebassets\\Images\\cafes\\BenoitAntoinette-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\cafes\\Cafe-Quetzal-Dota.png",
+      "PackagePath": "staticwebassets\\Images\\cafes\\Cafe-Quetzal-Dota.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\cafes\\Dotarrazu.jpg",
+      "PackagePath": "staticwebassets\\Images\\cafes\\Dotarrazu.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\cafes\\Especial Molido.png",
+      "PackagePath": "staticwebassets\\Images\\cafes\\Especial Molido.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\cafes\\EspeciallavadoFadiva.png",
+      "PackagePath": "staticwebassets\\Images\\cafes\\EspeciallavadoFadiva.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\cafes\\Fadivamolido.png",
+      "PackagePath": "staticwebassets\\Images\\cafes\\Fadivamolido.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\cafes\\caracolillo.png",
+      "PackagePath": "staticwebassets\\Images\\cafes\\caracolillo.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\cafes\\dotarrazu-254x230.png",
+      "PackagePath": "staticwebassets\\Images\\cafes\\dotarrazu-254x230.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\cafes\\fadivaCafe.png",
+      "PackagePath": "staticwebassets\\Images\\cafes\\fadivaCafe.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\cafes\\fadivaGourmet.png",
+      "PackagePath": "staticwebassets\\Images\\cafes\\fadivaGourmet.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\cafes\\fresh-dota.jpg",
+      "PackagePath": "staticwebassets\\Images\\cafes\\fresh-dota.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\cafes\\hermosa-254x230.png",
+      "PackagePath": "staticwebassets\\Images\\cafes\\hermosa-254x230.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\cafes\\hermosa-dota.jpg",
+      "PackagePath": "staticwebassets\\Images\\cafes\\hermosa-dota.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\cafes\\hombre.jpg",
+      "PackagePath": "staticwebassets\\Images\\cafes\\hombre.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\cafes\\reserva-254x230.png",
+      "PackagePath": "staticwebassets\\Images\\cafes\\reserva-254x230.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\cafes\\reserva-dota.jpg",
+      "PackagePath": "staticwebassets\\Images\\cafes\\reserva-dota.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\cafes\\sagaz-clasico.jpg",
+      "PackagePath": "staticwebassets\\Images\\cafes\\sagaz-clasico.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\cafes\\sagaz-clasico.png",
+      "PackagePath": "staticwebassets\\Images\\cafes\\sagaz-clasico.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\cafes\\sagaz-medio.png",
+      "PackagePath": "staticwebassets\\Images\\cafes\\sagaz-medio.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\cafes\\sagaz-oscuro.png",
+      "PackagePath": "staticwebassets\\Images\\cafes\\sagaz-oscuro.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\cafes\\sagaz-premium.jpg",
+      "PackagePath": "staticwebassets\\Images\\cafes\\sagaz-premium.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\cafes\\sagaz-tradicional.jpg",
+      "PackagePath": "staticwebassets\\Images\\cafes\\sagaz-tradicional.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\cafes\\sagaz-tradicional.png",
+      "PackagePath": "staticwebassets\\Images\\cafes\\sagaz-tradicional.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\cafes\\sliderUmarketHD603865432b091.jpg",
+      "PackagePath": "staticwebassets\\Images\\cafes\\sliderUmarketHD603865432b091.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\fondos\\breadcrumbs0.png",
+      "PackagePath": "staticwebassets\\Images\\fondos\\breadcrumbs0.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\fondos\\discount-bannar0.png",
+      "PackagePath": "staticwebassets\\Images\\fondos\\discount-bannar0.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\frutas\\Chile.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\Chile.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\frutas\\ChileDulce.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\ChileDulce.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\frutas\\ChileVerde2.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\ChileVerde2.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\frutas\\ChilesRojos.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\ChilesRojos.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\frutas\\Coliflor.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\Coliflor.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\frutas\\FrutaMorada.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\FrutaMorada.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\frutas\\Manzana.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\Manzana.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\frutas\\Pepino.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\Pepino.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\frutas\\Tomates.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\Tomates.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\frutas\\aguacate.jpg",
+      "PackagePath": "staticwebassets\\Images\\frutas\\aguacate.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\frutas\\banano.jpg",
+      "PackagePath": "staticwebassets\\Images\\frutas\\banano.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\frutas\\cas.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\cas.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\frutas\\chileVerde.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\chileVerde.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\frutas\\elote.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\elote.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\frutas\\fresas.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\fresas.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\frutas\\granadilla.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\granadilla.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\frutas\\guan_bana.jpg",
+      "PackagePath": "staticwebassets\\Images\\frutas\\guan_bana.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\frutas\\hojas.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\hojas.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\frutas\\image0.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\image0.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\frutas\\image1.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\image1.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\frutas\\image3.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\image3.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\frutas\\lechuga.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\lechuga.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\frutas\\manga.jpg",
+      "PackagePath": "staticwebassets\\Images\\frutas\\manga.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\frutas\\mango.jpg",
+      "PackagePath": "staticwebassets\\Images\\frutas\\mango.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\frutas\\maracuya.jpg",
+      "PackagePath": "staticwebassets\\Images\\frutas\\maracuya.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\frutas\\moras.jpg",
+      "PackagePath": "staticwebassets\\Images\\frutas\\moras.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\frutas\\papa.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\papa.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\frutas\\papaya-3-Exotic.jpg",
+      "PackagePath": "staticwebassets\\Images\\frutas\\papaya-3-Exotic.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\frutas\\papaya.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\papaya.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\frutas\\piña_g.jpg",
+      "PackagePath": "staticwebassets\\Images\\frutas\\piña_g.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\frutas\\sandia.jpg",
+      "PackagePath": "staticwebassets\\Images\\frutas\\sandia.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\insta\\instagram-post0.png",
+      "PackagePath": "staticwebassets\\Images\\insta\\instagram-post0.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\insta\\instagram-post1.png",
+      "PackagePath": "staticwebassets\\Images\\insta\\instagram-post1.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\insta\\instagram-post2.png",
+      "PackagePath": "staticwebassets\\Images\\insta\\instagram-post2.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\insta\\instagram-post3.png",
+      "PackagePath": "staticwebassets\\Images\\insta\\instagram-post3.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\insta\\instagram-post4.png",
+      "PackagePath": "staticwebassets\\Images\\insta\\instagram-post4.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\insta\\instagram-post6.png",
+      "PackagePath": "staticwebassets\\Images\\insta\\instagram-post6.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\logos\\image-10.png",
+      "PackagePath": "staticwebassets\\Images\\logos\\image-10.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\logos\\image-11.png",
+      "PackagePath": "staticwebassets\\Images\\logos\\image-11.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\logos\\image-12.png",
+      "PackagePath": "staticwebassets\\Images\\logos\\image-12.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\logos\\image-13.png",
+      "PackagePath": "staticwebassets\\Images\\logos\\image-13.png"
     },
     {
       "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\payments.png",
       "PackagePath": "staticwebassets\\Images\\payments.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\personas\\ellipse-50.png",
+      "PackagePath": "staticwebassets\\Images\\personas\\ellipse-50.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\personas\\image0 copy 2.png",
+      "PackagePath": "staticwebassets\\Images\\personas\\image0 copy 2.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\personas\\image0 copy.png",
+      "PackagePath": "staticwebassets\\Images\\personas\\image0 copy.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\personas\\image0.png",
+      "PackagePath": "staticwebassets\\Images\\personas\\image0.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\personas\\image1.png",
+      "PackagePath": "staticwebassets\\Images\\personas\\image1.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\personas\\image2 copy.png",
+      "PackagePath": "staticwebassets\\Images\\personas\\image2 copy.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\personas\\image2.png",
+      "PackagePath": "staticwebassets\\Images\\personas\\image2.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\personas\\image3.png",
+      "PackagePath": "staticwebassets\\Images\\personas\\image3.png"
     },
     {
       "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\css\\dashboard.css",

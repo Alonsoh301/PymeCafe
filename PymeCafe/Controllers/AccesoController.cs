@@ -74,6 +74,8 @@ namespace PymeCafe.Controllers
         {
             string resultado;
             int userId;
+            string tipoUsuario; // Cambié a string para manejar el tipo como texto
+
             using (SqlConnection cn = new SqlConnection(cadena))
             {
                 SqlCommand cmd = new SqlCommand("VerificarLogin", cn)
@@ -85,25 +87,31 @@ namespace PymeCafe.Controllers
                 cmd.Parameters.AddWithValue("CorreoElectronico", oUsuario.CorreoElectronico);
                 cmd.Parameters.AddWithValue("Contraseña", oUsuario.Contraseña);
 
-                // Parámetro de salida para el resultado (si el login fue exitoso o no)
+                // Parámetros de salida para el resultado, UserID y TipoUsuario
                 SqlParameter outputResultado = new SqlParameter("Resultado", SqlDbType.VarChar, 250)
                 {
                     Direction = ParameterDirection.Output
                 };
                 cmd.Parameters.Add(outputResultado);
 
-                // Parámetro de salida para el UserID
                 SqlParameter outputUserId = new SqlParameter("UserID", SqlDbType.Int)
                 {
                     Direction = ParameterDirection.Output
                 };
                 cmd.Parameters.Add(outputUserId);
 
+                SqlParameter outputTipoUsuario = new SqlParameter("TipoUsuario", SqlDbType.NVarChar, 50)
+                {
+                    Direction = ParameterDirection.Output
+                };
+                cmd.Parameters.Add(outputTipoUsuario);
+
                 cn.Open();
                 cmd.ExecuteNonQuery();
 
                 resultado = cmd.Parameters["Resultado"].Value.ToString();
-                userId = Convert.ToInt32(cmd.Parameters["UserID"].Value); // Obtener el UserID si el login es exitoso
+                userId = Convert.ToInt32(cmd.Parameters["UserID"].Value); // Obtener el UserID
+                tipoUsuario = cmd.Parameters["TipoUsuario"].Value.ToString(); // Obtener el TipoUsuario como string
             }
 
             // Enviar el resultado a la vista
@@ -116,17 +124,22 @@ namespace PymeCafe.Controllers
                 HttpContext.Session.SetInt32("UserId", userId); // Guardar el ID del usuario
                 HttpContext.Session.SetString("CorreoElectronico", oUsuario.CorreoElectronico); // Guardar el correo electrónico
 
-                // Redirigir a la página de inicio u otro lugar
-                return RedirectToAction("Index", "Home");
+                // Redirigir a la página correspondiente según el tipo de usuario
+                if (tipoUsuario == "Administrador") // Verifica si el tipo es "Administrador"
+                {
+                    return RedirectToAction("Index", "Admin"); // Cambia "Admin" por el controlador que corresponda
+                }
+                else // Cliente
+                {
+                    return RedirectToAction("Index", "Publicacion"); // Cliente va al Home
+                }
             }
             else
             {
                 // Si las credenciales son incorrectas, mostrar el mensaje de error
-                ModelState.AddModelError(string.Empty, errorMessage: resultado);
+                ModelState.AddModelError(string.Empty, resultado);
                 return View(); // Devolver la vista de login
             }
         }
-
-
     }
 }

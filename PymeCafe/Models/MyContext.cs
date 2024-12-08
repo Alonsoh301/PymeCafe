@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using PymeCafe.Models;
 
 namespace PymeCafe.Models;
 
@@ -214,4 +215,6 @@ public partial class MyContext : DbContext
     }
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+
+public DbSet<PymeCafe.Models.Publicacion> Publicacion { get; set; } = default!;
 }
