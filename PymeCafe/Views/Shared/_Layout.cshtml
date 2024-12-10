@@ -96,19 +96,16 @@
                 <i class="fas fa-map-marker-alt"></i> Localización, Tibás, San Juan, Costa Rica
             </div>
             <div>
-                <a href="#" class="text-muted me-3">Esp <i class="fas fa-globe"></i></a>
-                @if (Context.Session.GetString("UserID") != null) // Verificar si el usuario está logueado
-                {
-                    <a class="text-muted" asp-controller="Perfil" asp-action="Perfil">Mi Perfil</a>
-                    <a class="text-muted" asp-controller="Home" asp-action="Logout">Cerrar sesión</a>
-                }
-                else
-                {
-                    <a class="text-muted" asp-controller="Home" asp-action="Login">Registrarse / Iniciar sesión</a>
-                }
+                <a asp-controller="Perfil" asp-action="Perfil" class="text-muted">
+                    <!-- Ícono personalizado para redirigir al perfil -->
+                    <img src="~/Images/person-svgrepo-com.svg" alt="Mi Perfil" width="24" height="24" />
+                </a>
             </div>
         </div>
     </header>
+
+
+
 
 
     <!-- Barra de navegación principal -->
@@ -125,7 +122,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav flex-grow-1">
                     <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Publicacion" asp-action="Inicio">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-dark" asp-controller="Tienda" asp-action="Index">Tienda</a>

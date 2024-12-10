@@ -1,0 +1,35 @@
+﻿@model IEnumerable<PymeCafe.Models.Publicacion>
+
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+<h2 class="text-center my-4">Bienvenido a PymeCafe</h2>
+
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        @if (Model != null && Model.Any())
+        {
+            @foreach (var publicacion in Model)
+            {
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="@publicacion.ImagenRuta" class="card-img-top" alt="@publicacion.Titulo" />
+                        <div class="card-body">
+                            <h5 class="card-title text-success">@publicacion.Titulo</h5>
+                            <p class="card-text">@publicacion.Descripcion</p>
+                            <p class="text-muted">
+                                <small>Publicado el: @publicacion.FechaPublicacion.ToString("dd/MM/yyyy")</small>
+                            </p>
+                            <a href="#" class="btn btn-success">Leer Más</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <p class="text-center text-muted">No hay publicaciones disponibles.</p>
+        }
+    </div>
+</div>

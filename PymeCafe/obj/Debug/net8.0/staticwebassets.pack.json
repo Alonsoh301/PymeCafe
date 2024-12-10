@@ -337,6 +337,10 @@
       "PackagePath": "staticwebassets\\Images\\payments.png"
     },
     {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\person-svgrepo-com.svg",
+      "PackagePath": "staticwebassets\\Images\\person-svgrepo-com.svg"
+    },
+    {
       "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\personas\\ellipse-50.png",
       "PackagePath": "staticwebassets\\Images\\personas\\ellipse-50.png"
     },

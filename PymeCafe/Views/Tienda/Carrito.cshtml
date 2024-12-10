@@ -1,30 +1,45 @@
-﻿@{
-    ViewData["Title"] = "Shopping Cart";
-}
-@model List<PymeCafe.Models.Detallespedido>
+﻿@model List<PymeCafe.Models.Detallespedido>
 
-<h2>Your Cart</h2>
+<div class="container mt-5">
+    <h2 class="text-success">Tu Carrito</h2>
 
-<table class="table" id="cartTable">
-    <thead>
-        <tr>
-            <th>Producto</th>
-            <th>Cantidad</th>
-            <th>Precio</th>
-        </tr>
-    </thead>
-    <tbody id="cartBody">
-        @foreach(var item in Model) {
-            <tr>
-                <td>@item.Producto.NombreProducto</td>
-                <td>@item.Cantidad</td>
-                <td>@item.PrecioUnitario</td>
-            </tr>
-        }
-    </tbody>
-</table>
+    @if (Model.Count > 0)
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio Unitario</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Producto.NombreProducto</td>
+                        <td>@item.Cantidad</td>
+                        <td>$@item.PrecioUnitario</td>
+                        <td>$@(item.Cantidad * item.PrecioUnitario)</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
 
-<h3>Total: <span id="totalCost">@ViewBag.Total</span></h3>
+        <h4>Total: <strong>$@Model.Sum(item => item.Cantidad * item.PrecioUnitario)</strong></h4>
 
-<a asp-action="LimpiarCarrito" asp-controller="Tienda" class="btn btn-customRed" id="clearCart">Clear Cart</a>
-<a href="@Url.Action("Checkout", "Tienda")" class="btn btn-custom">todo listo para pagar</a>
+        <div class="mt-4">
+            <form method="post" action="@Url.Action("LimpiarCarrito", "Tienda")">
+                <button type="submit" class="btn btn-danger">Limpiar Carrito</button>
+            </form>
+            <a href="@Url.Action("Checkout", "Tienda")" class="btn btn-success mt-2">Continuar al Pago</a>
+        </div>
+    }
+    else
+    {
+        <p class="text-muted">Tu carrito está vacío.</p>
+        <a href="@Url.Action("Index", "Tienda")" class="btn btn-primary">Volver a la Tienda</a>
+    }
+</div>
+

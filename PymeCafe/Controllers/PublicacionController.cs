@@ -18,14 +18,17 @@ namespace PymeCafe.Controllers
             _context = context;
         }
 
-        // GET: Publicacions
+        // GET: Publicacion
         public async Task<IActionResult> Index()
         {
-            var myContext = _context.Publicacion.Include(p => p.Usuario);
-            return View(await myContext.ToListAsync());
+            return View(await _context.Publicacion.ToListAsync());
         }
-
-        // GET: Publicacions/Details/5
+        public async Task<IActionResult> Inicio()
+        {
+            var publicaciones = await _context.Publicacion.ToListAsync();
+            return View(publicaciones);
+        }
+        // GET: Publicacion/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -34,7 +37,6 @@ namespace PymeCafe.Controllers
             }
 
             var publicacion = await _context.Publicacion
-                .Include(p => p.Usuario)
                 .FirstOrDefaultAsync(m => m.PublicacionID == id);
             if (publicacion == null)
             {
@@ -44,19 +46,18 @@ namespace PymeCafe.Controllers
             return View(publicacion);
         }
 
-        // GET: Publicacions/Create
+        // GET: Publicacion/Create
         public IActionResult Create()
         {
-            ViewData["UsuarioID"] = new SelectList(_context.Usuarios, "UserId", "UserId");
             return View();
         }
 
-        // POST: Publicacions/Create
+        // POST: Publicacion/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("PublicacionID,Titulo,Descripcion,FechaPublicacion,Imagen,ImagenRuta,UsuarioID")] Publicacion publicacion)
+        public async Task<IActionResult> Create([Bind("PublicacionID,Titulo,Descripcion,FechaPublicacion,UsuarioID,ImagenRuta")] Publicacion publicacion)
         {
             if (ModelState.IsValid)
             {
@@ -64,11 +65,10 @@ namespace PymeCafe.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["UsuarioID"] = new SelectList(_context.Usuarios, "UserId", "UserId", publicacion.UsuarioID);
             return View(publicacion);
         }
 
-        // GET: Publicacions/Edit/5
+        // GET: Publicacion/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -81,16 +81,15 @@ namespace PymeCafe.Controllers
             {
                 return NotFound();
             }
-            ViewData["UsuarioID"] = new SelectList(_context.Usuarios, "UserId", "UserId", publicacion.UsuarioID);
             return View(publicacion);
         }
 
-        // POST: Publicacions/Edit/5
+        // POST: Publicacion/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("PublicacionID,Titulo,Descripcion,FechaPublicacion,Imagen,ImagenRuta,UsuarioID")] Publicacion publicacion)
+        public async Task<IActionResult> Edit(int id, [Bind("PublicacionID,Titulo,Descripcion,FechaPublicacion,UsuarioID,ImagenRuta")] Publicacion publicacion)
         {
             if (id != publicacion.PublicacionID)
             {
@@ -117,11 +116,10 @@ namespace PymeCafe.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["UsuarioID"] = new SelectList(_context.Usuarios, "UserId", "UserId", publicacion.UsuarioID);
             return View(publicacion);
         }
 
-        // GET: Publicacions/Delete/5
+        // GET: Publicacion/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -130,7 +128,6 @@ namespace PymeCafe.Controllers
             }
 
             var publicacion = await _context.Publicacion
-                .Include(p => p.Usuario)
                 .FirstOrDefaultAsync(m => m.PublicacionID == id);
             if (publicacion == null)
             {
@@ -140,7 +137,7 @@ namespace PymeCafe.Controllers
             return View(publicacion);
         }
 
-        // POST: Publicacions/Delete/5
+        // POST: Publicacion/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

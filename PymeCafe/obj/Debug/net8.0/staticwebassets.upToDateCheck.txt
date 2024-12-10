@@ -92,6 +92,7 @@ wwwroot\Images\personas\image1.png
 wwwroot\Images\personas\image2 copy.png
 wwwroot\Images\personas\image2.png
 wwwroot\Images\personas\image3.png
+wwwroot\Images\person-svgrepo-com.svg
 wwwroot\Images\QR.png
 wwwroot\Images\Upload.png
 wwwroot\js\pagar.js

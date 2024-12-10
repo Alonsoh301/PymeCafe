@@ -1,127 +1,85 @@
 ﻿@model IEnumerable<PymeCafe.Models.Producto>
 
 @{
-    Layout = "~/Views/Shared/_StoreLayout.cshtml";
     ViewData["Title"] = "Tienda";
 }
 
-<div class="row">
-    <!-- Sidebar for Categories -->
-    <div class="col-md-3">
-        <h3>Filters</h3>
-        <form method="get">
-            <div>
-                <input type="text" name="searchString" placeholder="Search products" class="form-control" />
-            </div>
-            <div class="mt-3">
-                <select name="categoryFilter" class="form-control">
-                    <option value="">All Categories</option>
-                    @foreach (var categoria in ViewBag.Categorias as IEnumerable<PymeCafe.Models.Categoria>)
+<div class="container mt-5">
+    <div class="row">
+        <!-- Área de búsqueda -->
+        <div class="col-md-3">
+            <h4 class="text-success">Buscar Productos</h4>
+            <form method="get" action="@Url.Action("Index", "Tienda")" class="mb-4">
+                <!-- Búsqueda por nombre -->
+                <input type="text" name="searchString" class="form-control mb-3" placeholder="Buscar por nombre" />
+
+                <!-- Filtro por categoría -->
+                <select name="categoryFilter" class="form-select mb-3">
+                    <option value="">Todas las Categorías</option>
+                    @if (ViewBag.Categorias != null)
                     {
-                        <option value="@categoria.NombreCategoria">@categoria.NombreCategoria</option>
+                        foreach (var categoria in ViewBag.Categorias)
+                        {
+                            <option value="@categoria.NombreCategoria">@categoria.NombreCategoria</option>
+                        }
                     }
                 </select>
-            </div>
-            <div class="mt-3">
-                <button type="submit" class="btn btn-custom">Apply</button>
-            </div>
-        </form>
-        <div class="mt-3">
-            <button class="btn btn-custom" onclick="viewCart()">Ver Carrito</button>
+
+                <!-- Botón de Filtrar -->
+                <button type="submit" class="btn btn-success w-100 mb-2">Filtrar</button>
+
+                <!-- Botón de Carrito -->
+                <a href="@Url.Action("Carrito", "Tienda")" class="btn btn-custom w-100">Ver Carrito</a>
+            </form>
         </div>
 
-    </div>
-
-    <!-- Main Product Feed -->
-    <div class="col-md-9">
-        <h2>Your Cart: <span id="cartCount">0</span> items</h2> <!-- Muestra la cantidad de artículos en el carrito -->
-        <div class="row">
-            @foreach (var item in Model)
-            {
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <img class="card-img-top" src="https://via.placeholder.com/150" alt="Product Image" />
-                        <div class="card-body">
-                            <h5 class="card-title">@item.NombreProducto</h5>
-                            <p class="card-text">
-                                @String.Format(System.Globalization.CultureInfo.GetCultureInfo("es-ES"), "{0:C}", item.Precio)
-                            </p>
-                            <a class="btn btn-custom" asp-action="AgregarAlCarrito" asp-controller="Tienda" asp-route-id="@item.ProductoId" asp-route-precio="@item.Precio.ToString()" asp-route-user="@ViewBag.UserId">
-                                Agregar al carrito
-                            </a>
+        <!-- Área de productos -->
+        <div class="col-md-9">
+            <h4 class="text-center text-success mb-4">Productos Disponibles</h4>
+            <div class="row">
+                @foreach (var producto in Model)
+                {
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <!-- Placeholder en lugar de imagen -->
+                            <div class="placeholder-image text-center d-flex align-items-center justify-content-center"
+                                 style="background-color: #e9ecef; height: 200px; font-size: 24px; color: #6c757d;">
+                                @producto.NombreProducto.Substring(0, 1).ToUpper()
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-success">@producto.NombreProducto</h5>
+                                <p class="card-text">@producto.Descripcion</p>
+                                <p class="card-text text-primary"><strong>$@producto.Precio</strong></p>
+                                <button class="btn btn-custom agregar-carrito" data-id="@producto.ProductoId">Agregar al Carrito</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-            }
+                }
+            </div>
         </div>
     </div>
-</div>
-
-<!-- Contenedor del Carrito -->
-<div id="cartContainer" style="display: none; position: fixed; right: 20px; top: 100px; width: 300px; background: white; border: 1px solid #ccc; padding: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
-    <h4>Cart Items</h4>
-    <table id="cartTable" class="table">
-        <thead>
-            <tr>
-                <th>Item</th>
-                <th>Quantity</th>
-            </tr>
-        </thead>
-        <tbody id="cartBody">
-            <!-- Las filas del carrito se agregarán aquí con JavaScript -->
-        </tbody>
-    </table>
 </div>
 
 <script>
-    let cartItems = []; // Array para almacenar los productos del carrito
+    // Lógica para agregar productos al carrito
+    document.querySelectorAll('.agregar-carrito').forEach(button => {
+        button.addEventListener('click', async function () {
+            const productoId = this.getAttribute('data-id');
 
-    // Función para agregar productos al carrito
-    function addToCart(productId, productName, productPrice) {
-        // Busca si el producto ya está en el carrito
-        const existingItem = cartItems.find(item => item.id === productId);
+            // Enviar solicitud al controlador
+            const response = await fetch('@Url.Action("AgregarAlCarrito", "Tienda")', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ productoId: parseInt(productoId), cantidad: 1 })
+            });
 
-        if (existingItem) {
-            existingItem.quantity += 1; // Aumenta la cantidad si ya está en el carrito
-        } else {
-            cartItems.push({ id: productId, name: productName, price: productPrice, quantity: 1 }); // Agrega nuevo producto
-        }
-
-        // Actualiza el contador de artículos en el carrito
-        document.getElementById('cartCount').innerText = cartItems.reduce((total, item) => total + item.quantity, 0);
-
-        // Muestra el carrito si es la primera adición
-        if (cartItems.length === 1) {
-            document.getElementById('cartContainer').style.display = 'block';
-        }
-
-        // Actualiza la tabla del carrito
-        updateCartTable();
-
-        // Aquí puedes agregar más lógica para mostrar un mensaje de éxito
-        alert(`${productName} has been added to the cart.`);
-    }
-
-    // Función para actualizar la tabla del carrito
-    function updateCartTable() {
-        const cartBody = document.getElementById('cartBody');
-        cartBody.innerHTML = ''; // Limpiar contenido anterior
-
-        cartItems.forEach(item => {
-            const row = document.createElement('tr');
-            row.innerHTML = `
-                    <td>${item.name}</td>
-                    <td>${item.quantity}</td>
-                `;
-            cartBody.appendChild(row);
+            if (response.ok) {
+                alert("Producto agregado al carrito");
+            } else {
+                alert("Error al agregar el producto al carrito");
+            }
         });
-    }
-    function viewCart() {
-        // Guarda el carrito en localStorage
-        localStorage.setItem('cartItems', JSON.stringify(cartItems));
-
-        // Redirige a la página del carrito
-        window.location.href = '@Url.Action("Carrito", "Tienda")';
-    }
-
+    });
 </script>

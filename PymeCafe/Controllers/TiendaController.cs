@@ -15,29 +15,20 @@ namespace PymeCafe.Controllers
             _context = context;
         }
 
-        // GET: Tienda
-        [HttpGet]
-        public async Task<IActionResult> Index(string searchString, string categoryFilter, int userId)
+        // GET: Tienda - Muestra los productos disponibles
+        public async Task<IActionResult> Index(string searchString, string categoryFilter)
         {
+            // Obtener las categorías para el filtro
+            ViewBag.Categorias = await _context.Categoria.ToListAsync();
 
-            // Fetch all products
+            // Obtener los productos y aplicar filtros
             var productos = _context.Productos.Include(p => p.Categoria).AsQueryable();
 
-            // Fetch all categories to populate the filter
-            var categorias = await _context.Categoria.ToListAsync();
-            ViewBag.Categorias = categorias;
-
-            // Filter by search string
             if (!string.IsNullOrEmpty(searchString))
             {
-                productos = productos.Where(p => p.NombreProducto.Contains(searchString) || p.Descripcion.Contains(searchString));
+                productos = productos.Where(p => p.NombreProducto.Contains(searchString));
             }
 
-            if(userId != 0 || ViewBag.UserId != null) {
-                ViewBag.UserId = userId;
-            }
-
-            // Filter by category
             if (!string.IsNullOrEmpty(categoryFilter))
             {
                 productos = productos.Where(p => p.Categoria.NombreCategoria == categoryFilter);
@@ -46,96 +37,129 @@ namespace PymeCafe.Controllers
             return View(await productos.ToListAsync());
         }
 
-        // This action can handle adding items to the cart
-        public async Task<IActionResult> AgregarAlCarrito(int id, string precio, int user) {
-            if (HttpContext.Session.GetInt32("UserId") == null) {
+        // GET: Carrito - Muestra los productos en el carrito
+        [HttpGet]
+        public async Task<IActionResult> Carrito()
+        {
+            var userId = HttpContext.Session.GetInt32("UserId");
+            if (userId == null || userId == -1)
+            {
                 return RedirectToAction("Login", "Acceso");
             }
-             
-            //var conversion = precio.Replace(",", ".");
-            decimal valor = decimal.Parse(precio);
-            var pedido = await _context.Pedidos.FirstOrDefaultAsync(x => x.UserId == (user == 0 ? HttpContext.Session.GetInt32("UserId") : user) && x.EstadoPedido == "En proceso");
-            if(pedido == null) {
-                Pedido nuevo = new Pedido {
-                    UserId = user == 0 ? HttpContext.Session.GetInt32("UserId") : user,
-                    EstadoPedido = "En proceso",
+
+            var pedidoEnProceso = await _context.Pedidos
+                .FirstOrDefaultAsync(p => p.UserId == userId && p.EstadoPedido == "En proceso");
+
+            if (pedidoEnProceso == null)
+            {
+                return View(new List<Detallespedido>());
+            }
+
+            var carrito = await _context.Detallespedidos
+                .Where(d => d.PedidoId == pedidoEnProceso.PedidoId)
+                .Include(d => d.Producto)
+                .ToListAsync();
+
+            return View(carrito);
+        }
+
+        // POST: Agregar producto al carrito
+        [HttpPost]
+        public async Task<IActionResult> AgregarAlCarrito([FromBody] CarritoRequest request)
+        {
+            var userId = HttpContext.Session.GetInt32("UserId");
+            if (userId == null || userId == -1)
+            {
+                return Unauthorized();
+            }
+
+            var pedidoEnProceso = await _context.Pedidos
+                .FirstOrDefaultAsync(p => p.UserId == userId && p.EstadoPedido == "En proceso");
+
+            if (pedidoEnProceso == null)
+            {
+                pedidoEnProceso = new Pedido
+                {
+                    UserId = userId.Value,
                     FechaPedido = DateOnly.FromDateTime(DateTime.Now),
-                    Comentarios = ""
+                    EstadoPedido = "En proceso",
+                    Comentarios = string.Empty
                 };
 
-                _context.Pedidos.Add(nuevo);
+                _context.Pedidos.Add(pedidoEnProceso);
                 await _context.SaveChangesAsync();
+            }
 
-                Detallespedido detalle = new Detallespedido { 
-                    ProductoId = id,
-                    PedidoId = nuevo.PedidoId,
-                    Cantidad = 1,
-                    PrecioUnitario = valor
+            var item = await _context.Detallespedidos
+                .FirstOrDefaultAsync(d => d.PedidoId == pedidoEnProceso.PedidoId && d.ProductoId == request.ProductoId);
+
+            if (item != null)
+            {
+                item.Cantidad += request.Cantidad;
+            }
+            else
+            {
+                var detalle = new Detallespedido
+                {
+                    ProductoId = request.ProductoId,
+                    PedidoId = pedidoEnProceso.PedidoId,
+                    Cantidad = request.Cantidad,
+                    PrecioUnitario = await _context.Productos
+                        .Where(p => p.ProductoId == request.ProductoId)
+                        .Select(p => p.Precio)
+                        .FirstOrDefaultAsync()
                 };
-
                 _context.Detallespedidos.Add(detalle);
-                await _context.SaveChangesAsync();
-            } else {
-                var detalles = await _context.Detallespedidos.FirstOrDefaultAsync(x => x.ProductoId == id && x.PedidoId == pedido.PedidoId);
-
-                if (detalles == null) {
-                    Detallespedido detalle = new Detallespedido {
-                        ProductoId = id,
-                        PedidoId = pedido.PedidoId,
-                        Cantidad = 1,
-                        PrecioUnitario = valor
-                    };
-                    _context.Detallespedidos.Add(detalle);
-                    await _context.SaveChangesAsync();
-                } else {
-                    detalles.Cantidad = detalles.Cantidad + 1;
-                    _context.Update(detalles);
-                    await _context.SaveChangesAsync();
-                }
             }
 
-            return RedirectToAction("Index", "Tienda");
+            await _context.SaveChangesAsync();
+
+            return Ok();
         }
 
-        // This action handles viewing the cart
-        public IActionResult Carrito()
-        {
-            var carrito = _context.Pedidos.FirstOrDefault(x => x.UserId == HttpContext.Session.GetInt32("UserId") && x.EstadoPedido == "En proceso");
-            if (carrito == null) {
-                return View();
-            }
-
-            var productos = _context.Detallespedidos.Where(x => x.PedidoId == carrito.PedidoId).Include(x => x.Producto).ToList();
-            var total = 0;
-            foreach (var product in productos) {
-                total += Convert.ToInt32(product.Cantidad * product.PrecioUnitario);
-            }
-            ViewBag.Total = total;
-            return View(productos); 
-        }
-        public IActionResult Checkout()
-        {
-            // Logic to display items in the cart
-            return View();
-        }
-        // Action to handle clearing the cart
+        // POST: Limpiar el carrito
+        [HttpPost]
         public async Task<IActionResult> LimpiarCarrito()
         {
-            var carrito = _context.Pedidos.FirstOrDefault(x => x.UserId == HttpContext.Session.GetInt32("UserId") && x.EstadoPedido == "En proceso");
-            if (carrito != null) {
-                await _context.Detallespedidos.Where(x => x.PedidoId == carrito.PedidoId).ExecuteDeleteAsync();
+            var userId = HttpContext.Session.GetInt32("UserId");
+            if (userId == null || userId == -1)
+            {
+                return RedirectToAction("Login", "Acceso");
+            }
+
+            var pedidoEnProceso = await _context.Pedidos
+                .FirstOrDefaultAsync(p => p.UserId == userId && p.EstadoPedido == "En proceso");
+
+            if (pedidoEnProceso != null)
+            {
+                _context.Detallespedidos.RemoveRange(_context.Detallespedidos.Where(d => d.PedidoId == pedidoEnProceso.PedidoId));
+                _context.Pedidos.Remove(pedidoEnProceso);
                 await _context.SaveChangesAsync();
             }
 
             return RedirectToAction("Carrito");
         }
-        [HttpPost]
-        public ActionResult SubmitPayment(string CardNumber, string CardHolder, string ExpiryMonth, string ExpiryYear, string CVV)
+
+        // GET: Checkout - Muestra la vista para el pago
+        [HttpGet]
+        public IActionResult Checkout()
         {
-            // Lógica para procesar el pago
             return View();
         }
 
+        [HttpPost]
+        public IActionResult ProcesarPago()
+        {
+            // Redirige directamente a la vista de confirmación de pago
+          
+            return View(ProcesarPago);
+        }
+
+    }
+
+    public class CarritoRequest
+    {
+        public int ProductoId { get; set; }
+        public int Cantidad { get; set; }
     }
 }
-

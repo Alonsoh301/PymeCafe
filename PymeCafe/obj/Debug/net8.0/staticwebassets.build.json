@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "joSAqDCs8sAXYd4C3dOZSBvRtET/b74hIMAzxPoBaJg=",
+  "Hash": "cRsc53XZgnHJUfQFJl8KOOTIxc2JYC/g61FyeTOTPdI=",
   "Source": "PymeCafe",
   "BasePath": "_content/PymeCafe",
   "Mode": "Default",
@@ -2031,6 +2031,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\personas\\image3.png"
+    },
+    {
+      "Identity": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\person-svgrepo-com.svg",
+      "SourceId": "PymeCafe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\",
+      "BasePath": "_content/PymeCafe",
+      "RelativePath": "Images/person-svgrepo-com#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vq29w9akie",
+      "Integrity": "J/o3+fasIHMTQegQBPJWBWSqOOVR+Onw/FqVwwc0xnQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\person-svgrepo-com.svg"
     },
     {
       "Identity": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\QR.png",
@@ -17824,6 +17845,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-CNyHVuGvRWwOESW0fltZhuPjEzQ7QLZY99q64J/uzAk="
+        }
+      ]
+    },
+    {
+      "Route": "Images/person-svgrepo-com.svg",
+      "AssetFile": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\person-svgrepo-com.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1061"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J/o3+fasIHMTQegQBPJWBWSqOOVR+Onw/FqVwwc0xnQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Dec 2024 18:29:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-J/o3+fasIHMTQegQBPJWBWSqOOVR+Onw/FqVwwc0xnQ="
+        }
+      ]
+    },
+    {
+      "Route": "Images/person-svgrepo-com.vq29w9akie.svg",
+      "AssetFile": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\person-svgrepo-com.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1061"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J/o3+fasIHMTQegQBPJWBWSqOOVR+Onw/FqVwwc0xnQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Dec 2024 18:29:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vq29w9akie"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/person-svgrepo-com.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-J/o3+fasIHMTQegQBPJWBWSqOOVR+Onw/FqVwwc0xnQ="
         }
       ]
     },

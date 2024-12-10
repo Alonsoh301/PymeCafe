@@ -1032,6 +1032,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-4MbvJGARiVgpKcVkfo8Sic7EXvyZGhCabm/4egfkEc0="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"11094"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00224MbvJGARiVgpKcVkfo8Sic7EXvyZGhCabm/4egfkEc0=\u0022"},{"Name":"Last-Modified","Value":"Mon, 21 Oct 2024 21:45:40 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/PymeCafe/Images/person-svgrepo-com.svg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\person-svgrepo-com.svg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-J/o3\u002BfasIHMTQegQBPJWBWSqOOVR\u002BOnw/FqVwwc0xnQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1061"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022J/o3\u002BfasIHMTQegQBPJWBWSqOOVR\u002BOnw/FqVwwc0xnQ=\u0022"},{"Name":"Last-Modified","Value":"Mon, 09 Dec 2024 18:29:56 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/PymeCafe/Images/person-svgrepo-com.vq29w9akie.svg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\person-svgrepo-com.svg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vq29w9akie"},{"Name":"integrity","Value":"sha256-J/o3\u002BfasIHMTQegQBPJWBWSqOOVR\u002BOnw/FqVwwc0xnQ="},{"Name":"label","Value":"_content/PymeCafe/Images/person-svgrepo-com.svg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1061"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022J/o3\u002BfasIHMTQegQBPJWBWSqOOVR\u002BOnw/FqVwwc0xnQ=\u0022"},{"Name":"Last-Modified","Value":"Mon, 09 Dec 2024 18:29:56 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/PymeCafe/Images/personas/ellipse-50.36443b8z1h.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\personas\ellipse-50.png'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
