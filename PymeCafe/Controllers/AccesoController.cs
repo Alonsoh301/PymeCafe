@@ -6,6 +6,7 @@ using System.Security.Cryptography;
 
 using System.Data.SqlTypes;
 using System.Text;
+using Microsoft.CodeAnalysis.Elfie.Diagnostics;
 namespace PymeCafe.Controllers
 {
     public class AccesoController : Controller
@@ -115,33 +116,35 @@ namespace PymeCafe.Controllers
                 cmd.ExecuteNonQuery();
 
                 resultado = cmd.Parameters["Resultado"].Value.ToString();
-                userId = Convert.ToInt32(cmd.Parameters["UserID"].Value); // Obtener el UserID
-                tipoUsuario = cmd.Parameters["TipoUsuario"].Value.ToString(); // Obtener el TipoUsuario como string
-            }
 
-            // Enviar el resultado a la vista
-            ViewData["Resultado"] = resultado;
-
-            // Verificar el resultado
-            if (resultado == "Inicio de sesión exitoso")
-            {
-                // Crear sesión guardando el UserID y el correo electrónico
-                HttpContext.Session.SetInt32("UserId", userId); // Guardar el ID del usuario
-                HttpContext.Session.SetString("CorreoElectronico", oUsuario.CorreoElectronico); // Guardar el correo electrónico
-
-                //// Redirigir a la página correspondiente según el tipo de usuario
-                if (tipoUsuario == "Administrador") // Verifica si el tipo es "Administrador"
+                if (resultado == "Inicio de sesión exitoso")
                 {
-                    return RedirectToAction("Index", "Admin"); // Cambia "Admin" por el controlador que corresponda
-                } else // Cliente
-                {
-                    return RedirectToAction("Inicio", "Publicacion"); // Cliente va al Home
+                    userId = Convert.ToInt32(cmd.Parameters["UserID"].Value); // Obtener el UserID
+                    tipoUsuario = cmd.Parameters["TipoUsuario"].Value.ToString(); // Obtener el TipoUsuario como string
+                                                                                  // Crear sesión guardando el UserID y el correo electrónico
+                    HttpContext.Session.SetInt32("UserId", userId); // Guardar el ID del usuario
+                    HttpContext.Session.SetString("CorreoElectronico", oUsuario.CorreoElectronico); // Guardar el correo electrónico
+
+
+                    // Enviar el resultado a la vista
+                    ViewData["Resultado"] = resultado;
+
+                    //// Redirigir a la página correspondiente según el tipo de usuario
+                    if (tipoUsuario == "Administrador") // Verifica si el tipo es "Administrador"
+                    {
+                        return RedirectToAction("Index", "Admin"); // Cambia "Admin" por el controlador que corresponda
+                    }
+                    else // Cliente
+                    {
+                        return RedirectToAction("Index", "Home"); // Cliente va al Home
+                    }
                 }
-        } else
-            {
-                // Si las credenciales son incorrectas, mostrar el mensaje de error
-                ModelState.AddModelError(string.Empty, resultado);
-                return View(); // Devolver la vista de login
+                else
+                {
+                    // Si las credenciales son incorrectas, mostrar el mensaje de error
+                    ModelState.AddModelError(string.Empty, resultado);
+                    return View(); // Devolver la vista de login
+                }
             }
         }
 
