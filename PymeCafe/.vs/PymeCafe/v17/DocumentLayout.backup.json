@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|c:\\users\\alons\\onedrive\\documentos\\github\\pyme\\pymecafe\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|c:\\users\\alons\\onedrive\\documentos\\github\\pyme\\pymecafe\\views\\tienda\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|solutionrelative:views\\tienda\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|c:\\users\\alons\\onedrive\\documentos\\github\\pyme\\pymecafe\\views\\tienda\\sinpe.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|solutionrelative:views\\tienda\\sinpe.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|c:\\users\\alons\\onedrive\\documentos\\github\\pyme\\pymecafe\\controllers\\tiendacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,36 +15,36 @@
       "RelativeMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|solutionrelative:controllers\\accesocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|c:\\users\\alons\\onedrive\\documentos\\github\\pyme\\pymecafe\\views\\tienda\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|solutionrelative:views\\tienda\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|c:\\users\\alons\\onedrive\\documentos\\github\\pyme\\pymecafe\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|c:\\users\\alons\\onedrive\\documentos\\github\\pyme\\pymecafe\\views\\tienda\\procesarpago.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|solutionrelative:views\\tienda\\procesarpago.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|c:\\users\\alons\\onedrive\\documentos\\github\\pyme\\pymecafe\\models\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|solutionrelative:models\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|c:\\users\\alons\\onedrive\\documentos\\github\\pyme\\pymecafe\\controllers\\pedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|solutionrelative:controllers\\pedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|c:\\users\\alons\\onedrive\\documentos\\github\\pyme\\pymecafe\\views\\tienda\\carrito.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|solutionrelative:views\\tienda\\carrito.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|c:\\users\\alons\\onedrive\\documentos\\github\\pyme\\pymecafe\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|c:\\users\\alons\\onedrive\\documentos\\github\\pyme\\pymecafe\\views\\tienda\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|solutionrelative:views\\tienda\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|c:\\users\\alons\\onedrive\\documentos\\github\\pyme\\pymecafe\\views\\publicacion\\inicio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|solutionrelative:views\\publicacion\\inicio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|c:\\users\\alons\\onedrive\\documentos\\github\\pyme\\pymecafe\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|solutionrelative:controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|c:\\users\\alons\\onedrive\\documentos\\github\\pyme\\pymecafe\\views\\acceso\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|solutionrelative:views\\acceso\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|c:\\users\\alons\\onedrive\\documentos\\github\\pyme\\pymecafe\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|solutionrelative:models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|c:\\users\\alons\\onedrive\\documentos\\github\\pyme\\pymecafe\\controllers\\publicacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|solutionrelative:controllers\\publicacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|c:\\users\\alons\\onedrive\\documentos\\github\\pyme\\pymecafe\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|c:\\users\\alons\\onedrive\\documentos\\github\\pyme\\pymecafe\\migrations\\20250113221908_agregarcolumnafoto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|solutionrelative:migrations\\20250113221908_agregarcolumnafoto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 134,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,76 +62,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PublicacionController.cs",
-              "DocumentMoniker": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Controllers\\PublicacionController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PublicacionController.cs",
-              "ToolTip": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Controllers\\PublicacionController.cs",
-              "RelativeToolTip": "Controllers\\PublicacionController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAYwBkAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T18:16:11.205Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AccesoController.cs",
-              "DocumentMoniker": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Controllers\\AccesoController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AccesoController.cs",
-              "ToolTip": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Controllers\\AccesoController.cs",
-              "RelativeToolTip": "Controllers\\AccesoController.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAlwHAAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T18:11:10.978Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Views\\Tienda\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Tienda\\Index.cshtml",
-              "ToolTip": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Views\\Tienda\\Index.cshtml",
-              "RelativeToolTip": "Views\\Tienda\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAABQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-09T22:52:19.803Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Checkout.cshtml",
-              "DocumentMoniker": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Views\\Tienda\\Checkout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Tienda\\Checkout.cshtml",
-              "ToolTip": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Views\\Tienda\\Checkout.cshtml",
-              "RelativeToolTip": "Views\\Tienda\\Checkout.cshtml",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAkwF4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-09T22:36:58.365Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ProcesarPago.cshtml",
-              "DocumentMoniker": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Views\\Tienda\\ProcesarPago.cshtml",
-              "RelativeDocumentMoniker": "Views\\Tienda\\ProcesarPago.cshtml",
-              "ToolTip": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Views\\Tienda\\ProcesarPago.cshtml",
-              "RelativeToolTip": "Views\\Tienda\\ProcesarPago.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAYwD4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-09T22:36:22.507Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "TiendaController.cs",
               "DocumentMoniker": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Controllers\\TiendaController.cs",
               "RelativeDocumentMoniker": "Controllers\\TiendaController.cs",
               "ToolTip": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Controllers\\TiendaController.cs",
               "RelativeToolTip": "Controllers\\TiendaController.cs",
-              "ViewState": "AgIAAIoAAAAAAAAAAAAqwJoAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAJ0AAAAAAAAAAADwv8cAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T22:02:54.303Z"
+              "WhenOpened": "2025-01-14T22:11:33.633Z"
             },
             {
               "$type": "Document",
@@ -145,70 +80,118 @@
               "RelativeDocumentMoniker": "Views\\Tienda\\Carrito.cshtml",
               "ToolTip": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Views\\Tienda\\Carrito.cshtml",
               "RelativeToolTip": "Views\\Tienda\\Carrito.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-09T22:28:57.58Z"
+              "WhenOpened": "2025-01-14T22:08:41.022Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAFUAAAAAAAAAAAApwGkAAAAAAAAAAAAAAA==",
+              "Title": "sinpe.cshtml",
+              "DocumentMoniker": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Views\\Tienda\\sinpe.cshtml",
+              "RelativeDocumentMoniker": "Views\\Tienda\\sinpe.cshtml",
+              "ToolTip": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Views\\Tienda\\sinpe.cshtml",
+              "RelativeToolTip": "Views\\Tienda\\sinpe.cshtml",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-09T18:25:21.026Z",
+              "WhenOpened": "2025-01-14T22:09:08.835Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Inicio.cshtml",
-              "DocumentMoniker": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Views\\Publicacion\\Inicio.cshtml",
-              "RelativeDocumentMoniker": "Views\\Publicacion\\Inicio.cshtml",
-              "ToolTip": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Views\\Publicacion\\Inicio.cshtml",
-              "RelativeToolTip": "Views\\Publicacion\\Inicio.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAkwCMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-09T18:20:06.134Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Views\\Acceso\\Login.cshtml",
-              "RelativeDocumentMoniker": "Views\\Acceso\\Login.cshtml",
-              "ToolTip": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Views\\Acceso\\Login.cshtml",
-              "RelativeToolTip": "Views\\Acceso\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-09T18:20:15.741Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Views\\Tienda\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Tienda\\Index.cshtml",
+              "ToolTip": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Views\\Tienda\\Index.cshtml",
+              "RelativeToolTip": "Views\\Tienda\\Index.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAcwFwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-09T18:10:42.522Z"
+              "WhenOpened": "2025-01-13T22:57:41.997Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAAqAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "AccesoController.cs",
+              "DocumentMoniker": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Controllers\\AccesoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccesoController.cs",
+              "ToolTip": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Controllers\\AccesoController.cs",
+              "RelativeToolTip": "Controllers\\AccesoController.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAowE4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T18:10:31.71Z"
+              "WhenOpened": "2025-01-08T19:51:18.241Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Pedido.cs",
+              "DocumentMoniker": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Models\\Pedido.cs",
+              "RelativeDocumentMoniker": "Models\\Pedido.cs",
+              "ToolTip": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Models\\Pedido.cs",
+              "RelativeToolTip": "Models\\Pedido.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T22:55:16.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductoController.cs",
+              "DocumentMoniker": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Controllers\\ProductoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductoController.cs",
+              "ToolTip": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Controllers\\ProductoController.cs",
+              "RelativeToolTip": "Controllers\\ProductoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T22:30:22.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20250113221908_AgregarColumnaFoto.cs",
+              "DocumentMoniker": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Migrations\\20250113221908_AgregarColumnaFoto.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250113221908_AgregarColumnaFoto.cs",
+              "ToolTip": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Migrations\\20250113221908_AgregarColumnaFoto.cs",
+              "RelativeToolTip": "Migrations\\20250113221908_AgregarColumnaFoto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T22:19:08.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Models\\Producto.cs",
+              "RelativeDocumentMoniker": "Models\\Producto.cs",
+              "ToolTip": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Models\\Producto.cs",
+              "RelativeToolTip": "Models\\Producto.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAowBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T22:17:43.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAGgAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-16T23:57:17.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PedidoController.cs",
+              "DocumentMoniker": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Controllers\\PedidoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PedidoController.cs",
+              "ToolTip": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\Controllers\\PedidoController.cs",
+              "RelativeToolTip": "Controllers\\PedidoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T23:25:38.881Z"
             }
           ]
         }

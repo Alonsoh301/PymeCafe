@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cRsc53XZgnHJUfQFJl8KOOTIxc2JYC/g61FyeTOTPdI=",
+  "Hash": "Gi9pmFi+lxJEcw19Cc8Ga96Mslbb1T6/shtFw++I3fc=",
   "Source": "PymeCafe",
   "BasePath": "_content/PymeCafe",
   "Mode": "Default",
@@ -939,6 +939,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\cafes\\sliderUmarketHD603865432b091.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\carrito.svg",
+      "SourceId": "PymeCafe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\",
+      "BasePath": "_content/PymeCafe",
+      "RelativePath": "Images/carrito#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4ffah5xmgi",
+      "Integrity": "cB7NKfh/u7DLMr7m07J7kTpxfmvTc7RWQMi4+7RjVls=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\carrito.svg"
     },
     {
       "Identity": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\fondos\\breadcrumbs0.png",
@@ -13581,6 +13602,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-3WAOKEjxlmY4TWrQwsOZW0Ka54B0wUZoXcuQNVyjpS0="
+        }
+      ]
+    },
+    {
+      "Route": "Images/carrito.4ffah5xmgi.svg",
+      "AssetFile": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\carrito.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "842"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cB7NKfh/u7DLMr7m07J7kTpxfmvTc7RWQMi4+7RjVls=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Dec 2024 00:47:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4ffah5xmgi"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/carrito.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cB7NKfh/u7DLMr7m07J7kTpxfmvTc7RWQMi4+7RjVls="
+        }
+      ]
+    },
+    {
+      "Route": "Images/carrito.svg",
+      "AssetFile": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\carrito.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "842"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cB7NKfh/u7DLMr7m07J7kTpxfmvTc7RWQMi4+7RjVls=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Dec 2024 00:47:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cB7NKfh/u7DLMr7m07J7kTpxfmvTc7RWQMi4+7RjVls="
         }
       ]
     },

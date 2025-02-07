@@ -40,6 +40,7 @@ wwwroot\Images\cafes\sagaz-premium.jpg
 wwwroot\Images\cafes\sagaz-tradicional.jpg
 wwwroot\Images\cafes\sagaz-tradicional.png
 wwwroot\Images\cafes\sliderUmarketHD603865432b091.jpg
+wwwroot\Images\carrito.svg
 wwwroot\Images\fondos\breadcrumbs0.png
 wwwroot\Images\fondos\discount-bannar0.png
 wwwroot\Images\frutas\aguacate.jpg

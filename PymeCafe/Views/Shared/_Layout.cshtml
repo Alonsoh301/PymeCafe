@@ -95,14 +95,19 @@
             <div class="text-muted">
                 <i class="fas fa-map-marker-alt"></i> Localización, Tibás, San Juan, Costa Rica
             </div>
-            <div>
-                <a asp-controller="Perfil" asp-action="Perfil" class="text-muted">
-                    <!-- Ícono personalizado para redirigir al perfil -->
+            <div class="d-flex align-items-center">
+                <!-- Enlace al perfil -->
+                <a asp-controller="Perfil" asp-action="Perfil" class="text-muted me-3">
                     <img src="~/Images/person-svgrepo-com.svg" alt="Mi Perfil" width="24" height="24" />
+                </a>
+                <!-- Enlace al carrito -->
+                <a asp-controller="Tienda" asp-action="Carrito" class="text-muted">
+                    <img src="~/Images/carrito.svg" alt="Carrito" width="24" height="24" />
                 </a>
             </div>
         </div>
     </header>
+
 
 
 

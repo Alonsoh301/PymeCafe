@@ -41,11 +41,18 @@
                 {
                     <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
-                            <!-- Placeholder en lugar de imagen -->
-                            <div class="placeholder-image text-center d-flex align-items-center justify-content-center"
-                                 style="background-color: #e9ecef; height: 200px; font-size: 24px; color: #6c757d;">
-                                @producto.NombreProducto.Substring(0, 1).ToUpper()
-                            </div>
+                            <!-- Imagen del producto -->
+                            @if (!string.IsNullOrEmpty(producto.Foto))
+                            {
+                                <img src="@producto.Foto" alt="@producto.NombreProducto" class="card-img-top" style="height: 200px; object-fit: cover;">
+                            }
+                            else
+                            {
+                                <div class="placeholder-image text-center d-flex align-items-center justify-content-center"
+                                     style="background-color: #e9ecef; height: 200px; font-size: 24px; color: #6c757d;">
+                                    @producto.NombreProducto.Substring(0, 1).ToUpper()
+                                </div>
+                            }
                             <div class="card-body">
                                 <h5 class="card-title text-success">@producto.NombreProducto</h5>
                                 <p class="card-text">@producto.Descripcion</p>

@@ -15,6 +15,8 @@ public partial class Producto
 
     public int? CategoriaId { get; set; }
 
+    public string? Foto { get; set; } // Nueva propiedad para la ruta de la foto
+
     public virtual Categoria? Categoria { get; set; }
 
     public virtual ICollection<Detallespedido> Detallespedidos { get; set; } = new List<Detallespedido>();

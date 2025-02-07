@@ -161,6 +161,10 @@
       "PackagePath": "staticwebassets\\Images\\cafes\\sliderUmarketHD603865432b091.jpg"
     },
     {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\carrito.svg",
+      "PackagePath": "staticwebassets\\Images\\carrito.svg"
+    },
+    {
       "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\wwwroot\\Images\\fondos\\breadcrumbs0.png",
       "PackagePath": "staticwebassets\\Images\\fondos\\breadcrumbs0.png"
     },

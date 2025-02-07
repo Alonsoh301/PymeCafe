@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Pago con Sinpe Móvil";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 text-center">
+            <h1 class="text-success mb-4">Pago con Sinpe Móvil</h1>
+            <p class="mb-4">Realiza tu pago de forma fácil y segura utilizando Sinpe Móvil. Escanea el código QR o envía el monto al número indicado.</p>
+            <img src="https://seeklogo.com/images/S/sinpe-movil-logo-D694F98AE5-seeklogo.com.png" alt="Sinpe Móvil Logo" class="img-fluid mb-4" style="max-width: 200px;">
+
+            <div class="card p-4 shadow">
+                <h5 class="card-title">Número para Sinpe Móvil</h5>
+                <p class="card-text fs-4 text-primary"><strong>8888-8888</strong></p>
+                <p class="text-muted">Por favor, verifica el monto antes de enviar el pago.</p>
+            </div>
+
+            <!-- Botón para adjuntar captura del pago -->
+            <form method="post" enctype="multipart/form-data" asp-action="SubirComprobante">
+                <label for="capturaPago" class="form-label mt-4">Adjuntar captura del pago:</label>
+                <input type="file" id="capturaPago" name="capturaPago" class="form-control mb-3" accept="image/*">
+                <button type="submit" class="btn btn-success">Enviar Captura</button>
+            </form>
+
+            <a href="@Url.Action("Index", "Tienda")" class="btn btn-success mt-4">Regresar a la tienda</a>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+</style>

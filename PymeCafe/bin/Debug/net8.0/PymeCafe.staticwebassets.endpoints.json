@@ -3201,6 +3201,88 @@
       ]
     },
     {
+      "Route": "Images/carrito.4ffah5xmgi.svg",
+      "AssetFile": "Images/carrito.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "842"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cB7NKfh/u7DLMr7m07J7kTpxfmvTc7RWQMi4+7RjVls=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Dec 2024 00:47:20 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4ffah5xmgi"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cB7NKfh/u7DLMr7m07J7kTpxfmvTc7RWQMi4+7RjVls="
+        },
+        {
+          "Name": "label",
+          "Value": "Images/carrito.svg"
+        }
+      ]
+    },
+    {
+      "Route": "Images/carrito.svg",
+      "AssetFile": "Images/carrito.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "842"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cB7NKfh/u7DLMr7m07J7kTpxfmvTc7RWQMi4+7RjVls=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Dec 2024 00:47:20 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cB7NKfh/u7DLMr7m07J7kTpxfmvTc7RWQMi4+7RjVls="
+        }
+      ]
+    },
+    {
       "Route": "Images/fondos/breadcrumbs0.c1oc6onqe4.png",
       "AssetFile": "Images/fondos/breadcrumbs0.png",
       "Selectors": [],

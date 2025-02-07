@@ -155,6 +155,66 @@ namespace PymeCafe.Controllers
             return View(ProcesarPago);
         }
 
+        public IActionResult Sinpe()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> SubirComprobante(int pedidoId, IFormFile capturaPago)
+        {
+            if (capturaPago != null && capturaPago.Length > 0)
+            {
+                // Verificar si el archivo es una imagen
+                if (!capturaPago.ContentType.StartsWith("image/"))
+                {
+                    TempData["Error"] = "El archivo debe ser una imagen.";
+                    return RedirectToAction("Sinpe");
+                }
+
+                // Limitar el tamaño del archivo (ejemplo: 2MB)
+                if (capturaPago.Length > 2 * 1024 * 1024)
+                {
+                    TempData["Error"] = "El tamaño de la imagen no debe superar los 2 MB.";
+                    return RedirectToAction("Sinpe");
+                }
+
+                // Convertir la imagen a binario
+                using (var memoryStream = new MemoryStream())
+                {
+                    await capturaPago.CopyToAsync(memoryStream);
+                    var imageData = memoryStream.ToArray();
+
+                    // Guardar en la base de datos
+                    var pedido = await _context.Pedidos.FindAsync(pedidoId);
+                    if (pedido != null)
+                    {
+                        pedido.Comprobante = imageData; // Guarda la imagen en formato binario
+                        await _context.SaveChangesAsync();
+                        TempData["Message"] = "Comprobante subido exitosamente.";
+                    }
+                }
+            }
+            return RedirectToAction("Sinpe");
+        }
+
+
+        public async Task<IActionResult> MostrarComprobante(int pedidoId)
+        {
+            var pedido = await _context.Pedidos.FindAsync(pedidoId);
+            if (pedido?.Comprobante != null)
+            {
+                var base64String = Convert.ToBase64String(pedido.Comprobante);
+                ViewBag.ImagenBase64 = $"data:image/png;base64,{base64String}";
+            }
+            else
+            {
+                TempData["Error"] = "No hay comprobante disponible.";
+                return RedirectToAction("Sinpe");
+            }
+            return View(pedido);
+        }
+
     }
 
     public class CarritoRequest

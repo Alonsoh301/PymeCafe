@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PymeCafe.Models;
 
@@ -11,9 +12,11 @@ using PymeCafe.Models;
 namespace PymeCafe.Migrations
 {
     [DbContext(typeof(MyContext))]
-    partial class MyContextModelSnapshot : ModelSnapshot
+    [Migration("20250113221908_AgregarColumnaFoto")]
+    partial class AgregarColumnaFoto
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -117,9 +120,6 @@ namespace PymeCafe.Migrations
                         .HasMaxLength(255)
                         .IsUnicode(false)
                         .HasColumnType("varchar(255)");
-
-                    b.Property<byte[]>("Comprobante")
-                        .HasColumnType("varbinary(max)");
 
                     b.Property<string>("EstadoPedido")
                         .HasMaxLength(50)
