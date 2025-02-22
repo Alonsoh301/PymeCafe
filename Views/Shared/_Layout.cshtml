@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@inject PymeCafe.Services.ISesionUsuarioService SesionUsuarioService
+@{
+    var usuario = SesionUsuarioService.ObtenerUsuarioActual();
+}
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="utf-8" />
@@ -112,8 +116,6 @@
 
 
 
-
-    <!-- Barra de navegación principal -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
         <div class="container">
             <a class="navbar-brand text-success fw-bold" asp-area="" asp-controller="Home" asp-action="Index">
@@ -129,9 +131,14 @@
                     <li class="nav-item">
                         <a class="nav-link text-dark" asp-area="" asp-controller="Publicacion" asp-action="Inicio">Inicio</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="Index">Administracion</a>
-                    </li>
+
+                    @if (usuario != null && usuario.TipoUsuario == "Administrador")
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="Index">Administración</a>
+                        </li>
+                    }
+
                     <li class="nav-item">
                         <a class="nav-link text-dark" asp-controller="Tienda" asp-action="Index">Tienda</a>
                     </li>

@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using PymeCafe.Models;
+using PymeCafe.Services; // Asegúrate de agregar esta línea para que reconozca ISesionUsuarioService y SesionUsuarioService
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +18,10 @@ builder.Services.AddSession(options =>
 // Configurar el DbContext para usar SQL Server
 builder.Services.AddDbContext<MyContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("cn")));
+
+// Registrar el servicio de sesión y el HttpContextAccessor
+builder.Services.AddScoped<ISesionUsuarioService, SesionUsuarioService>();
+builder.Services.AddHttpContextAccessor();
 
 var app = builder.Build();
 

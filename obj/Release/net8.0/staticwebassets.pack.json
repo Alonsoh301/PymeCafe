@@ -1,0 +1,1953 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\PymeCafe.bundle.scp.css",
+      "PackagePath": "staticwebassets\\PymeCafe.94c618hxf2.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\QR.png",
+      "PackagePath": "staticwebassets\\Images\\QR.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\Upload.png",
+      "PackagePath": "staticwebassets\\Images\\Upload.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\background\\bannar-big0.png",
+      "PackagePath": "staticwebassets\\Images\\background\\bannar-big0.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\background\\bannar-big0Cafes.png",
+      "PackagePath": "staticwebassets\\Images\\background\\bannar-big0Cafes.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\background\\bg0 copy.png",
+      "PackagePath": "staticwebassets\\Images\\background\\bg0 copy.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\background\\bg0.png",
+      "PackagePath": "staticwebassets\\Images\\background\\bg0.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\background\\bg1.png",
+      "PackagePath": "staticwebassets\\Images\\background\\bg1.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\background\\bg4.png",
+      "PackagePath": "staticwebassets\\Images\\background\\bg4.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\background\\breadcrumbs0.png",
+      "PackagePath": "staticwebassets\\Images\\background\\breadcrumbs0.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\background\\discount-bannar0.png",
+      "PackagePath": "staticwebassets\\Images\\background\\discount-bannar0.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\background\\image0.png",
+      "PackagePath": "staticwebassets\\Images\\background\\image0.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\background\\rectangle-510.png",
+      "PackagePath": "staticwebassets\\Images\\background\\rectangle-510.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\background\\rectangle-540.png",
+      "PackagePath": "staticwebassets\\Images\\background\\rectangle-540.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\background\\rectangle-541.png",
+      "PackagePath": "staticwebassets\\Images\\background\\rectangle-541.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\background\\rectangle-542.png",
+      "PackagePath": "staticwebassets\\Images\\background\\rectangle-542.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\cafes\\BenoitAntoinette-1.jpg",
+      "PackagePath": "staticwebassets\\Images\\cafes\\BenoitAntoinette-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\cafes\\Cafe-Quetzal-Dota.png",
+      "PackagePath": "staticwebassets\\Images\\cafes\\Cafe-Quetzal-Dota.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\cafes\\Dotarrazu.jpg",
+      "PackagePath": "staticwebassets\\Images\\cafes\\Dotarrazu.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\cafes\\Especial Molido.png",
+      "PackagePath": "staticwebassets\\Images\\cafes\\Especial Molido.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\cafes\\EspeciallavadoFadiva.png",
+      "PackagePath": "staticwebassets\\Images\\cafes\\EspeciallavadoFadiva.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\cafes\\Fadivamolido.png",
+      "PackagePath": "staticwebassets\\Images\\cafes\\Fadivamolido.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\cafes\\caracolillo.png",
+      "PackagePath": "staticwebassets\\Images\\cafes\\caracolillo.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\cafes\\dotarrazu-254x230.png",
+      "PackagePath": "staticwebassets\\Images\\cafes\\dotarrazu-254x230.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\cafes\\fadivaCafe.png",
+      "PackagePath": "staticwebassets\\Images\\cafes\\fadivaCafe.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\cafes\\fadivaGourmet.png",
+      "PackagePath": "staticwebassets\\Images\\cafes\\fadivaGourmet.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\cafes\\fresh-dota.jpg",
+      "PackagePath": "staticwebassets\\Images\\cafes\\fresh-dota.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\cafes\\hermosa-254x230.png",
+      "PackagePath": "staticwebassets\\Images\\cafes\\hermosa-254x230.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\cafes\\hermosa-dota.jpg",
+      "PackagePath": "staticwebassets\\Images\\cafes\\hermosa-dota.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\cafes\\hombre.jpg",
+      "PackagePath": "staticwebassets\\Images\\cafes\\hombre.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\cafes\\reserva-254x230.png",
+      "PackagePath": "staticwebassets\\Images\\cafes\\reserva-254x230.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\cafes\\reserva-dota.jpg",
+      "PackagePath": "staticwebassets\\Images\\cafes\\reserva-dota.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\cafes\\sagaz-clasico.jpg",
+      "PackagePath": "staticwebassets\\Images\\cafes\\sagaz-clasico.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\cafes\\sagaz-clasico.png",
+      "PackagePath": "staticwebassets\\Images\\cafes\\sagaz-clasico.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\cafes\\sagaz-medio.png",
+      "PackagePath": "staticwebassets\\Images\\cafes\\sagaz-medio.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\cafes\\sagaz-oscuro.png",
+      "PackagePath": "staticwebassets\\Images\\cafes\\sagaz-oscuro.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\cafes\\sagaz-premium.jpg",
+      "PackagePath": "staticwebassets\\Images\\cafes\\sagaz-premium.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\cafes\\sagaz-tradicional.jpg",
+      "PackagePath": "staticwebassets\\Images\\cafes\\sagaz-tradicional.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\cafes\\sagaz-tradicional.png",
+      "PackagePath": "staticwebassets\\Images\\cafes\\sagaz-tradicional.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\cafes\\sliderUmarketHD603865432b091.jpg",
+      "PackagePath": "staticwebassets\\Images\\cafes\\sliderUmarketHD603865432b091.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\carrito.svg",
+      "PackagePath": "staticwebassets\\Images\\carrito.svg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\fondos\\breadcrumbs0.png",
+      "PackagePath": "staticwebassets\\Images\\fondos\\breadcrumbs0.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\fondos\\discount-bannar0.png",
+      "PackagePath": "staticwebassets\\Images\\fondos\\discount-bannar0.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\frutas\\Chile.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\Chile.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\frutas\\ChileDulce.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\ChileDulce.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\frutas\\ChileVerde2.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\ChileVerde2.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\frutas\\ChilesRojos.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\ChilesRojos.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\frutas\\Coliflor.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\Coliflor.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\frutas\\FrutaMorada.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\FrutaMorada.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\frutas\\Manzana.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\Manzana.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\frutas\\Pepino.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\Pepino.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\frutas\\Tomates.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\Tomates.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\frutas\\aguacate.jpg",
+      "PackagePath": "staticwebassets\\Images\\frutas\\aguacate.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\frutas\\banano.jpg",
+      "PackagePath": "staticwebassets\\Images\\frutas\\banano.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\frutas\\cas.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\cas.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\frutas\\chileVerde.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\chileVerde.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\frutas\\elote.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\elote.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\frutas\\fresas.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\fresas.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\frutas\\granadilla.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\granadilla.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\frutas\\guan_bana.jpg",
+      "PackagePath": "staticwebassets\\Images\\frutas\\guan_bana.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\frutas\\hojas.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\hojas.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\frutas\\image0.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\image0.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\frutas\\image1.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\image1.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\frutas\\image3.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\image3.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\frutas\\lechuga.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\lechuga.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\frutas\\manga.jpg",
+      "PackagePath": "staticwebassets\\Images\\frutas\\manga.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\frutas\\mango.jpg",
+      "PackagePath": "staticwebassets\\Images\\frutas\\mango.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\frutas\\maracuya.jpg",
+      "PackagePath": "staticwebassets\\Images\\frutas\\maracuya.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\frutas\\moras.jpg",
+      "PackagePath": "staticwebassets\\Images\\frutas\\moras.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\frutas\\papa.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\papa.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\frutas\\papaya-3-Exotic.jpg",
+      "PackagePath": "staticwebassets\\Images\\frutas\\papaya-3-Exotic.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\frutas\\papaya.png",
+      "PackagePath": "staticwebassets\\Images\\frutas\\papaya.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\frutas\\piña_g.jpg",
+      "PackagePath": "staticwebassets\\Images\\frutas\\piña_g.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\frutas\\sandia.jpg",
+      "PackagePath": "staticwebassets\\Images\\frutas\\sandia.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\insta\\instagram-post0.png",
+      "PackagePath": "staticwebassets\\Images\\insta\\instagram-post0.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\insta\\instagram-post1.png",
+      "PackagePath": "staticwebassets\\Images\\insta\\instagram-post1.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\insta\\instagram-post2.png",
+      "PackagePath": "staticwebassets\\Images\\insta\\instagram-post2.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\insta\\instagram-post3.png",
+      "PackagePath": "staticwebassets\\Images\\insta\\instagram-post3.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\insta\\instagram-post4.png",
+      "PackagePath": "staticwebassets\\Images\\insta\\instagram-post4.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\insta\\instagram-post6.png",
+      "PackagePath": "staticwebassets\\Images\\insta\\instagram-post6.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\logos\\image-10.png",
+      "PackagePath": "staticwebassets\\Images\\logos\\image-10.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\logos\\image-11.png",
+      "PackagePath": "staticwebassets\\Images\\logos\\image-11.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\logos\\image-12.png",
+      "PackagePath": "staticwebassets\\Images\\logos\\image-12.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\logos\\image-13.png",
+      "PackagePath": "staticwebassets\\Images\\logos\\image-13.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\payments.png",
+      "PackagePath": "staticwebassets\\Images\\payments.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\person-svgrepo-com.svg",
+      "PackagePath": "staticwebassets\\Images\\person-svgrepo-com.svg"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\personas\\ellipse-50.png",
+      "PackagePath": "staticwebassets\\Images\\personas\\ellipse-50.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\personas\\image0 copy 2.png",
+      "PackagePath": "staticwebassets\\Images\\personas\\image0 copy 2.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\personas\\image0 copy.png",
+      "PackagePath": "staticwebassets\\Images\\personas\\image0 copy.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\personas\\image0.png",
+      "PackagePath": "staticwebassets\\Images\\personas\\image0.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\personas\\image1.png",
+      "PackagePath": "staticwebassets\\Images\\personas\\image1.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\personas\\image2 copy.png",
+      "PackagePath": "staticwebassets\\Images\\personas\\image2 copy.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\personas\\image2.png",
+      "PackagePath": "staticwebassets\\Images\\personas\\image2.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\personas\\image3.png",
+      "PackagePath": "staticwebassets\\Images\\personas\\image3.png"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\css\\dashboard.css",
+      "PackagePath": "staticwebassets\\css\\dashboard.css"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\css\\pagar.css",
+      "PackagePath": "staticwebassets\\css\\pagar.css"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\js\\pagar.js",
+      "PackagePath": "staticwebassets\\js\\pagar.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\js\\vue\\vue.cjs.js",
+      "PackagePath": "staticwebassets\\js\\vue\\vue.cjs.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\js\\vue\\vue.cjs.min.js",
+      "PackagePath": "staticwebassets\\js\\vue\\vue.cjs.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\js\\vue\\vue.cjs.prod.js",
+      "PackagePath": "staticwebassets\\js\\vue\\vue.cjs.prod.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\js\\vue\\vue.cjs.prod.min.js",
+      "PackagePath": "staticwebassets\\js\\vue\\vue.cjs.prod.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\js\\vue\\vue.esm-browser.js",
+      "PackagePath": "staticwebassets\\js\\vue\\vue.esm-browser.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\js\\vue\\vue.esm-browser.min.js",
+      "PackagePath": "staticwebassets\\js\\vue\\vue.esm-browser.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\js\\vue\\vue.esm-browser.prod.js",
+      "PackagePath": "staticwebassets\\js\\vue\\vue.esm-browser.prod.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\js\\vue\\vue.esm-browser.prod.min.js",
+      "PackagePath": "staticwebassets\\js\\vue\\vue.esm-browser.prod.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\js\\vue\\vue.esm-bundler.js",
+      "PackagePath": "staticwebassets\\js\\vue\\vue.esm-bundler.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\js\\vue\\vue.esm-bundler.min.js",
+      "PackagePath": "staticwebassets\\js\\vue\\vue.esm-bundler.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\js\\vue\\vue.global.js",
+      "PackagePath": "staticwebassets\\js\\vue\\vue.global.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\js\\vue\\vue.global.min.js",
+      "PackagePath": "staticwebassets\\js\\vue\\vue.global.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\js\\vue\\vue.global.prod.js",
+      "PackagePath": "staticwebassets\\js\\vue\\vue.global.prod.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\js\\vue\\vue.global.prod.min.js",
+      "PackagePath": "staticwebassets\\js\\vue\\vue.global.prod.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\js\\vue\\vue.runtime.esm-browser.js",
+      "PackagePath": "staticwebassets\\js\\vue\\vue.runtime.esm-browser.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\js\\vue\\vue.runtime.esm-browser.min.js",
+      "PackagePath": "staticwebassets\\js\\vue\\vue.runtime.esm-browser.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\js\\vue\\vue.runtime.esm-browser.prod.js",
+      "PackagePath": "staticwebassets\\js\\vue\\vue.runtime.esm-browser.prod.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\js\\vue\\vue.runtime.esm-browser.prod.min.js",
+      "PackagePath": "staticwebassets\\js\\vue\\vue.runtime.esm-browser.prod.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\js\\vue\\vue.runtime.esm-bundler.js",
+      "PackagePath": "staticwebassets\\js\\vue\\vue.runtime.esm-bundler.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\js\\vue\\vue.runtime.esm-bundler.min.js",
+      "PackagePath": "staticwebassets\\js\\vue\\vue.runtime.esm-bundler.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\js\\vue\\vue.runtime.global.js",
+      "PackagePath": "staticwebassets\\js\\vue\\vue.runtime.global.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\js\\vue\\vue.runtime.global.min.js",
+      "PackagePath": "staticwebassets\\js\\vue\\vue.runtime.global.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\js\\vue\\vue.runtime.global.prod.js",
+      "PackagePath": "staticwebassets\\js\\vue\\vue.runtime.global.prod.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\js\\vue\\vue.runtime.global.prod.min.js",
+      "PackagePath": "staticwebassets\\js\\vue\\vue.runtime.global.prod.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\cjs\\enums.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\cjs\\enums.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\cjs\\enums.js.map",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\cjs\\enums.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\cjs\\enums.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\cjs\\enums.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\cjs\\popper-base.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\cjs\\popper-base.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\cjs\\popper-base.js.map",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\cjs\\popper-base.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\cjs\\popper-base.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\cjs\\popper-base.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\cjs\\popper-lite.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\cjs\\popper-lite.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\cjs\\popper-lite.js.map",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\cjs\\popper-lite.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\cjs\\popper-lite.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\cjs\\popper-lite.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\cjs\\popper.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\cjs\\popper.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\cjs\\popper.js.map",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\cjs\\popper.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\cjs\\popper.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\cjs\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\createpopper.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\createpopper.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\createpopper.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\createpopper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\contains.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\contains.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\contains.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\contains.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\getboundingclientrect.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\getboundingclientrect.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\getboundingclientrect.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\getboundingclientrect.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\getclippingrect.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\getclippingrect.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\getclippingrect.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\getclippingrect.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\getcompositerect.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\getcompositerect.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\getcompositerect.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\getcompositerect.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\getcomputedstyle.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\getcomputedstyle.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\getcomputedstyle.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\getcomputedstyle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\getdocumentelement.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\getdocumentelement.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\getdocumentelement.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\getdocumentelement.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\getdocumentrect.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\getdocumentrect.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\getdocumentrect.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\getdocumentrect.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\gethtmlelementscroll.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\gethtmlelementscroll.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\gethtmlelementscroll.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\gethtmlelementscroll.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\getlayoutrect.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\getlayoutrect.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\getlayoutrect.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\getlayoutrect.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\getnodename.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\getnodename.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\getnodename.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\getnodename.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\getnodescroll.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\getnodescroll.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\getnodescroll.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\getnodescroll.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\getoffsetparent.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\getoffsetparent.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\getoffsetparent.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\getoffsetparent.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\getparentnode.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\getparentnode.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\getparentnode.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\getparentnode.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\getscrollparent.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\getscrollparent.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\getscrollparent.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\getscrollparent.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\getviewportrect.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\getviewportrect.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\getviewportrect.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\getviewportrect.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\getwindow.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\getwindow.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\getwindow.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\getwindow.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\getwindowscroll.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\getwindowscroll.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\getwindowscroll.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\getwindowscroll.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\getwindowscrollbarx.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\getwindowscrollbarx.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\getwindowscrollbarx.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\getwindowscrollbarx.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\instanceof.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\instanceof.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\instanceof.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\instanceof.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\islayoutviewport.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\islayoutviewport.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\islayoutviewport.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\islayoutviewport.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\isscrollparent.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\isscrollparent.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\isscrollparent.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\isscrollparent.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\istableelement.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\istableelement.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\istableelement.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\istableelement.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\listscrollparents.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\listscrollparents.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\dom-utils\\listscrollparents.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\dom-utils\\listscrollparents.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\enums.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\enums.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\enums.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\enums.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\index.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\index.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\index.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\index.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\modifiers\\applystyles.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\modifiers\\applystyles.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\modifiers\\applystyles.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\modifiers\\applystyles.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\modifiers\\arrow.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\modifiers\\arrow.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\modifiers\\arrow.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\modifiers\\arrow.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\modifiers\\computestyles.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\modifiers\\computestyles.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\modifiers\\computestyles.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\modifiers\\computestyles.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\modifiers\\eventlisteners.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\modifiers\\eventlisteners.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\modifiers\\eventlisteners.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\modifiers\\eventlisteners.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\modifiers\\flip.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\modifiers\\flip.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\modifiers\\flip.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\modifiers\\flip.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\modifiers\\hide.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\modifiers\\hide.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\modifiers\\hide.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\modifiers\\hide.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\modifiers\\index.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\modifiers\\index.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\modifiers\\index.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\modifiers\\index.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\modifiers\\offset.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\modifiers\\offset.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\modifiers\\offset.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\modifiers\\offset.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\modifiers\\popperoffsets.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\modifiers\\popperoffsets.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\modifiers\\popperoffsets.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\modifiers\\popperoffsets.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\modifiers\\preventoverflow.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\modifiers\\preventoverflow.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\modifiers\\preventoverflow.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\modifiers\\preventoverflow.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\popper-base.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\popper-base.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\popper-base.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\popper-base.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\popper-lite.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\popper-lite.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\popper-lite.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\popper-lite.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\popper.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\popper.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\popper.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\types.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\types.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\types.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\types.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\computeautoplacement.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\computeautoplacement.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\computeautoplacement.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\computeautoplacement.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\computeoffsets.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\computeoffsets.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\computeoffsets.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\computeoffsets.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\debounce.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\debounce.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\debounce.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\debounce.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\detectoverflow.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\detectoverflow.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\detectoverflow.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\detectoverflow.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\expandtohashmap.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\expandtohashmap.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\expandtohashmap.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\expandtohashmap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\getaltaxis.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\getaltaxis.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\getaltaxis.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\getaltaxis.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\getaltlen.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\getaltlen.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\getaltlen.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\getaltlen.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\getbaseplacement.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\getbaseplacement.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\getbaseplacement.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\getbaseplacement.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\getfreshsideobject.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\getfreshsideobject.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\getfreshsideobject.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\getfreshsideobject.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\getmainaxisfromplacement.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\getmainaxisfromplacement.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\getmainaxisfromplacement.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\getmainaxisfromplacement.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\getoppositeplacement.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\getoppositeplacement.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\getoppositeplacement.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\getoppositeplacement.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\getoppositevariationplacement.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\getoppositevariationplacement.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\getoppositevariationplacement.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\getoppositevariationplacement.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\getvariation.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\getvariation.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\getvariation.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\getvariation.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\math.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\math.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\math.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\math.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\mergebyname.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\mergebyname.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\mergebyname.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\mergebyname.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\mergepaddingobject.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\mergepaddingobject.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\mergepaddingobject.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\mergepaddingobject.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\ordermodifiers.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\ordermodifiers.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\ordermodifiers.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\ordermodifiers.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\recttoclientrect.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\recttoclientrect.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\recttoclientrect.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\recttoclientrect.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\uniqueby.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\uniqueby.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\uniqueby.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\uniqueby.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\useragent.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\useragent.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\useragent.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\useragent.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\within.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\within.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\esm\\utils\\within.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\esm\\utils\\within.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\umd\\enums.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\umd\\enums.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\umd\\enums.js.map",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\umd\\enums.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\umd\\enums.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\umd\\enums.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\umd\\enums.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\umd\\enums.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\umd\\popper-base.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\umd\\popper-base.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\umd\\popper-base.js.map",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\umd\\popper-base.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\umd\\popper-base.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\umd\\popper-base.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\umd\\popper-base.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\umd\\popper-base.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\umd\\popper-lite.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\umd\\popper-lite.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\umd\\popper-lite.js.map",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\umd\\popper-lite.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\umd\\popper-lite.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\umd\\popper-lite.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\umd\\popper-lite.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\umd\\popper-lite.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\umd\\popper.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\umd\\popper.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\umd\\popper.js.map",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\umd\\popper.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\umd\\popper.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\umd\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\lib\\popper.js\\umd\\popper.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\umd\\popper.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\cjs\\enums.js",
+      "PackagePath": "staticwebassets\\popper.js\\cjs\\enums.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\cjs\\enums.js.map",
+      "PackagePath": "staticwebassets\\popper.js\\cjs\\enums.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\cjs\\enums.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\cjs\\enums.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\cjs\\popper-base.js",
+      "PackagePath": "staticwebassets\\popper.js\\cjs\\popper-base.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\cjs\\popper-base.js.map",
+      "PackagePath": "staticwebassets\\popper.js\\cjs\\popper-base.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\cjs\\popper-base.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\cjs\\popper-base.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\cjs\\popper-lite.js",
+      "PackagePath": "staticwebassets\\popper.js\\cjs\\popper-lite.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\cjs\\popper-lite.js.map",
+      "PackagePath": "staticwebassets\\popper.js\\cjs\\popper-lite.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\cjs\\popper-lite.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\cjs\\popper-lite.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\cjs\\popper.js",
+      "PackagePath": "staticwebassets\\popper.js\\cjs\\popper.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\cjs\\popper.js.map",
+      "PackagePath": "staticwebassets\\popper.js\\cjs\\popper.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\cjs\\popper.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\cjs\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\createpopper.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\createpopper.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\createpopper.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\createpopper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\contains.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\contains.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\contains.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\contains.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\getboundingclientrect.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\getboundingclientrect.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\getboundingclientrect.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\getboundingclientrect.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\getclippingrect.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\getclippingrect.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\getclippingrect.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\getclippingrect.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\getcompositerect.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\getcompositerect.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\getcompositerect.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\getcompositerect.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\getcomputedstyle.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\getcomputedstyle.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\getcomputedstyle.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\getcomputedstyle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\getdocumentelement.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\getdocumentelement.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\getdocumentelement.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\getdocumentelement.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\getdocumentrect.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\getdocumentrect.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\getdocumentrect.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\getdocumentrect.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\gethtmlelementscroll.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\gethtmlelementscroll.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\gethtmlelementscroll.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\gethtmlelementscroll.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\getlayoutrect.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\getlayoutrect.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\getlayoutrect.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\getlayoutrect.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\getnodename.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\getnodename.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\getnodename.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\getnodename.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\getnodescroll.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\getnodescroll.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\getnodescroll.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\getnodescroll.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\getoffsetparent.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\getoffsetparent.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\getoffsetparent.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\getoffsetparent.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\getparentnode.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\getparentnode.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\getparentnode.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\getparentnode.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\getscrollparent.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\getscrollparent.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\getscrollparent.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\getscrollparent.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\getviewportrect.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\getviewportrect.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\getviewportrect.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\getviewportrect.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\getwindow.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\getwindow.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\getwindow.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\getwindow.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\getwindowscroll.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\getwindowscroll.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\getwindowscroll.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\getwindowscroll.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\getwindowscrollbarx.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\getwindowscrollbarx.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\getwindowscrollbarx.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\getwindowscrollbarx.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\instanceof.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\instanceof.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\instanceof.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\instanceof.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\islayoutviewport.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\islayoutviewport.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\islayoutviewport.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\islayoutviewport.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\isscrollparent.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\isscrollparent.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\isscrollparent.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\isscrollparent.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\istableelement.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\istableelement.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\istableelement.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\istableelement.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\listscrollparents.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\listscrollparents.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\dom-utils\\listscrollparents.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\dom-utils\\listscrollparents.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\enums.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\enums.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\enums.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\enums.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\index.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\index.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\index.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\index.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\modifiers\\applystyles.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\modifiers\\applystyles.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\modifiers\\applystyles.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\modifiers\\applystyles.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\modifiers\\arrow.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\modifiers\\arrow.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\modifiers\\arrow.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\modifiers\\arrow.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\modifiers\\computestyles.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\modifiers\\computestyles.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\modifiers\\computestyles.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\modifiers\\computestyles.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\modifiers\\eventlisteners.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\modifiers\\eventlisteners.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\modifiers\\eventlisteners.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\modifiers\\eventlisteners.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\modifiers\\flip.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\modifiers\\flip.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\modifiers\\flip.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\modifiers\\flip.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\modifiers\\hide.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\modifiers\\hide.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\modifiers\\hide.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\modifiers\\hide.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\modifiers\\index.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\modifiers\\index.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\modifiers\\index.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\modifiers\\index.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\modifiers\\offset.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\modifiers\\offset.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\modifiers\\offset.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\modifiers\\offset.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\modifiers\\popperoffsets.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\modifiers\\popperoffsets.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\modifiers\\popperoffsets.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\modifiers\\popperoffsets.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\modifiers\\preventoverflow.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\modifiers\\preventoverflow.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\modifiers\\preventoverflow.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\modifiers\\preventoverflow.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\popper-base.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\popper-base.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\popper-base.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\popper-base.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\popper-lite.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\popper-lite.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\popper-lite.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\popper-lite.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\popper.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\popper.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\popper.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\types.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\types.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\types.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\types.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\computeautoplacement.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\computeautoplacement.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\computeautoplacement.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\computeautoplacement.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\computeoffsets.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\computeoffsets.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\computeoffsets.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\computeoffsets.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\debounce.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\debounce.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\debounce.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\debounce.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\detectoverflow.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\detectoverflow.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\detectoverflow.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\detectoverflow.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\expandtohashmap.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\expandtohashmap.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\expandtohashmap.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\expandtohashmap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\getaltaxis.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\getaltaxis.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\getaltaxis.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\getaltaxis.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\getaltlen.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\getaltlen.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\getaltlen.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\getaltlen.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\getbaseplacement.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\getbaseplacement.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\getbaseplacement.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\getbaseplacement.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\getfreshsideobject.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\getfreshsideobject.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\getfreshsideobject.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\getfreshsideobject.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\getmainaxisfromplacement.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\getmainaxisfromplacement.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\getmainaxisfromplacement.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\getmainaxisfromplacement.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\getoppositeplacement.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\getoppositeplacement.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\getoppositeplacement.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\getoppositeplacement.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\getoppositevariationplacement.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\getoppositevariationplacement.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\getoppositevariationplacement.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\getoppositevariationplacement.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\getvariation.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\getvariation.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\getvariation.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\getvariation.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\math.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\math.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\math.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\math.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\mergebyname.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\mergebyname.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\mergebyname.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\mergebyname.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\mergepaddingobject.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\mergepaddingobject.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\mergepaddingobject.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\mergepaddingobject.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\ordermodifiers.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\ordermodifiers.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\ordermodifiers.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\ordermodifiers.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\recttoclientrect.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\recttoclientrect.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\recttoclientrect.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\recttoclientrect.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\uniqueby.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\uniqueby.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\uniqueby.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\uniqueby.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\useragent.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\useragent.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\useragent.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\useragent.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\within.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\within.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\esm\\utils\\within.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\esm\\utils\\within.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\umd\\enums.js",
+      "PackagePath": "staticwebassets\\popper.js\\umd\\enums.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\umd\\enums.js.map",
+      "PackagePath": "staticwebassets\\popper.js\\umd\\enums.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\umd\\enums.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\umd\\enums.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\umd\\enums.min.js.map",
+      "PackagePath": "staticwebassets\\popper.js\\umd\\enums.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\umd\\popper-base.js",
+      "PackagePath": "staticwebassets\\popper.js\\umd\\popper-base.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\umd\\popper-base.js.map",
+      "PackagePath": "staticwebassets\\popper.js\\umd\\popper-base.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\umd\\popper-base.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\umd\\popper-base.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\umd\\popper-base.min.js.map",
+      "PackagePath": "staticwebassets\\popper.js\\umd\\popper-base.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\umd\\popper-lite.js",
+      "PackagePath": "staticwebassets\\popper.js\\umd\\popper-lite.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\umd\\popper-lite.js.map",
+      "PackagePath": "staticwebassets\\popper.js\\umd\\popper-lite.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\umd\\popper-lite.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\umd\\popper-lite.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\umd\\popper-lite.min.js.map",
+      "PackagePath": "staticwebassets\\popper.js\\umd\\popper-lite.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\umd\\popper.js",
+      "PackagePath": "staticwebassets\\popper.js\\umd\\popper.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\umd\\popper.js.map",
+      "PackagePath": "staticwebassets\\popper.js\\umd\\popper.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\umd\\popper.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\umd\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\popper.js\\umd\\popper.min.js.map",
+      "PackagePath": "staticwebassets\\popper.js\\umd\\popper.min.js.map"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.PymeCafe.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.PymeCafe.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.PymeCafe.props",
+      "PackagePath": "build\\PymeCafe.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.PymeCafe.props",
+      "PackagePath": "buildMultiTargeting\\PymeCafe.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.PymeCafe.props",
+      "PackagePath": "buildTransitive\\PymeCafe.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OXkgH8yzWWE=",
+  "dgSpecHash": "c7mFjAIHXG4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe\\PymeCafe.csproj",
+  "projectFilePath": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alons\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\alons\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

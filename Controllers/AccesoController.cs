@@ -136,7 +136,7 @@ namespace PymeCafe.Controllers
                     }
                     else // Cliente
                     {
-                        return RedirectToAction("Index", "Home"); // Cliente va al Home
+                        return RedirectToAction("Inicio", "Publicacion"); // Cliente va al Home
                     }
                 }
                 else
