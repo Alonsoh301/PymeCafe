@@ -182,7 +182,7 @@ namespace PymeCafe.Controllers
                 ViewData["UserId"] = usuario.UserId;
                 return View(usuario);
             }
-            return RedirectToAction("Login", "Cuenta");
+            return RedirectToAction("Login", "Acceso");
         }
 
         // GET: Editar el perfil del usuario logueado
@@ -190,7 +190,7 @@ namespace PymeCafe.Controllers
         {
             var userId = GetLoggedUserId();
             if (userId == -1)
-                return RedirectToAction("Login", "Cuenta");
+                return RedirectToAction("Login", "Acceso");
 
             var usuario = await _context.Usuarios.FindAsync(userId);
             if (usuario == null)

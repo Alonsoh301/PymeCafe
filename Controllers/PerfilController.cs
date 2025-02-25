@@ -29,7 +29,7 @@ namespace PymeCafe.Controllers
             var userId = GetLoggedUserId();
             if (userId == -1)
             {
-                return RedirectToAction("Login", "Cuenta");
+                return RedirectToAction("Login", "Acceso");
             }
 
             var usuario = await _context.Usuarios.FindAsync(userId);
@@ -47,7 +47,7 @@ namespace PymeCafe.Controllers
             var userId = GetLoggedUserId();
             if (userId == -1)
             {
-                return RedirectToAction("Login", "Cuenta");
+                return RedirectToAction("Login", "Acceso");
             }
 
             var usuario = await _context.Usuarios.FindAsync(userId);
@@ -56,33 +56,61 @@ namespace PymeCafe.Controllers
                 return NotFound();
             }
 
-            return View(usuario);
+            return View(usuario); // Aquí se carga la vista correctamente
         }
 
-        // Acción para actualizar el perfil del usuario
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> UpdatePerfil(Usuario updatedUser)
         {
-            var userId = GetLoggedUserId();
+            var userId = GetLoggedUserId(); // Se obtiene el ID de la sesión, no de la vista
             if (userId == -1)
             {
-                return RedirectToAction("Login", "Cuenta");
+                return RedirectToAction("Login", "Acceso");
             }
 
-            var userToUpdate = await _context.Usuarios.FindAsync(userId);
-            if (userToUpdate != null)
+            try
             {
-                userToUpdate.Nombre = updatedUser.Nombre;
-                userToUpdate.Apellido = updatedUser.Apellido;
-                userToUpdate.Contraseña = updatedUser.Contraseña;
+                using (var connection = _context.Database.GetDbConnection())
+                {
+                    await connection.OpenAsync();
+                    using (var command = connection.CreateCommand())
+                    {
+                        command.CommandText = "sp_ActualizarUsuario";
+                        command.CommandType = System.Data.CommandType.StoredProcedure;
 
-                await _context.SaveChangesAsync();
+                        command.Parameters.Add(CreateSqlParameter("@UsuarioID", userId));
+                        command.Parameters.Add(CreateSqlParameter("@Nombre", updatedUser.Nombre));
+                        command.Parameters.Add(CreateSqlParameter("@Apellido", updatedUser.Apellido));
+                        command.Parameters.Add(CreateSqlParameter("@CorreoElectronico", updatedUser.CorreoElectronico)); // Ajuste en el nombre del campo
+
+                        await command.ExecuteNonQueryAsync();
+                    }
+                }
+
+
+                TempData["Mensaje"] = "Perfil actualizado correctamente.";
                 return RedirectToAction(nameof(Perfil));
             }
-
-            return NotFound();
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", "Error al actualizar el perfil.");
+                Console.WriteLine($"Error: {ex.Message}");
+                return View("EditPerfil", updatedUser);
+            }
         }
+
+        // Método auxiliar para crear parámetros SQL seguros
+        private static System.Data.Common.DbParameter CreateSqlParameter(string name, object value)
+        {
+            var parameter = new Microsoft.Data.SqlClient.SqlParameter
+            {
+                ParameterName = name,
+                Value = value ?? DBNull.Value
+            };
+            return parameter;
+        }
+
 
         // Acción para mostrar los pedidos del usuario
         public async Task<IActionResult> Pedidos()
@@ -90,7 +118,7 @@ namespace PymeCafe.Controllers
             var userId = GetLoggedUserId();
             if (userId == -1)
             {
-                return RedirectToAction("Login", "Cuenta");
+                return RedirectToAction("Login", "Acceso");
             }
 
             var pedidos = await _context.Pedidos
@@ -106,7 +134,7 @@ namespace PymeCafe.Controllers
             var userId = GetLoggedUserId();
             if (userId == -1)
             {
-                return RedirectToAction("Login", "Cuenta");
+                return RedirectToAction("Login", "Acceso");
             }
 
             var detallesPedido = await _context.Detallespedidos
@@ -122,7 +150,7 @@ namespace PymeCafe.Controllers
             var userId = GetLoggedUserId();
             if (userId == -1)
             {
-                return RedirectToAction("Login", "Cuenta");
+                return RedirectToAction("Login", "Acceso");
             }
 
             var recomendaciones = await _context.Recomendacions
@@ -165,7 +193,7 @@ namespace PymeCafe.Controllers
 
             if (userId == -1) // Si no hay usuario logueado, redirige al login
             {
-                return RedirectToAction("Login", "Cuenta");
+                return RedirectToAction("Login", "Acceso");
             }
 
             // Obtén las valoraciones del usuario logueado desde la base de datos

@@ -65,7 +65,7 @@ namespace PymeCafe.Controllers
             // Verificar el resultado
             if (resultado == "Usuario registrado exitosamente.") 
             {
-                return RedirectToAction("Login", "Accesso"); 
+                return RedirectToAction("Login", "Acceso"); 
             }
             else
             {
