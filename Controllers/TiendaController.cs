@@ -3,15 +3,20 @@ using Microsoft.EntityFrameworkCore;
 using PymeCafe.Models;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
+using System.Configuration;
 
 namespace PymeCafe.Controllers
 {
     public class TiendaController : Controller
     {
         private readonly MyContext _context;
+        private readonly IConfiguration _configuration;
 
-        public TiendaController(MyContext context)
+        public TiendaController(IConfiguration configuration, MyContext context)
         {
+            _configuration = configuration;
             _context = context;
         }
 
@@ -157,11 +162,12 @@ namespace PymeCafe.Controllers
 
         public IActionResult Sinpe()
         {
+            ViewBag.GoogleMapsApiKey = _configuration["GoogleMapsApiKey"];
             return View();
         }
 
         [HttpPost]
-        public async Task<IActionResult> SubirComprobante(int pedidoId, IFormFile capturaPago)
+        public async Task<IActionResult> SubirComprobante(int pedidoId, IFormFile capturaPago, string DireccionDeEnvio)
         {
             if (capturaPago != null && capturaPago.Length > 0)
             {
@@ -190,8 +196,9 @@ namespace PymeCafe.Controllers
                     if (pedido != null)
                     {
                         pedido.Comprobante = imageData; // Guarda la imagen en formato binario
+                        pedido.DireccionDeEnvio = DireccionDeEnvio; // Guarda la dirección de envío
                         await _context.SaveChangesAsync();
-                        TempData["Message"] = "Comprobante subido exitosamente.";
+                        TempData["Message"] = "Comprobante y dirección guardados exitosamente.";
                     }
                 }
             }

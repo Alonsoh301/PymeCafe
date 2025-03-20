@@ -32,6 +32,10 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNvXExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/alons/OneDrive/Documentos/GitHub/pyme/Views/Acceso/LoginError.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNvXExvZ2luRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/alons/OneDrive/Documentos/GitHub/pyme/Views/Acceso/Registrar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNvXFJlZ2lzdHJhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -242,6 +246,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/alons/OneDrive/Documentos/GitHub/pyme/Views/Recomendacion/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjb21lbmRhY2lvblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alons/OneDrive/Documentos/GitHub/pyme/Views/Reportes/Reportes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0ZXNcUmVwb3J0ZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/alons/OneDrive/Documentos/GitHub/pyme/Views/Shared/Error.cshtml]

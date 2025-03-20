@@ -17,6 +17,8 @@ public partial class Pedido
 
     public byte[]? Comprobante { get; set; } // Nueva propiedad para almacenar el comprobante en binario
 
+    public string DireccionDeEnvio { get; set; } = "SIN ASIGNAR"; // Nueva columna con valor por defecto
+
     public virtual ICollection<Detallespedido> Detallespedidos { get; set; } = new List<Detallespedido>();
 
     public virtual Usuario? User { get; set; }

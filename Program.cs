@@ -15,6 +15,9 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true; // La sesión es esencial para la aplicación
 });
 
+// Leer la clave API desde appsettings.json
+var googleMapsApiKey = builder.Configuration["GoogleMapsApiKey"];
+
 // Configurar el DbContext para usar SQL Server
 builder.Services.AddDbContext<MyContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("cn")));

@@ -56,7 +56,7 @@ namespace PymeCafe.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("PedidoId,UserId,FechaPedido,EstadoPedido,Comentarios,Comprobante")] Pedido pedido)
+        public async Task<IActionResult> Create([Bind("PedidoId,UserId,FechaPedido,EstadoPedido,Comentarios,Comprobante,DireccionDeEnvio")] Pedido pedido)
         {
             if (ModelState.IsValid)
             {
@@ -90,7 +90,7 @@ namespace PymeCafe.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("PedidoId,UserId,FechaPedido,EstadoPedido,Comentarios,Comprobante")] Pedido pedido)
+        public async Task<IActionResult> Edit(int id, [Bind("PedidoId,UserId,FechaPedido,EstadoPedido,Comentarios,Comprobante,DireccionDeEnvio")] Pedido pedido)
         {
             if (id != pedido.PedidoId)
             {

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zqtIRvGkfS9/t0+djzPcp+W/PRD0MgT0KwKNL/ydEDs=",
+  "Hash": "H1nezDGYXjV/FK5nMeacvlZuYqvk/n2wwhcpXQ+Z3Zo=",
   "Source": "PymeCafe",
   "BasePath": "_content/PymeCafe",
   "Mode": "Default",
@@ -2073,6 +2073,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\person-svgrepo-com.svg"
+    },
+    {
+      "Identity": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\Plantita.svg",
+      "SourceId": "PymeCafe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\",
+      "BasePath": "_content/PymeCafe",
+      "RelativePath": "Images/Plantita#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "md4wgrp4mh",
+      "Integrity": "Ksr79eOwaKEYc6ThLklsUGXOryESbxTKSuQraE/BsRM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Plantita.svg"
     },
     {
       "Identity": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\QR.png",
@@ -18030,6 +18051,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-J/o3+fasIHMTQegQBPJWBWSqOOVR+Onw/FqVwwc0xnQ="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Plantita.md4wgrp4mh.svg",
+      "AssetFile": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\Plantita.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1807"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ksr79eOwaKEYc6ThLklsUGXOryESbxTKSuQraE/BsRM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Feb 2025 22:54:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "md4wgrp4mh"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Plantita.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ksr79eOwaKEYc6ThLklsUGXOryESbxTKSuQraE/BsRM="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Plantita.svg",
+      "AssetFile": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\Plantita.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1807"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ksr79eOwaKEYc6ThLklsUGXOryESbxTKSuQraE/BsRM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Feb 2025 22:54:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ksr79eOwaKEYc6ThLklsUGXOryESbxTKSuQraE/BsRM="
         }
       ]
     },

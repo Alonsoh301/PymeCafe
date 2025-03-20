@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PymeCafe")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fd5aa0d670e7fcb7aec532a5f91ddc28672959ef")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1998ed859a8d1321f0696916c8856e98f42217c6")]
 [assembly: System.Reflection.AssemblyProductAttribute("PymeCafe")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PymeCafe")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

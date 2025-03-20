@@ -21,10 +21,16 @@ namespace PymeCafe.Controllers
         {
             return View();
         }
+        public IActionResult LoginError()
+        {
+            return View();
+        }
+
         public IActionResult Registrar()
         {
             return View();
         }
+
         [HttpPost]
         public IActionResult Registrar(Usuario oUsuario)
         {
@@ -141,10 +147,10 @@ namespace PymeCafe.Controllers
                 }
                 else
                 {
-                    // Si las credenciales son incorrectas, mostrar el mensaje de error
-                    ModelState.AddModelError(string.Empty, resultado);
-                    return View(); // Devolver la vista de login
+                    // Redirigir a la vista de error con un mensaje personalizado
+                    return RedirectToAction("LoginError", "Acceso");
                 }
+
             }
         }
 

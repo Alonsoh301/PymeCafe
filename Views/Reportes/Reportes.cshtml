@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "Generar Reportes";
+}
+
+<h2>Generar Reporte</h2>
+
+<!-- Dropdown para seleccionar la tabla -->
+<label for="tablaSeleccionada">Selecciona la Tabla:</label>
+<select id="tablaSeleccionada"></select>
+
+<!-- Dropdown para seleccionar el formato -->
+<label for="formatoSeleccionado">Formato:</label>
+<select id="formatoSeleccionado">
+    <option value="pdf">PDF</option>
+    <option value="excel">Excel</option>
+</select>
+
+<!-- Botón para generar el reporte -->
+<button onclick="generarReporte()">Generar Reporte</button>
+
+<script>
+    async function cargarTablas() {
+        try {
+            let response = await fetch('/api/reportes/tablas');
+            let tablas = await response.json();
+            let select = document.getElementById("tablaSeleccionada");
+
+            tablas.forEach(tabla => {
+                let option = document.createElement("option");
+                option.value = tabla;
+                option.textContent = tabla;
+                select.appendChild(option);
+            });
+        } catch (error) {
+            console.error("Error obteniendo las tablas:", error);
+        }
+    }
+
+    function generarReporte() {
+        let tabla = document.getElementById("tablaSeleccionada").value;
+        let formato = document.getElementById("formatoSeleccionado").value;
+        window.location.href = `/api/reportes/generar?tabla=${tabla}&formato=${formato}`;
+    }
+
+    // Cargar las tablas al abrir la vista
+    window.onload = cargarTablas;
+</script>

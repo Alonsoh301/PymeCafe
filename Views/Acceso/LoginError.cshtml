@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error de Inicio de Sesión</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #941B80, #0096AE);
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .retry-button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+            .retry-button:hover {
+                background-color: #218838;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Información Incorrecta</h1>
+        <p>El usuario o la contraseña ingresados son incorrectos. Por favor, inténtelo de nuevo.</p>
+        <button class="retry-button" onclick="window.location.href='login'">Volver a Intentar</button>
+    </div>
+</body>
+</html>
