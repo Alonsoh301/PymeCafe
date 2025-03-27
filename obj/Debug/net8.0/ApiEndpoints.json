@@ -1,1 +1,59 @@
-[]
+[
+  {
+    "ContainingType": "PymeCafe.Controllers.ReportesController",
+    "Method": "ObtenerDatos",
+    "RelativePath": "api/Reportes/datos/{tabla}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tabla",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PymeCafe.Controllers.ReportesController",
+    "Method": "GenerarReporte",
+    "RelativePath": "api/Reportes/generar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tabla",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "formato",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PymeCafe.Controllers.ReportesController",
+    "Method": "ObtenerTablas",
+    "RelativePath": "api/Reportes/tablas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PymeCafe.Controllers.ReportesController",
+    "Method": "Reportes",
+    "RelativePath": "reportes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

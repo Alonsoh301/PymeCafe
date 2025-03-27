@@ -1,92 +1,150 @@
-﻿@model IEnumerable<PymeCafe.Models.Producto>
+﻿@model List<PymeCafe.Models.Producto>
 
 @{
     ViewData["Title"] = "Tienda";
 }
 
-<div class="container mt-5">
-    <div class="row">
-        <!-- Área de búsqueda -->
-        <div class="col-md-3">
-            <h4 class="text-success">Buscar Productos</h4>
-            <form method="get" action="@Url.Action("Index", "Tienda")" class="mb-4">
-                <!-- Búsqueda por nombre -->
-                <input type="text" name="searchString" class="form-control mb-3" placeholder="Buscar por nombre" />
+<h2>Productos</h2>
 
-                <!-- Filtro por categoría -->
-                <select name="categoryFilter" class="form-select mb-3">
-                    <option value="">Todas las Categorías</option>
-                    @if (ViewBag.Categorias != null)
-                    {
-                        foreach (var categoria in ViewBag.Categorias)
-                        {
-                            <option value="@categoria.NombreCategoria">@categoria.NombreCategoria</option>
-                        }
-                    }
-                </select>
+<form method="get" asp-controller="Tienda" asp-action="Index">
+    <input type="text" name="searchString" placeholder="Buscar productos..." value="@Context.Request.Query["searchString"]" />
+    <select name="categoryFilter">
+        <option value="">Todas las categorías</option>
+        @foreach (var categoria in ViewBag.Categorias as List<PymeCafe.Models.Categoria>)
+        {
+            <option value="@categoria.NombreCategoria" selected="@(Context.Request.Query["categoryFilter"] == categoria.NombreCategoria ? "selected" : null)">
+                @categoria.NombreCategoria
+            </option>
+        }
+    </select>
+    <button type="submit">Buscar</button>
+</form>
 
-                <!-- Botón de Filtrar -->
-                <button type="submit" class="btn btn-success w-100 mb-2">Filtrar</button>
+@foreach (var producto in Model)
+{
+    <div class="producto">
+        <h3>@producto.NombreProducto</h3>
+        <p>@producto.Descripcion</p>
+        <p><strong>Precio:</strong> @producto.Precio</p>
 
-                <!-- Botón de Carrito -->
-                <a href="@Url.Action("Carrito", "Tienda")" class="btn btn-custom w-100">Ver Carrito</a>
-            </form>
-        </div>
+        <!-- Botón Recomendar -->
+        <button class="btn-recomendar" onclick="recomendarProducto(@producto.ProductoId)">
+            <svg xmlns="http://www.w3.org/200/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.272.069c.585.149.918.783.773 1.367l-.287 1.149h2.345c.864 0 1.393.878.943 1.612l-.333.547c-.163.268-.194.6-.085.897l.286.768c.263.704-.05 1.498-.723 1.78l-1.371.568c.215.941-.16 1.949-.93 2.516-.5.37-1.126.555-1.75.555H7.468c-.8 0-1.543-.393-2.006-1.053L3.55 10.804a1.713 1.713 0 0 1-.248-.886V6.354c0-.403.162-.79.448-1.074l2.244-2.19c.396-.386.584-.926.542-1.45z" />
+            </svg>
+            Recomendar
+        </button>
 
-        <!-- Área de productos -->
-        <div class="col-md-9">
-            <h4 class="text-center text-success mb-4">Productos Disponibles</h4>
-            <div class="row">
-                @foreach (var producto in Model)
-                {
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                            <!-- Imagen del producto -->
-                            @if (!string.IsNullOrEmpty(producto.Foto))
-                            {
-                                <img src="@producto.Foto" alt="@producto.NombreProducto" class="card-img-top" style="height: 200px; object-fit: cover;">
-                            }
-                            else
-                            {
-                                <div class="placeholder-image text-center d-flex align-items-center justify-content-center"
-                                     style="background-color: #e9ecef; height: 200px; font-size: 24px; color: #6c757d;">
-                                    @producto.NombreProducto.Substring(0, 1).ToUpper()
-                                </div>
-                            }
-                            <div class="card-body">
-                                <h5 class="card-title text-success">@producto.NombreProducto</h5>
-                                <p class="card-text">@producto.Descripcion</p>
-                                <p class="card-text text-primary"><strong>$@producto.Precio</strong></p>
-                                <button class="btn btn-custom agregar-carrito" data-id="@producto.ProductoId">Agregar al Carrito</button>
-                            </div>
-                        </div>
-                    </div>
-                }
+        <!-- Botón Reseña -->
+        <button class="btn-resena" onclick="mostrarCajaResena(@producto.ProductoId)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M2 2a2 2 0 0 0-2 2v11.293l2.146-2.147A.5.5 0 0 1 2.5 13H14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm12 8H2V4h12v6z" />
+            </svg>
+            Reseña
+        </button>
+
+        <!-- Caja Reseña flotante -->
+        <div id="cajaResena-@producto.ProductoId" class="caja-resena" style="display: none;">
+            <textarea id="comentario-@producto.ProductoId" placeholder="Escribe tu reseña..."></textarea>
+            <div class="acciones">
+                <button onclick="enviarResena(@producto.ProductoId)">Enviar</button>
+                <button onclick="ocultarCajaResena(@producto.ProductoId)">Cancelar</button>
             </div>
         </div>
     </div>
-</div>
+}
+
+<style>
+    form {
+        margin-bottom: 20px;
+    }
+
+    input[type="text"], select {
+        padding: 6px;
+        margin-right: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    button[type="submit"] {
+        padding: 6px 12px;
+        background-color: #28a745;
+        border: none;
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .producto {
+        border: 1px solid #ddd;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .btn-recomendar, .btn-resena {
+        margin: 5px;
+        padding: 6px 12px;
+        border: none;
+        border-radius: 6px;
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+    }
+
+        .btn-recomendar svg, .btn-resena svg {
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+
+    .caja-resena {
+        margin-top: 10px;
+        background-color: #f4f4f4;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+        .caja-resena textarea {
+            width: 100%;
+            min-height: 60px;
+            margin-bottom: 5px;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            resize: vertical;
+        }
+</style>
 
 <script>
-    // Lógica para agregar productos al carrito
-    document.querySelectorAll('.agregar-carrito').forEach(button => {
-        button.addEventListener('click', async function () {
-            const productoId = this.getAttribute('data-id');
+    function mostrarCajaResena(productoId) {
+        document.getElementById(`cajaResena-${productoId}`).style.display = 'block';
+    }
 
-            // Enviar solicitud al controlador
-            const response = await fetch('@Url.Action("AgregarAlCarrito", "Tienda")', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ productoId: parseInt(productoId), cantidad: 1 })
-            });
+    function ocultarCajaResena(productoId) {
+        document.getElementById(`cajaResena-${productoId}`).style.display = 'none';
+    }
 
-            if (response.ok) {
-                alert("Producto agregado al carrito");
-            } else {
-                alert("Error al agregar el producto al carrito");
+    function recomendarProducto(productoId) {
+        fetch('/Tienda/RecomendarProducto', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(productoId)
+        }).then(res => {
+            if (res.ok) alert("Gracias por tu recomendación!");
+        });
+    }
+
+    function enviarResena(productoId) {
+        const comentario = document.getElementById(`comentario-${productoId}`).value;
+        fetch('/Tienda/AgregarValoracion', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ productoId, comentario })
+        }).then(res => {
+            if (res.ok) {
+                alert("Reseña enviada correctamente");
+                ocultarCajaResena(productoId);
             }
         });
-    });
+    }
 </script>

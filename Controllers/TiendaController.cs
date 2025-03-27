@@ -151,6 +151,50 @@ namespace PymeCafe.Controllers
         {
             return View();
         }
+        [HttpPost]
+        public async Task<IActionResult> RecomendarProducto([FromBody] int productoId)
+        {
+            var userId = HttpContext.Session.GetInt32("UserId");
+            if (userId == null) return Unauthorized();
+
+            var recomendacion = new Recomendacion
+            {
+                ProductoId = productoId,
+                UserId = userId.Value,
+                FechaRecomendacion = DateTime.Now
+            };
+
+            _context.Recomendacions.Add(recomendacion);
+            await _context.SaveChangesAsync();
+
+            return Ok();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AgregarValoracion([FromBody] ValoracionRequest request)
+        {
+            var userId = HttpContext.Session.GetInt32("UserId");
+            if (userId == null) return Unauthorized();
+
+            var valoracion = new Valoracionesdeproducto
+            {
+                ProductoId = request.ProductoId,
+                UserId = userId.Value,
+                Comentario = request.Comentario,
+                Calificacion = null // se puede extender luego si querés estrellas
+            };
+
+            _context.Valoracionesdeproductos.Add(valoracion);
+            await _context.SaveChangesAsync();
+
+            return Ok();
+        }
+
+        public class ValoracionRequest
+        {
+            public int ProductoId { get; set; }
+            public string Comentario { get; set; } = string.Empty;
+        }
 
         [HttpPost]
         public IActionResult ProcesarPago()
