@@ -26,6 +26,12 @@
         <h3>@producto.NombreProducto</h3>
         <p>@producto.Descripcion</p>
         <p><strong>Precio:</strong> @producto.Precio</p>
+        @if (!string.IsNullOrEmpty(producto.Foto))
+        {
+            <div class="producto-imagen">
+                <img src="@producto.Foto" alt="Imagen de @producto.NombreProducto" />
+            </div>
+        }
 
         <!-- Botón Recomendar -->
         <button class="btn-recomendar" onclick="recomendarProducto(@producto.ProductoId)">

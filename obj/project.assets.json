@@ -11969,23 +11969,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\alons\\.nuget\\packages\\": {},
+    "C:\\Users\\sofia\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe.csproj",
+      "projectUniqueName": "C:\\Users\\sofia\\OneDrive\\Documents\\GitHub\\PymeCafe\\PymeCafe.csproj",
       "projectName": "PymeCafe",
-      "projectPath": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\PymeCafe.csproj",
-      "packagesPath": "C:\\Users\\alons\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\obj\\",
+      "projectPath": "C:\\Users\\sofia\\OneDrive\\Documents\\GitHub\\PymeCafe\\PymeCafe.csproj",
+      "packagesPath": "C:\\Users\\sofia\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sofia\\OneDrive\\Documents\\GitHub\\PymeCafe\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\alons\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sofia\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -12010,9 +12010,9 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "direct"
+        "auditMode": "all"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -12072,7 +12072,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   },
@@ -12081,7 +12081,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "El paquete \"iTextSharp-LGPL 4.1.6\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net8.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "message": "Package 'iTextSharp-LGPL 4.1.6' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
       "libraryId": "iTextSharp-LGPL",
       "targetGraphs": [
         "net8.0"
