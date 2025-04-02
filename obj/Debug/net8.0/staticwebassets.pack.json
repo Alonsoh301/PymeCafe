@@ -381,6 +381,10 @@
       "PackagePath": "staticwebassets\\Images\\personas\\image3.png"
     },
     {
+      "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\Images\\placeholder.png",
+      "PackagePath": "staticwebassets\\Images\\placeholder.png"
+    },
+    {
       "Id": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\wwwroot\\css\\dashboard.css",
       "PackagePath": "staticwebassets\\css\\dashboard.css"
     },

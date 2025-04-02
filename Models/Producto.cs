@@ -16,6 +16,7 @@ public partial class Producto
     public int? CategoriaId { get; set; }
 
     public string? Foto { get; set; } // Nueva propiedad para la ruta de la foto
+    public int Cantidad { get; set; }
 
     public virtual Categoria? Categoria { get; set; }
 

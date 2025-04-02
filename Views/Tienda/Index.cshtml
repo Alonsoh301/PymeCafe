@@ -5,6 +5,7 @@
 }
 
 <h2>Productos</h2>
+<a href="/Tienda/Carrito" class="btn-ver-carrito">🛒 Ver carrito</a>
 
 <form method="get" asp-controller="Tienda" asp-action="Index">
     <input type="text" name="searchString" placeholder="Buscar productos..." value="@Context.Request.Query["searchString"]" />
@@ -20,45 +21,46 @@
     <button type="submit">Buscar</button>
 </form>
 
-@foreach (var producto in Model)
-{
-    <div class="producto">
-        <h3>@producto.NombreProducto</h3>
-        <p>@producto.Descripcion</p>
-        <p><strong>Precio:</strong> @producto.Precio</p>
-        @if (!string.IsNullOrEmpty(producto.Foto))
-        {
+<div class="contenedor-productos">
+    @foreach (var producto in Model)
+    {
+        <div class="producto">
             <div class="producto-imagen">
-                <img src="@producto.Foto" alt="Imagen de @producto.NombreProducto" />
+                <img src="@(!string.IsNullOrEmpty(producto.Foto) ? producto.Foto : "/images/placeholder.png")"
+                     alt="Imagen de @producto.NombreProducto"
+                     onerror="this.onerror=null; this.src='/images/placeholder.png';" />
+
             </div>
-        }
+            <div class="producto-info">
+                <h3>@producto.NombreProducto</h3>
+                <p>@producto.Descripcion</p>
+                <p><strong>Precio:</strong> ₡@producto.Precio</p>
 
-        <!-- Botón Recomendar -->
-        <button class="btn-recomendar" onclick="recomendarProducto(@producto.ProductoId)">
-            <svg xmlns="http://www.w3.org/200/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.272.069c.585.149.918.783.773 1.367l-.287 1.149h2.345c.864 0 1.393.878.943 1.612l-.333.547c-.163.268-.194.6-.085.897l.286.768c.263.704-.05 1.498-.723 1.78l-1.371.568c.215.941-.16 1.949-.93 2.516-.5.37-1.126.555-1.75.555H7.468c-.8 0-1.543-.393-2.006-1.053L3.55 10.804a1.713 1.713 0 0 1-.248-.886V6.354c0-.403.162-.79.448-1.074l2.244-2.19c.396-.386.584-.926.542-1.45z" />
-            </svg>
-            Recomendar
-        </button>
+                <button class="btn-recomendar" onclick="recomendarProducto(@producto.ProductoId)">
+                    Recomendar
+                </button>
+                <button class="btn-resena" onclick="mostrarCajaResena(@producto.ProductoId)">
+                    Reseña
+                </button>
+                <button class="btn-carrito" onclick="agregarAlCarrito(@producto.ProductoId)">
+                    Añadir al carrito
+                </button>
 
-        <!-- Botón Reseña -->
-        <button class="btn-resena" onclick="mostrarCajaResena(@producto.ProductoId)">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                <path d="M2 2a2 2 0 0 0-2 2v11.293l2.146-2.147A.5.5 0 0 1 2.5 13H14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm12 8H2V4h12v6z" />
-            </svg>
-            Reseña
-        </button>
 
-        <!-- Caja Reseña flotante -->
-        <div id="cajaResena-@producto.ProductoId" class="caja-resena" style="display: none;">
-            <textarea id="comentario-@producto.ProductoId" placeholder="Escribe tu reseña..."></textarea>
-            <div class="acciones">
-                <button onclick="enviarResena(@producto.ProductoId)">Enviar</button>
-                <button onclick="ocultarCajaResena(@producto.ProductoId)">Cancelar</button>
+                <div id="cajaResena-@producto.ProductoId" class="caja-resena" style="display: none;">
+                    <textarea id="comentario-@producto.ProductoId" placeholder="Escribe tu reseña..."></textarea>
+                    <div class="acciones">
+                        <button onclick="enviarResena(@producto.ProductoId)">Enviar</button>
+                        <button onclick="ocultarCajaResena(@producto.ProductoId)">Cancelar</button>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-}
+    }
+</div>
+<a href="/Tienda/Carrito" class="btn-flotante-carrito" title="Ver carrito">
+    🛒
+</a>
 
 <style>
     form {
@@ -81,45 +83,128 @@
         cursor: pointer;
     }
 
+    .contenedor-productos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+    }
+
     .producto {
+        background-color: #fff;
         border: 1px solid #ddd;
-        padding: 15px;
         border-radius: 10px;
-        margin-bottom: 20px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     }
 
-    .btn-recomendar, .btn-resena {
-        margin: 5px;
+    .producto-imagen img {
+        width: 200px;
+        height: 200px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+
+    .producto-info h3 {
+        margin: 0 0 5px 0;
+        text-align: center;
+    }
+
+    .producto-info p {
+        font-size: 14px;
+        margin: 4px 0;
+        text-align: center;
+    }
+
+    .btn-recomendar,
+    .btn-resena,
+    .btn-carrito {
+        margin: 4px;
         padding: 6px 12px;
+        background-color: #00b307;
         border: none;
+        color: #fff;
         border-radius: 6px;
-        background-color: #007bff;
-        color: white;
         cursor: pointer;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
     }
 
-        .btn-recomendar svg, .btn-resena svg {
-            margin-right: 5px;
-            vertical-align: middle;
+        .btn-recomendar:hover,
+        .btn-resena:hover,
+        .btn-carrito:hover {
+            background-color: #009d06;
         }
 
     .caja-resena {
+        width: 100%;
         margin-top: 10px;
-        background-color: #f4f4f4;
+        background-color: #f9f9f9;
         padding: 10px;
-        border-radius: 8px;
+        border-radius: 6px;
     }
 
         .caja-resena textarea {
             width: 100%;
             min-height: 60px;
-            margin-bottom: 5px;
             padding: 8px;
-            border-radius: 4px;
             border: 1px solid #ccc;
+            border-radius: 4px;
             resize: vertical;
         }
+
+    .acciones {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 8px;
+    }
+
+    .btn-flotante-carrito {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #00b307;
+        color: white;
+        font-size: 24px;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 56px;
+        text-decoration: none;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        z-index: 1000;
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-flotante-carrito:hover {
+            background-color: #009d06;
+        }
+
+    .btn-ver-carrito {
+        display: inline-block;
+        margin-bottom: 20px;
+        padding: 8px 16px;
+        background-color: #00b307;
+        color: white;
+        font-weight: bold;
+        border-radius: 6px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-ver-carrito:hover {
+            background-color: #009d06;
+        }
+
 </style>
+
 
 <script>
     function mostrarCajaResena(productoId) {
@@ -151,6 +236,27 @@
                 alert("Reseña enviada correctamente");
                 ocultarCajaResena(productoId);
             }
+        });
+    }
+    function agregarAlCarrito(productoId) {
+        fetch('/Tienda/AgregarAlCarrito', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ productoId: productoId, cantidad: 1 })
+        })
+        .then(res => {
+            if (res.ok) {
+                alert("Producto añadido al carrito 🛒");
+            } else if (res.status === 401) {
+                alert("Debes iniciar sesión para agregar productos al carrito.");
+                window.location.href = "/Acceso/Login";
+            } else {
+                alert("Ocurrió un error al añadir el producto.");
+            }
+        })
+        .catch(error => {
+            console.error("Error al conectar con el servidor:", error);
+            alert("Error de conexión.");
         });
     }
 </script>
