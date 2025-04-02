@@ -1,17 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\sofia\\OneDrive\\Documents\\GitHub\\PymeCafe\\",
+  "WorkspaceRootPath": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|c:\\users\\sofia\\onedrive\\documents\\github\\pymecafe\\views\\tienda\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|c:\\users\\alons\\onedrive\\documentos\\github\\pyme\\controllers\\reportescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|solutionrelative:controllers\\reportescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|c:\\users\\alons\\onedrive\\documentos\\github\\pyme\\views\\tienda\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|solutionrelative:views\\tienda\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|c:\\users\\sofia\\onedrive\\documents\\github\\pymecafe\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|c:\\users\\alons\\onedrive\\documentos\\github\\pyme\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|solutionrelative:views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|c:\\users\\sofia\\onedrive\\documents\\github\\pymecafe\\controllers\\tiendacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|c:\\users\\alons\\onedrive\\documentos\\github\\pyme\\controllers\\tiendacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{57C9AA29-FED1-473A-92D1-02C145A7AC13}|PymeCafe.csproj|solutionrelative:controllers\\tiendacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 134,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,37 +34,48 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\sofia\\OneDrive\\Documents\\GitHub\\PymeCafe\\Views\\Admin\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\Index.cshtml",
-              "ToolTip": "C:\\Users\\sofia\\OneDrive\\Documents\\GitHub\\PymeCafe\\Views\\Admin\\Index.cshtml",
-              "RelativeToolTip": "Views\\Admin\\Index.cshtml",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAAAIQAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-28T00:21:47.914Z",
+              "DocumentIndex": 0,
+              "Title": "ReportesController.cs",
+              "DocumentMoniker": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\Controllers\\ReportesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ReportesController.cs",
+              "ToolTip": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\Controllers\\ReportesController.cs",
+              "RelativeToolTip": "Controllers\\ReportesController.cs",
+              "ViewState": "AgIAAN8AAAAAAAAAAAAAwO8AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T18:50:56.016Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "TiendaController.cs",
-              "DocumentMoniker": "C:\\Users\\sofia\\OneDrive\\Documents\\GitHub\\PymeCafe\\Controllers\\TiendaController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TiendaController.cs",
-              "ToolTip": "C:\\Users\\sofia\\OneDrive\\Documents\\GitHub\\PymeCafe\\Controllers\\TiendaController.cs",
-              "RelativeToolTip": "Controllers\\TiendaController.cs",
-              "ViewState": "AgIAAKIAAAAAAAAAAADwv8UAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T00:06:38.03Z",
-              "EditorCaption": ""
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAIQAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-28T00:21:47.914Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "TiendaController.cs",
+              "DocumentMoniker": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\Controllers\\TiendaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TiendaController.cs",
+              "ToolTip": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\Controllers\\TiendaController.cs",
+              "RelativeToolTip": "Controllers\\TiendaController.cs",
+              "ViewState": "AgIAAKIAAAAAAAAAAADwv8UAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T00:06:38.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\sofia\\OneDrive\\Documents\\GitHub\\PymeCafe\\Views\\Tienda\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\Views\\Tienda\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Tienda\\Index.cshtml",
-              "ToolTip": "C:\\Users\\sofia\\OneDrive\\Documents\\GitHub\\PymeCafe\\Views\\Tienda\\Index.cshtml",
+              "ToolTip": "C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\Views\\Tienda\\Index.cshtml",
               "RelativeToolTip": "Views\\Tienda\\Index.cshtml",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",

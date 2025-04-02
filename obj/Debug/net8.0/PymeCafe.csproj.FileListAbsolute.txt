@@ -848,7 +848,6 @@ C:\Users\alons\OneDrive\Documentos\GitHub\pyme\obj\Debug\net8.0\staticwebassets\
 C:\Users\alons\OneDrive\Documentos\GitHub\pyme\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.PymeCafe.props
 C:\Users\alons\OneDrive\Documentos\GitHub\pyme\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.PymeCafe.props
 C:\Users\alons\OneDrive\Documentos\GitHub\pyme\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\alons\OneDrive\Documentos\GitHub\pyme\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\alons\OneDrive\Documentos\GitHub\pyme\obj\Debug\net8.0\PymeCafe.csproj.Up2Date
 C:\Users\alons\OneDrive\Documentos\GitHub\pyme\obj\Debug\net8.0\PymeCafe.dll
 C:\Users\alons\OneDrive\Documentos\GitHub\pyme\obj\Debug\net8.0\refint\PymeCafe.dll
@@ -1196,3 +1195,6 @@ C:\Users\sofia\OneDrive\Documents\GitHub\PymeCafe\obj\Debug\net8.0\refint\PymeCa
 C:\Users\sofia\OneDrive\Documents\GitHub\PymeCafe\obj\Debug\net8.0\PymeCafe.pdb
 C:\Users\sofia\OneDrive\Documents\GitHub\PymeCafe\obj\Debug\net8.0\PymeCafe.genruntimeconfig.cache
 C:\Users\sofia\OneDrive\Documents\GitHub\PymeCafe\obj\Debug\net8.0\ref\PymeCafe.dll
+C:\Users\alons\OneDrive\Documentos\GitHub\pyme\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\alons\OneDrive\Documentos\GitHub\pyme\bin\Debug\net8.0\itext.bouncy-castle-adapter.dll
+C:\Users\alons\OneDrive\Documentos\GitHub\pyme\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

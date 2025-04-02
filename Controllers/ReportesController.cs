@@ -235,6 +235,8 @@ namespace PymeCafe.Controllers
         // ✅ 6. Generar reporte en Excel con EPPlus
         private byte[] GenerarExcel(List<Dictionary<string, object>> datos, string titulo)
         {
+            ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+
             using (var package = new ExcelPackage())
             {
                 var worksheet = package.Workbook.Worksheets.Add(titulo);
