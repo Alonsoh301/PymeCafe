@@ -163,16 +163,38 @@
             
             <div>
                 
-                <h2>
+                
+                <div id="newsletter-container" style="text-align:center; margin-top:40px;">
+                    <h2 style="color:#32cd32;">PymeCafe</h2>
+                    <p>Suscríbete a nuestro boletín.</p>
+                    <input type="email" id="newsletterEmail" placeholder="Tu correo electrónico" style="padding: 10px; width: 300px; border-radius: 5px;" />
+                    <br />
+                    <button onclick="subscribe()" style="padding: 10px 40px; background-color: #00cc00; color: white; font-weight: bold; border: none; margin-top: 10px; border-radius: 5px;">Suscribirme</button>
+                    <p id="successMessage" style="color:#00ff00; display:none; margin-top:10px;">¡Gracias por suscribirte!</p>
+                </div>
 
-                    
-                    
-                    PymeCafe</h2>
-                <p>Suscríbete a nuestro boletín.</p>
-                <form>
-                    <input type="email" placeholder="Tu correo electrónico">
-                    <button class="btn-customFooter">Suscribirme</button>
-                </form>
+                <script>
+                    function subscribe() {
+                        const email = document.getElementById("newsletterEmail").value;
+                        if (email) {
+                            fetch("/Suscripcion/Guardar", {
+                                method: "POST",
+                                headers: {
+                                    'Content-Type': 'application/json'
+                                },
+                                body: JSON.stringify({ email: email })
+                            })
+                            .then(response => {
+                                if (response.ok) {
+                                    document.getElementById("newsletterEmail").style.display = "none";
+                                    document.querySelector("button").style.display = "none";
+                                    document.getElementById("successMessage").style.display = "block";
+                                }
+                            });
+                        }
+                    }
+                </script>
+
             </div>
             <div>
                 <h3>Mi cuenta</h3>

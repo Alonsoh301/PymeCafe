@@ -1152,6 +1152,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-CNyHVuGvRWwOESW0fltZhuPjEzQ7QLZY99q64J/uzAk="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"721085"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022CNyHVuGvRWwOESW0fltZhuPjEzQ7QLZY99q64J/uzAk=\u0022"},{"Name":"Last-Modified","Value":"Sun, 28 Apr 2024 00:28:30 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/PymeCafe/Images/placeholder.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\placeholder.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-alW4uU35CUC8lyu12tIfHRFKxQERiQdIw40nHCe79uE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"26946"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022alW4uU35CUC8lyu12tIfHRFKxQERiQdIw40nHCe79uE=\u0022"},{"Name":"Last-Modified","Value":"Wed, 02 Apr 2025 23:16:48 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/PymeCafe/Images/placeholder.uqhz29ylsd.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\placeholder.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"uqhz29ylsd"},{"Name":"integrity","Value":"sha256-alW4uU35CUC8lyu12tIfHRFKxQERiQdIw40nHCe79uE="},{"Name":"label","Value":"_content/PymeCafe/Images/placeholder.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"26946"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022alW4uU35CUC8lyu12tIfHRFKxQERiQdIw40nHCe79uE=\u0022"},{"Name":"Last-Modified","Value":"Wed, 02 Apr 2025 23:16:48 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/PymeCafe/Images/Plantita.md4wgrp4mh.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Plantita.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

@@ -7711,6 +7711,88 @@
       ]
     },
     {
+      "Route": "Images/placeholder.png",
+      "AssetFile": "Images/placeholder.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26946"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"alW4uU35CUC8lyu12tIfHRFKxQERiQdIw40nHCe79uE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Apr 2025 23:16:48 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-alW4uU35CUC8lyu12tIfHRFKxQERiQdIw40nHCe79uE="
+        }
+      ]
+    },
+    {
+      "Route": "Images/placeholder.uqhz29ylsd.png",
+      "AssetFile": "Images/placeholder.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26946"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"alW4uU35CUC8lyu12tIfHRFKxQERiQdIw40nHCe79uE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Apr 2025 23:16:48 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uqhz29ylsd"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-alW4uU35CUC8lyu12tIfHRFKxQERiQdIw40nHCe79uE="
+        },
+        {
+          "Name": "label",
+          "Value": "Images/placeholder.png"
+        }
+      ]
+    },
+    {
       "Route": "PymeCafe.94c618hxf2.styles.css",
       "AssetFile": "PymeCafe.styles.css",
       "Selectors": [],

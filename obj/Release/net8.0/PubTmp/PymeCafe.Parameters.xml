@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
-  <parameter name="IIS Web Application Name" description="" value="PymeCafe2025" tags="IisApp">
+  <parameter name="IIS Web Application Name" description="" value="PymeCafe20250425104542" tags="IisApp">
     <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\alons\\OneDrive\\Documentos\\GitHub\\pyme\\obj\\Release\\net8\.0\\PubTmp\\Out\\$" />
   </parameter>
 </parameters>
