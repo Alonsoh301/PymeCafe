@@ -1,30 +1,40 @@
 ﻿@model IEnumerable<PymeCafe.Models.Valoracionesdeproducto>
 
-<h2>Valoraciones de Producto</h2>
+<h2 class="mb-4 text-success">Tus Valoraciones</h2>
 
 @if (!Model.Any())
 {
-    <p>No has realizado valoraciones de productos.</p>
+    <p class="text-muted">No has realizado valoraciones de productos.</p>
 }
 else
 {
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Producto</th>
-                <th>Calificación</th>
-                <th>Comentario</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var valoracion in Model)
-            {
-                <tr>
-                    <td>@valoracion.Producto</td> <!-- Cambia "Producto" si el nombre del campo es diferente -->
-                    <td>@valoracion.Calificacion</td> <!-- Cambia "Calificacion" si el nombre del campo es diferente -->
-                    <td>@valoracion.Comentario</td> <!-- Cambia "Comentario" si el nombre del campo es diferente -->
-                </tr>
-            }
-        </tbody>
-    </table>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        @foreach (var valoracion in Model)
+        {
+            <div class="col">
+                <div class="card shadow-sm h-100">
+                    <img src="@(!string.IsNullOrEmpty(valoracion.Producto?.Foto) ? valoracion.Producto.Foto : "/images/placeholder.png")"
+                         class="card-img-top imagen-producto-fija"
+                         alt="Producto"
+                         onerror="this.onerror=null;this.src='/images/placeholder.png';" />
+
+
+                    <div class="card-body">
+                        <h5 class="card-title">@valoracion.Producto?.NombreProducto</h5>
+                        <p class="card-text"><strong>Calificación:</strong> @valoracion.Calificacion ⭐</p>
+                        <p class="card-text text-muted">@valoracion.Comentario</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
 }
+<style>
+    .imagen-producto-fija {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 4px;
+    }
+</style>

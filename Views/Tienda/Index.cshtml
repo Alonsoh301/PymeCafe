@@ -49,6 +49,17 @@
 
                 <div id="cajaResena-@producto.ProductoId" class="caja-resena" style="display: none;">
                     <textarea id="comentario-@producto.ProductoId" placeholder="Escribe tu reseña..."></textarea>
+                    <div id="rating-container">
+                        
+
+                        <div class="form-group">
+                            <label for="rating">Calificación (1 a 5):</label>
+                            <input type="number" name="rating" id="rating-@producto.ProductoId" min="1" max="5" value="1" class="form-control" style="width: 60px;">
+
+                        </div>
+
+                    </div>
+
                     <div class="acciones">
                         <button onclick="enviarResena(@producto.ProductoId)">Enviar</button>
                         <button onclick="ocultarCajaResena(@producto.ProductoId)">Cancelar</button>
@@ -202,7 +213,6 @@
         .btn-ver-carrito:hover {
             background-color: #009d06;
         }
-
 </style>
 
 
@@ -225,19 +235,29 @@
         });
     }
 
-    function enviarResena(productoId) {
+        function enviarResena(productoId) {
         const comentario = document.getElementById(`comentario-${productoId}`).value;
+        const calificacion = parseInt(document.getElementById(`rating-${productoId}`).value);
+
         fetch('/Tienda/AgregarValoracion', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ productoId, comentario })
-        }).then(res => {
+            body: JSON.stringify({ productoId, comentario, calificacion })
+        })
+        .then(res => {
             if (res.ok) {
                 alert("Reseña enviada correctamente");
                 ocultarCajaResena(productoId);
+            } else {
+                alert("Hubo un error al enviar la reseña.");
             }
+        })
+        .catch(err => {
+            console.error(err);
+            alert("Error de red al enviar reseña.");
         });
     }
+
     function agregarAlCarrito(productoId) {
         fetch('/Tienda/AgregarAlCarrito', {
             method: 'POST',

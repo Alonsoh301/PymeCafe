@@ -181,7 +181,7 @@ namespace PymeCafe.Controllers
                 ProductoId = request.ProductoId,
                 UserId = userId.Value,
                 Comentario = request.Comentario,
-                Calificacion = null // se puede extender luego si querés estrellas
+                Calificacion = request.Calificacion // ← Ya no null, sino el valor real
             };
 
             _context.Valoracionesdeproductos.Add(valoracion);
@@ -194,6 +194,8 @@ namespace PymeCafe.Controllers
         {
             public int ProductoId { get; set; }
             public string Comentario { get; set; } = string.Empty;
+            public int Calificacion { get; set; }
+
         }
 
         [HttpPost]
@@ -204,14 +206,26 @@ namespace PymeCafe.Controllers
             return View(ProcesarPago);
         }
 
-        public IActionResult Sinpe()
+        [HttpGet]
+        public async Task<IActionResult> Sinpe()
         {
+            var userId = HttpContext.Session.GetInt32("UserId");
+            var pedido = await _context.Pedidos
+                .FirstOrDefaultAsync(p => p.UserId == userId && p.EstadoPedido == "En proceso");
+
+            if (pedido != null)
+            {
+                ViewBag.PedidoId = pedido.PedidoId;
+            }
+
             ViewBag.GoogleMapsApiKey = _configuration["GoogleMapsApiKey"];
             return View();
         }
 
+
         [HttpPost]
-        public async Task<IActionResult> SubirComprobante(int pedidoId, IFormFile capturaPago, string DireccionDeEnvio)
+        public async Task<IActionResult> SubirComprobante(int pedidoId, IFormFile capturaPago, string DireccionDeEnvio, string comentarioPago)
+
         {
             if (capturaPago != null && capturaPago.Length > 0)
             {
@@ -239,11 +253,14 @@ namespace PymeCafe.Controllers
                     var pedido = await _context.Pedidos.FindAsync(pedidoId);
                     if (pedido != null)
                     {
-                        pedido.Comprobante = imageData; // Guarda la imagen en formato binario
-                        pedido.DireccionDeEnvio = DireccionDeEnvio; // Guarda la dirección de envío
+                        pedido.Comprobante = imageData;
+                        pedido.DireccionDeEnvio = DireccionDeEnvio;
+                        pedido.Comentarios = comentarioPago; // <-- aquí se guarda
+                        pedido.EstadoPedido = "Confirmado";
                         await _context.SaveChangesAsync();
-                        TempData["Message"] = "Comprobante y dirección guardados exitosamente.";
                     }
+
+
                 }
             }
             return RedirectToAction("Sinpe");

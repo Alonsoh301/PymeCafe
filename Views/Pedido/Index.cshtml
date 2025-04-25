@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<PymeCafe.Models.Pedido>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Pedidos";
 }
 
-<h1>Index</h1>
+<h1>Pedidos</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -46,10 +46,43 @@
                 @Html.DisplayFor(modelItem => item.Comentarios)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Comprobante)
+                    @if (item.Comprobante != null)
+                    {
+                        var base64 = Convert.ToBase64String(item.Comprobante);
+                        var imgSrc = $"data:image/png;base64,{base64}";
+                        <button class="btn btn-outline-primary btn-sm" onclick="expandirImagenDesdeSrc('@imgSrc')">
+                            Ver comprobante
+                        </button>
+                    }
+                    else
+                    {
+                        <span class="text-muted">No hay comprobante</span>
+                    }
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.DireccionDeEnvio)
+                    @if (!string.IsNullOrEmpty(item.DireccionDeEnvio) && item.DireccionDeEnvio.Contains(","))
+                    {
+                        var partes = item.DireccionDeEnvio.Split(',');
+                        if (partes.Length == 2)
+                        {
+                            var lat = partes[0];
+                            var lng = partes[1];
+                            var url = $"https://www.openstreetmap.org/?mlat={lat}&mlon={lng}#map=16/{lat}/{lng}";
+                            <a href="@url" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener">
+                                Ver ubicación
+                            </a>
+                        }
+                        else
+                        {
+                            <span class="text-warning">Ubicación inválida</span>
+                        }
+                    }
+                    else
+                    {
+                        <span class="text-muted">No hay ubicación</span>
+                    }
+
+
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.User.UserId)
@@ -62,4 +95,94 @@
         </tr>
 }
     </tbody>
+    
 </table>
+<style>
+    .mapa-modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 9999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .mapa-modal .mapa {
+            width: 80vw;
+            height: 80vh;
+            border: 2px solid #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255,255,255,0.2);
+        }
+    /* Estilo del modal que se muestra al hacer clic en "Ver comprobante" */
+    .modal-imagen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+
+        .modal-imagen img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+        }
+</style>
+
+<script>
+    function expandirImagenDesdeSrc(src) {
+        const modal = document.createElement("div");
+        modal.classList.add("modal-imagen");
+        modal.onclick = () => document.body.removeChild(modal);
+
+        const img = document.createElement("img");
+        img.src = src;
+        modal.appendChild(img);
+
+        document.body.appendChild(modal);
+    }
+</script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<<script>
+     function mostrarMapa(ubicacion) {
+         const [lat, lng] = ubicacion.split(',');
+
+         const contenedor = document.getElementById('mapaUbicacion');
+         contenedor.innerHTML = "<div id='mapa' class='mapa'></div>";
+         contenedor.style.display = "flex";
+
+         setTimeout(() => {
+             const mapa = L.map('mapa').setView([lat, lng], 15);
+
+             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                 attribution: '&copy; OpenStreetMap'
+             }).addTo(mapa);
+
+             L.marker([lat, lng]).addTo(mapa);
+
+             // FIX: Asegura que se redibuje correctamente
+             setTimeout(() => {
+                 mapa.invalidateSize();
+             }, 200);
+
+             // Cerrar al hacer clic afuera
+             contenedor.onclick = () => {
+                 contenedor.innerHTML = "";
+                 contenedor.style.display = "none";
+             };
+         }, 50);
+     }
+</script>
+
+

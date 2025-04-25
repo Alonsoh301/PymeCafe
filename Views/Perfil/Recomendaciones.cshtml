@@ -1,30 +1,30 @@
 ﻿@model IEnumerable<PymeCafe.Models.Recomendacion>
 
-<h2>Recomendaciones para Ti</h2>
+<h2 class="mb-4 text-primary">Tus Recomendaciones</h2>
 
 @if (!Model.Any())
 {
-    <p>No tienes recomendaciones en este momento.</p>
+    <p class="text-muted">No tienes recomendaciones en este momento.</p>
 }
 else
 {
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Producto</th>
-                <th>Fecha de Recomendación</th>
-                <th>Usuario</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var recomendacion in Model)
-            {
-                <tr>
-                    <td>@recomendacion.Producto?.NombreProducto</td>
-                    <td>@recomendacion.FechaRecomendacion?.ToString("dd/MM/yyyy")</td>
-                    <td>@recomendacion.User?.Nombre @recomendacion.User?.Apellido</td>
-                </tr>
-            }
-        </tbody>
-    </table>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        @foreach (var rec in Model)
+        {
+            <div class="col">
+                <div class="card shadow-sm h-100">
+                    @if (!string.IsNullOrEmpty(rec.Producto?.Foto))
+                    {
+                        <img src="@rec.Producto.Foto" class="card-img-top" alt="Producto recomendado" />
+
+                    }
+                    <div class="card-body">
+                        <h5 class="card-title">@rec.Producto?.NombreProducto</h5>
+                        <p class="card-text"><strong>Recomendado por:</strong> @rec.User?.Nombre @rec.User?.Apellido</p>
+                        <p class="card-text"><small class="text-muted">Fecha: @rec.FechaRecomendacion?.ToString("dd/MM/yyyy")</small></p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
 }

@@ -9,45 +9,24 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
-<table class="table">
-    <thead>
+<table class="table table-bordered shadow-sm">
+    <thead class="table-dark">
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Cantidad)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PrecioUnitario)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Pedido)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Producto)
-            </th>
-            <th></th>
+            <th>Producto</th>
+            <th class="text-center">Cantidad</th>
+            <th class="text-end">Precio Unitario</th>
+            <th class="text-end">Subtotal</th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Cantidad)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PrecioUnitario)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Pedido.PedidoId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Producto.ProductoId)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.DetalleId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.DetalleId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.DetalleId">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@(item.Producto?.NombreProducto ?? "Sin nombre")</td>
+                <td class="text-center">@item.Cantidad</td>
+                <td class="text-end">@item.PrecioUnitario?.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("es-CR"))</td>
+                <td class="text-end">@(((item.Cantidad ?? 0) * (item.PrecioUnitario ?? 0)).ToString("C", System.Globalization.CultureInfo.GetCultureInfo("es-CR")))</td>
+            </tr>
+        }
     </tbody>
 </table>

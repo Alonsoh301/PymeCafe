@@ -1,15 +1,15 @@
 ﻿@model IEnumerable<PymeCafe.Models.Detallespedido>
 
-<h2>Detalles del Pedido</h2>
+<h2 class="mb-4 text-success">Detalles del Pedido</h2>
 
 @if (!Model.Any())
 {
-    <p>No hay detalles disponibles para este pedido.</p>
+    <p class="text-muted">No hay detalles disponibles para este pedido.</p>
 }
 else
 {
-    <table class="table">
-        <thead>
+    <table class="table table-bordered shadow-sm">
+        <thead class="table-dark">
             <tr>
                 <th>Producto</th>
                 <th>Cantidad</th>
@@ -21,13 +21,14 @@ else
             @foreach (var detalle in Model)
             {
                 <tr>
-                    <td>@detalle.Producto?.NombreProducto</td>
+                    
+                    <td>@(detalle.Producto?.NombreProducto ?? "Sin nombre")</td>
                     <td>@detalle.Cantidad</td>
-                    <td>@detalle.PrecioUnitario?.ToString("C")</td>
-                    <td>@((detalle.Cantidad ?? 0) * (detalle.PrecioUnitario ?? 0)).ToString("C")</td>
+                    <td>@(detalle.PrecioUnitario?.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("es-CR")))</td>
+                    <td>@(((detalle.Cantidad ?? 0) * (detalle.PrecioUnitario ?? 0)).ToString("C", System.Globalization.CultureInfo.GetCultureInfo("es-CR")))</td>
+
                 </tr>
             }
         </tbody>
     </table>
 }
-

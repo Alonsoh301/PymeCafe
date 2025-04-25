@@ -14,7 +14,10 @@ else
                 <th>Fecha del Pedido</th>
                 <th>Estado</th>
                 <th>Comentarios</th>
+                <th>Comprobante</th>
+                <th>Ubicación</th>
                 <th>Detalles</th>
+
             </tr>
         </thead>
         <tbody>
@@ -24,13 +27,91 @@ else
                     <td>@pedido.FechaPedido?.ToString("dd/MM/yyyy")</td>
                     <td>@pedido.EstadoPedido</td>
                     <td>@pedido.Comentarios</td>
+
                     <td>
-                        <a href="@Url.Action("DetallesPedido", "Pedidos", new { pedidoId = pedido.PedidoId })" class="btn btn-custom">
-                            Ver Detalles
+                        @if (pedido.Comprobante != null)
+                        {
+                            var base64 = Convert.ToBase64String(pedido.Comprobante);
+                            var imgSrc = $"data:image/png;base64,{base64}";
+                            <button class="btn btn-outline-primary btn-sm" onclick="expandirImagenDesdeSrc('@imgSrc')">
+                                Ver comprobante
+                            </button>
+                        }
+                        else
+                        {
+                            <span class="text-muted">No hay comprobante</span>
+                        }
+                    </td>
+
+                    <td>
+                        @if (!string.IsNullOrEmpty(pedido.DireccionDeEnvio) && pedido.DireccionDeEnvio.Contains(","))
+                        {
+                            var coords = pedido.DireccionDeEnvio.Split(',');
+                            if (coords.Length == 2)
+                            {
+                                var lat = coords[0];
+                                var lng = coords[1];
+                                var url = $"https://www.openstreetmap.org/?mlat={lat}&mlon={lng}#map=16/{lat}/{lng}";
+                                <a href="@url" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener">
+                                    Ver ubicación
+                                </a>
+                            }
+                            else
+                            {
+                                <span class="text-warning">Ubicación inválida</span>
+                            }
+                        }
+                        else
+                        {
+                            <span class="text-muted">No hay ubicación</span>
+                        }
+                    </td>
+                    <td>
+                        <a href="@Url.Action("DetallesPedido", "Perfil", new { pedidoId = pedido.PedidoId })" class="btn btn-info btn-sm">
+                            Ver más detalles
                         </a>
                     </td>
+
+
                 </tr>
             }
         </tbody>
     </table>
 }
+
+<!-- Scripts y estilos para el modal de imagen -->
+<script>
+    function expandirImagenDesdeSrc(src) {
+        const modal = document.createElement("div");
+        modal.classList.add("modal-imagen");
+        modal.onclick = () => document.body.removeChild(modal);
+
+        const img = document.createElement("img");
+        img.src = src;
+        modal.appendChild(img);
+
+        document.body.appendChild(modal);
+    }
+</script>
+
+<style>
+    .modal-imagen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+
+        .modal-imagen img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+        }
+</style>

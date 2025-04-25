@@ -4,56 +4,66 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
-
-<h4>Pedido</h4>
+<h1>Editar Pedido</h1>
 <hr />
 <div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
+    <div class="col-md-6">
+        <form asp-action="Edit" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="PedidoId" />
+
             <div class="form-group">
                 <label asp-for="UserId" class="control-label"></label>
                 <select asp-for="UserId" class="form-control" asp-items="ViewBag.UserId"></select>
                 <span asp-validation-for="UserId" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="FechaPedido" class="control-label"></label>
                 <input asp-for="FechaPedido" class="form-control" />
                 <span asp-validation-for="FechaPedido" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="EstadoPedido" class="control-label"></label>
                 <input asp-for="EstadoPedido" class="form-control" />
                 <span asp-validation-for="EstadoPedido" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="Comentarios" class="control-label"></label>
                 <input asp-for="Comentarios" class="form-control" />
                 <span asp-validation-for="Comentarios" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <label asp-for="Comprobante" class="control-label"></label>
-                <input asp-for="Comprobante" class="form-control" />
-                <span asp-validation-for="Comprobante" class="text-danger"></span>
+                <label class="control-label">Comprobante actual</label><br />
+                @if (Model.Comprobante != null)
+                {
+                    var base64 = Convert.ToBase64String(Model.Comprobante);
+                    <img src="data:image/png;base64,@base64" alt="Comprobante" style="max-width: 200px; height: auto;" />
+                }
+                else
+                {
+                    <p class="text-muted">No hay comprobante actual.</p>
+                }
             </div>
+
             <div class="form-group">
-                <label asp-for="DireccionDeEnvio" class="control-label"></label>
-                <input asp-for="DireccionDeEnvio" class="form-control" />
-                <span asp-validation-for="DireccionDeEnvio" class="text-danger"></span>
+                <label class="control-label">Reemplazar comprobante</label>
+                <input type="file" name="nuevoComprobante" class="form-control" accept="image/*" />
             </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+
+            <div class="form-group mt-3">
+                <input type="submit" value="Guardar cambios" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

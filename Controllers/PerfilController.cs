@@ -138,11 +138,13 @@ namespace PymeCafe.Controllers
             }
 
             var detallesPedido = await _context.Detallespedidos
+                .Include(d => d.Producto) // ← Asegura que se cargue el producto asociado
                 .Where(d => d.PedidoId == pedidoId && d.Pedido.UserId == userId)
                 .ToListAsync();
 
             return View(detallesPedido);
         }
+
 
         // Acción para mostrar las recomendaciones del usuario
         public async Task<IActionResult> Recomendaciones()
@@ -154,11 +156,14 @@ namespace PymeCafe.Controllers
             }
 
             var recomendaciones = await _context.Recomendacions
+                .Include(r => r.Producto)
+                .Include(r => r.User)
                 .Where(r => r.UserId == userId)
                 .ToListAsync();
 
             return View(recomendaciones);
         }
+
 
         // Acción para mostrar los puntos de lealtad del usuario
         public async Task<IActionResult> PuntosLealtad()
@@ -196,13 +201,14 @@ namespace PymeCafe.Controllers
                 return RedirectToAction("Login", "Acceso");
             }
 
-            // Obtén las valoraciones del usuario logueado desde la base de datos
+            // Incluye la relación con Producto para acceder a su imagen y nombre
             var valoraciones = await _context.Valoracionesdeproductos
-                .Where(v => v.UserId == userId) // Ajusta si tu campo de relación es diferente
+                .Include(v => v.Producto)
+                .Where(v => v.UserId == userId)
                 .ToListAsync();
 
-            // Asegúrate de enviar una lista, incluso si está vacía, para evitar el error
             return View(valoraciones ?? new List<Valoracionesdeproducto>());
         }
+
     }
 }

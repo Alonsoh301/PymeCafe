@@ -69,6 +69,8 @@ namespace PymeCafe.Controllers
         }
 
         // GET: Pedido/Edit/5
+        [HttpGet("Pedido/Edit/{id}")]
+
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -88,9 +90,11 @@ namespace PymeCafe.Controllers
         // POST: Pedido/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
+        [HttpPost("Pedido/Edit/{id}")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("PedidoId,UserId,FechaPedido,EstadoPedido,Comentarios,Comprobante,DireccionDeEnvio")] Pedido pedido)
+        
+
+        public async Task<IActionResult> Edit(int id, [Bind("PedidoId,UserId,FechaPedido,EstadoPedido,Comentarios,DireccionDeEnvio")] Pedido pedido, IFormFile nuevoComprobante)
         {
             if (id != pedido.PedidoId)
             {
@@ -101,8 +105,30 @@ namespace PymeCafe.Controllers
             {
                 try
                 {
+                    // Si se subió un nuevo comprobante, convertirlo a binario
+                    if (nuevoComprobante != null && nuevoComprobante.Length > 0)
+                    {
+                        using (var memoryStream = new MemoryStream())
+                        {
+                            await nuevoComprobante.CopyToAsync(memoryStream);
+                            pedido.Comprobante = memoryStream.ToArray();
+                        }
+                    }
+                    else
+                    {
+                        // Si no se subió uno nuevo, conservar el comprobante original
+                        var comprobanteExistente = await _context.Pedidos
+                            .AsNoTracking()
+                            .Where(p => p.PedidoId == id)
+                            .Select(p => p.Comprobante)
+                            .FirstOrDefaultAsync();
+
+                        pedido.Comprobante = comprobanteExistente;
+                    }
+
                     _context.Update(pedido);
                     await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -115,8 +141,8 @@ namespace PymeCafe.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
             }
+
             ViewData["UserId"] = new SelectList(_context.Usuarios, "UserId", "UserId", pedido.UserId);
             return View(pedido);
         }

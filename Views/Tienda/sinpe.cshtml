@@ -28,6 +28,11 @@
                 <button type="button" onclick="getUserLocation()" class="btn btn-primary mb-3">Usar mi ubicación actual</button>
                 <div id="map" class="map-container"></div>
                 <input type="hidden" id="direccionDeEnvio" name="DireccionDeEnvio">
+                <input type="hidden" name="pedidoId" value="@ViewBag.PedidoId" />
+                <div class="form-group mt-3">
+                    <label for="comentarioPago" class="form-label">Comentario del pago (opcional):</label>
+                    <textarea id="comentarioPago" name="comentarioPago" class="form-control" rows="3" placeholder="Por ejemplo: Pedido urgente, confirmar recepción, etc."></textarea>
+                </div>
 
                 <button type="submit" class="btn btn-success mt-4">Enviar Pago y Dirección</button>
             </form>
